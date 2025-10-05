@@ -1,0 +1,169 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #eef3ff 0%, #cfd9ff 50%, #ffffff 100%);
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease-in-out infinite;
+  text-align: center;
+  color: #333;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* หัวข้อ */
+.title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #1e2a78;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* กริดตัวละคร */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.cardBox {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+
+.cardBox:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.imageWrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 12px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ปุ่ม CTA */
+.ctas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 14px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: none;
+}
+
+/* ปุ่มหลัก */
+.primary {
+  background: linear-gradient(90deg, #0d6efd, #3a8bff);
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
+}
+
+.primary:hover {
+  background: linear-gradient(90deg, #0056d2, #1f6fff);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ปุ่มรอง */
+.secondary {
+  background: #fff;
+  border: 2px solid #dee2e6;
+  color: #6c757d;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.secondary:hover {
+  background: #f8f9fa;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn {
+    width: 100%;
+    height: 64px;
+    font-size: 18px;
+  }
+
+  .ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
