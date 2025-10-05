@@ -15,7 +15,7 @@ export const categories = [
       {
         id: "black-white",
         name: "ลายขาวดำ",
-        img: "/patterns/blackwhite.png",
+        img: "/112521.jpg",
         products: [
           { name: "Crybaby Black", img: "/characters/crybaby_black.png" },
           { name: "Crybaby Stripe", img: "/characters/crybaby_stripe.png" },
