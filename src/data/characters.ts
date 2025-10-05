@@ -30,16 +30,16 @@ export const categories = [
       {
         id: "dream",
         name: "ลายดรีมแฟนตาซี",
-        img: "/patterns/dream.png",
+        img: "/112521.jpg",
         products: [
-          { name: "Dimoo Dream", img: "/characters/dimoo1.png" },
+          { name: "Dimoo Dream", img: "/112521.jpg" },
           { name: "Dimoo Sleep", img: "/characters/dimoo2.png" },
         ],
       },
       {
         id: "night-sky",
         name: "ลายท้องฟ้ายามค่ำ",
-        img: "/patterns/nightsky.png",
+        img: "/112521.jpg",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
@@ -48,7 +48,7 @@ export const categories = [
            {
         id: "night-sky-1",
         name: "ลายท้องฟ้ายามค่ำ-1",
-        img: "/patterns/nightsky.png",
+        img: "/112521.jpg",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
@@ -57,7 +57,7 @@ export const categories = [
            {
         id: "night-sky-2",
         name: "ลายท้องฟ้ายามค่ำ-2",
-        img: "/patterns/nightsky.png",
+        img: "/112521.jpg",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
