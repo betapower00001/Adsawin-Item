@@ -29,7 +29,7 @@ export const categories = [
     patterns: [
       {
         id: "dream",
-        name: "ลายดรีมแฟนตาซี--11555511111111",
+        name: "ลายดรีมแฟนตาซี--11555511111dadadadad111",
         img: "/112521.jpg",
         products: [
           { name: "Dimoo Dream", img: "/112521.jpg" },
@@ -38,7 +38,7 @@ export const categories = [
       },
       {
         id: "night-sky",
-        name: "ลายท้องฟ้ายามค่ำ",
+        name: "ลายท้องฟ้ายามค่ำนะ",
         img: "/112521.jpg",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
