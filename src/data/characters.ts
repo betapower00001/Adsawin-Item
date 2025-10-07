@@ -29,7 +29,7 @@ export const categories = [
     patterns: [
       {
         id: "dream",
-        name: "ลายดรีมแฟนตาซี--11555511111dadadadad111",
+        name: "ลายดรีมแฟนตาซี--ลายเส้น",
         img: "/112521.jpg",
         products: [
           { name: "Dimoo Dream", img: "/112521.jpg" },
