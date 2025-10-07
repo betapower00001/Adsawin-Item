@@ -38,7 +38,7 @@ export const categories = [
       },
       {
         id: "night-sky",
-        name: "ลายท้องฟ้ายามค่ำนะ",
+        name: "ลายท้องฟ้ายามค่ำนะจ๊ะ",
         img: "/112521.jpg",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
