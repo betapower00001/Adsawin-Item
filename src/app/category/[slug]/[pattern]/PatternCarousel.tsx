@@ -1,9 +1,9 @@
 "use client";
 
-import * as React from 'react';
-import Image from 'next/image';
-import { motion, AnimatePresence, PanInfo } from 'framer-motion';
-import styles from './PatternPage.module.css';
+import * as React from "react";
+import Image from "next/image";
+import { motion, AnimatePresence, PanInfo } from "framer-motion";
+import styles from "./PatternPage.module.css";
 
 interface Product {
   img: string;
@@ -22,8 +22,8 @@ export default function PatternCarousel({ products }: Props) {
   React.useEffect(() => {
     setWindowWidth(window.innerWidth);
     const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const handleDragEnd = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {

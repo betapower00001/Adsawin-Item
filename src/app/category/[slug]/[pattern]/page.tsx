@@ -1,16 +1,21 @@
-import PatternCarousel from './PatternCarousel';
-import { categories } from '@/data/characters';
-import styles from './PatternPage.module.css';
+import PatternCarousel from "./PatternCarousel";
+import { categories } from "@/data/characters";
+import styles from "./PatternPage.module.css";
 
 interface Params {
   slug: string;
   pattern: string;
 }
 
-export default function PatternPage({ params }: { params: Params }) {
-  const { slug, pattern } = params;
-  const category = categories.find(c => c.slug === slug) || null;
-  const patternData = category?.patterns.find(p => p.id === pattern) || null;
+interface PatternPageProps {
+  params: Promise<Params>; // Promise
+}
+
+export default async function PatternPage({ params }: PatternPageProps) {
+  const { slug, pattern } = await params; // ต้อง await
+
+  const category = categories.find((c) => c.slug === slug) || null;
+  const patternData = category?.patterns.find((p) => p.id === pattern) || null;
 
   if (!category || !patternData) {
     return (
