@@ -2,24 +2,40 @@
 
 import * as React from "react";
 import Image from "next/image";
-import { categories } from "@/data/characters";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, PanInfo } from "framer-motion";
 import styles from "./PatternPage.module.css";
+import { categories } from "@/data/characters";
 
-interface Params {
-  slug: string;
-  pattern: string;
+// SSR-safe
+export function handleCategory(slug: string, pattern: string) {
+  const category = categories.find((c) => c.slug === slug) || null;
+  const patternData = category?.patterns.find((p) => p.id === pattern) || null;
+  return { category, patternData };
 }
 
-export default function PatternPage({ params }: { params: Promise<Params> }) {
-  const { slug, pattern } = React.use(params);
+interface PatternPageProps {
+  params: Promise<{ slug: string; pattern: string }>;
+}
 
-  const category = categories.find((c) => c.slug === slug);
-  const patternData = category?.patterns.find((p) => p.id === pattern);
-
+export default function PatternPage({ params }: PatternPageProps) {
+  const [category, setCategory] = React.useState<any>(null);
+  const [patternData, setPatternData] = React.useState<any>(null);
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [windowWidth, setWindowWidth] = React.useState(0);
+  const [isDragging, setIsDragging] = React.useState(false);
 
+  // รอ params resolve
+  React.useEffect(() => {
+    async function loadParams() {
+      const { slug, pattern } = await params;
+      const { category, patternData } = handleCategory(slug, pattern);
+      setCategory(category);
+      setPatternData(patternData);
+    }
+    loadParams();
+  }, [params]);
+
+  // resize window
   React.useEffect(() => {
     setWindowWidth(window.innerWidth);
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -36,7 +52,9 @@ export default function PatternPage({ params }: { params: Promise<Params> }) {
     );
   }
 
-  const handleDragEnd = (_: any, info: any) => {
+  // drag carousel
+  const handleDragEnd = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
+    setIsDragging(false);
     const offset = info.offset.x;
     const velocity = info.velocity.x;
     const threshold = 30;
@@ -49,6 +67,7 @@ export default function PatternPage({ params }: { params: Promise<Params> }) {
   };
 
   const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    if (isDragging) return;
     const clickX = e.nativeEvent.offsetX;
     if (clickX < windowWidth / 2) {
       if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
@@ -69,12 +88,13 @@ export default function PatternPage({ params }: { params: Promise<Params> }) {
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={0.15}
+          onDragStart={() => setIsDragging(true)}
           onDragEnd={handleDragEnd}
           animate={{ x: -currentIndex * windowWidth }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
           <AnimatePresence initial={false}>
-            {patternData.products.map((prod, i) => (
+            {patternData.products.map((prod: any, i: number) => (
               <motion.div
                 key={i}
                 className={styles.card}
@@ -96,7 +116,6 @@ export default function PatternPage({ params }: { params: Promise<Params> }) {
           </AnimatePresence>
         </motion.div>
 
-        {/* Prev/Next Buttons */}
         {currentIndex > 0 && (
           <button className={`${styles.navButton} ${styles.prev}`} onClick={() => setCurrentIndex(currentIndex - 1)}>
             &#10094;
@@ -109,9 +128,8 @@ export default function PatternPage({ params }: { params: Promise<Params> }) {
         )}
       </div>
 
-      {/* Dots Indicator */}
       <div className={styles.dots}>
-        {patternData.products.map((_, i) => (
+        {patternData.products.map((_: any, i: number) => (
           <span
             key={i}
             className={`${styles.dot} ${currentIndex === i ? styles.active : ""}`}
