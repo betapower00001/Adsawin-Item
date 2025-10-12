@@ -1,15 +1,15 @@
 export const categories = [
   {
-    slug: "crybaby",
-    name: "CRYBABY",
+    slug: "%E0%B8%9B%E0%B8%A5%E0%B8%B1%E0%B9%8A%E0%B8%81%E0%B9%84%E0%B8%9F%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%B1%E0%B9%88%E0%B8%87b2b",
+    name: "ปลั๊กไฟตามสั่งb2b",
     patterns: [
       {
         id: "pink-sweet",
         name: "ลายชมพูหวาน",
-        img: "/patterns/pink.png",
+        img: "/01-Lost-in-Space Template-01.jpg",
         products: [
-          { name: "Crybaby Ver.1", img: "/characters/crybaby1.png" },
-          { name: "Crybaby Ver.2", img: "/characters/crybaby2.png" },
+          { name: "Crybaby Ver.1", img: "/01-Lost-in-Space Template-02.jpg" },
+          { name: "Crybaby Black", img: "/01-Lost-in-Space Template-03.jpg" },
         ],
       },
       {
@@ -17,15 +17,14 @@ export const categories = [
         name: "ลายขาวดำ",
         img: "/112521.jpg",
         products: [
-          { name: "Crybaby Black", img: "/characters/crybaby_black.png" },
-          { name: "Crybaby Stripe", img: "/characters/crybaby_stripe.png" },
+          { name: "Crybaby Black", img: "/01-Lost-in-Space Template-03.jpg" },
         ],
       },
     ],
   },
   {
-    slug: "dimoo",
-    name: "DIMOO",
+    slug: "seasonal",
+    name: "SEASONAL",
     patterns: [
       {
         id: "dream",
@@ -45,7 +44,7 @@ export const categories = [
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
         ],
       },
-           {
+      {
         id: "night-sky-1",
         name: "ลายท้องฟ้ายามค่ำ-1",
         img: "/112521.jpg",
@@ -54,7 +53,7 @@ export const categories = [
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
         ],
       },
-           {
+      {
         id: "night-sky-2",
         name: "ลายท้องฟ้ายามค่ำ-2",
         img: "/112521.jpg",

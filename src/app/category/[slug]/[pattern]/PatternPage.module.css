@@ -1,0 +1,93 @@
+.patternPage {
+  padding: 0;
+  text-align: center;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.title span {
+  color: #c9a062;
+}
+
+.carouselWrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.carouselInner {
+  display: flex;
+}
+
+.card {
+  flex: 0 0 100%;
+  max-width: 100%;
+  cursor: pointer; /* บอกผู้ใช้ว่ากดได้ */
+}
+
+.cardImage {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #c9a062;
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  color: #555;
+}
+
+.notFound h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
