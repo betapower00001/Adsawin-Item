@@ -28,7 +28,7 @@
 .card {
   flex: 0 0 100%;
   max-width: 100%;
-  cursor: pointer; /* บอกผู้ใช้ว่ากดได้ */
+  cursor: pointer;
 }
 
 .cardImage {

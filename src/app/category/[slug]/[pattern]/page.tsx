@@ -3,7 +3,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { categories } from "@/data/characters";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./PatternPage.module.css";
 
 interface Params {
@@ -22,10 +22,8 @@ export default function PatternPage({ params }: { params: Promise<Params> }) {
 
   React.useEffect(() => {
     setWindowWidth(window.innerWidth);
-
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
-
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -50,10 +48,12 @@ export default function PatternPage({ params }: { params: Promise<Params> }) {
     }
   };
 
-  // ฟังก์ชันเลื่อนไป card ถัดไปเมื่อคลิก
-  const handleClick = () => {
-    if (currentIndex < patternData.products.length - 1) {
-      setCurrentIndex(currentIndex + 1);
+  const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    const clickX = e.nativeEvent.offsetX;
+    if (clickX < windowWidth / 2) {
+      if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
+    } else {
+      if (currentIndex < patternData.products.length - 1) setCurrentIndex(currentIndex + 1);
     }
   };
 
@@ -73,21 +73,27 @@ export default function PatternPage({ params }: { params: Promise<Params> }) {
           animate={{ x: -currentIndex * windowWidth }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
-          {patternData.products.map((prod, i) => (
-            <div
-              key={i}
-              className={styles.card}
-              onClick={handleClick} // คลิกเลื่อนไป card ต่อไป
-            >
-              <Image
-                src={prod.img}
-                alt={prod.name}
-                width={windowWidth}
-                height={window.innerHeight * 0.7}
-                className={styles.cardImage}
-              />
-            </div>
-          ))}
+          <AnimatePresence initial={false}>
+            {patternData.products.map((prod, i) => (
+              <motion.div
+                key={i}
+                className={styles.card}
+                onClick={handleClick}
+                initial={{ opacity: 0.7, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0.7, scale: 0.95 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Image
+                  src={prod.img}
+                  alt={prod.name}
+                  width={windowWidth}
+                  height={window.innerHeight * 0.7}
+                  className={styles.cardImage}
+                />
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </motion.div>
 
         {/* Prev/Next Buttons */}
