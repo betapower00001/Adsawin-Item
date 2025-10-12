@@ -3,8 +3,8 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion, AnimatePresence, PanInfo } from "framer-motion";
-import styles from "./PatternPage.module.css";
 import { categories } from "@/data/characters";
+import styles from "./PatternPage.module.css";
 
 // SSR-safe
 export function handleCategory(slug: string, pattern: string) {
@@ -24,7 +24,7 @@ export default function PatternPage({ params }: PatternPageProps) {
   const [windowWidth, setWindowWidth] = React.useState(0);
   const [isDragging, setIsDragging] = React.useState(false);
 
-  // รอ params resolve
+  // unwrap params
   React.useEffect(() => {
     async function loadParams() {
       const { slug, pattern } = await params;
@@ -35,7 +35,7 @@ export default function PatternPage({ params }: PatternPageProps) {
     loadParams();
   }, [params]);
 
-  // resize window
+  // responsive
   React.useEffect(() => {
     setWindowWidth(window.innerWidth);
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -52,7 +52,6 @@ export default function PatternPage({ params }: PatternPageProps) {
     );
   }
 
-  // drag carousel
   const handleDragEnd = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
     setIsDragging(false);
     const offset = info.offset.x;
