@@ -2,8 +2,8 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import styles from "@/app/category/CategoryPage.module.css";
 
 interface Category {
@@ -13,6 +13,8 @@ interface Category {
 }
 
 export default function CategoryMotionWrapper({ category }: { category: Category }) {
+  const router = useRouter();
+
   return (
     <section className={styles.page}>
       <motion.div
@@ -21,6 +23,33 @@ export default function CategoryMotionWrapper({ category }: { category: Category
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
+        {/* 🔙 ปุ่มกลับหน้าแรก */}
+        <div style={{ textAlign: "left", marginBottom: "20px" }}>
+          <motion.button
+            whileTap={{ scale: 0.95 }}
+            onClick={() => router.push("/")}
+            style={{
+              background: "#333",
+              color: "#fff",
+              padding: "10px 20px",
+              borderRadius: "8px",
+              border: "none",
+              cursor: "pointer",
+              fontWeight: 500,
+              fontSize: "0.95rem",
+              transition: "background 0.3s, transform 0.2s",
+            }}
+            onMouseEnter={(e) =>
+              ((e.target as HTMLButtonElement).style.background = "#555")
+            }
+            onMouseLeave={(e) =>
+              ((e.target as HTMLButtonElement).style.background = "#333")
+            }
+          >
+            🏠 กลับหน้าแรก
+          </motion.button>
+        </div>
+
         <motion.h1
           className={styles.title}
           initial={{ opacity: 0, y: -30 }}
@@ -31,24 +60,26 @@ export default function CategoryMotionWrapper({ category }: { category: Category
 
         <div className={styles.grid}>
           {category.patterns.map((p) => (
-            <Link key={p.id} href={`/category/${category.slug}/${p.id}`}>
-              <motion.div
-                className={styles.cardBox}
-                whileHover={{ scale: 1.15 }}
-                transition={{ type: "spring", stiffness: 900, damping: 20 }}
-              >
-                <div className={styles.imageWrapper}>
-                  <Image
-                    src={p.img}
-                    alt={p.name}
-                    width={200}
-                    height={200}
-                    className={styles.image}
-                  />
-                </div>
-                <p className={styles.name}>{p.name}</p>
-              </motion.div>
-            </Link>
+            <motion.div
+              key={p.id}
+              className={styles.cardBox}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 900, damping: 20 }}
+              onClick={() => router.push(`/category/${category.slug}/${p.id}`)}
+              style={{ cursor: "pointer" }}
+            >
+              <div className={styles.imageWrapper}>
+                <Image
+                  src={p.img}
+                  alt={p.name}
+                  width={200}
+                  height={200}
+                  className={styles.image}
+                />
+              </div>
+              <p className={styles.name}>{p.name}</p>
+            </motion.div>
           ))}
         </div>
       </motion.div>
