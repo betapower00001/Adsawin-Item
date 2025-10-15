@@ -12,9 +12,10 @@ interface Product {
 
 interface Props {
   products: Product[];
+  slug: string; // ✅ เพิ่ม slug
 }
 
-export default function PatternCarousel({ products }: Props) {
+export default function PatternCarousel({ products, slug }: Props) {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [windowWidth, setWindowWidth] = React.useState(0);
   const [isDragging, setIsDragging] = React.useState(false);
@@ -36,16 +37,31 @@ export default function PatternCarousel({ products }: Props) {
       setCurrentIndex(currentIndex + 1);
     } else if ((offset > threshold || velocity > 500) && currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
+    } else if (offset < -threshold && currentIndex === products.length - 1) {
+      // ✅ ถ้าสไลด์สุดท้ายแล้วลากไปขวา -> กลับหน้า Category
+      window.location.href = `/category/${slug}`;
     }
   };
 
   const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if (isDragging) return;
-    const clickX = e.nativeEvent.offsetX;
-    if (clickX < windowWidth / 2) {
-      if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
+
+    const rect = e.currentTarget.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+
+    if (clickX < rect.width / 2) {
+      // ✅ คลิกซีกซ้าย → ย้อนกลับ
+      if (currentIndex > 0) {
+        setCurrentIndex(currentIndex - 1);
+      }
     } else {
-      if (currentIndex < products.length - 1) setCurrentIndex(currentIndex + 1);
+      // ✅ คลิกซีกขวา → ไปต่อ
+      if (currentIndex < products.length - 1) {
+        setCurrentIndex(currentIndex + 1);
+      } else {
+        // ✅ ถ้าอยู่ภาพสุดท้าย → กลับหน้า Category
+        window.location.href = `/category/${slug}`;
+      }
     }
   };
 
@@ -78,7 +94,7 @@ export default function PatternCarousel({ products }: Props) {
                 src={prod.img}
                 alt={prod.name}
                 width={windowWidth}
-                height={window.innerHeight * 0.7}
+                height={window.innerHeight * 0.85}
                 className={styles.cardImage}
               />
             </motion.div>
@@ -87,12 +103,19 @@ export default function PatternCarousel({ products }: Props) {
       </motion.div>
 
       {currentIndex > 0 && (
-        <button className={`${styles.navButton} ${styles.prev}`} onClick={() => setCurrentIndex(currentIndex - 1)}>
+        <button
+          className={`${styles.navButton} ${styles.prev}`}
+          onClick={() => setCurrentIndex(currentIndex - 1)}
+        >
           &#10094;
         </button>
       )}
+
       {currentIndex < products.length - 1 && (
-        <button className={`${styles.navButton} ${styles.next}`} onClick={() => setCurrentIndex(currentIndex + 1)}>
+        <button
+          className={`${styles.navButton} ${styles.next}`}
+          onClick={() => setCurrentIndex(currentIndex + 1)}
+        >
           &#10095;
         </button>
       )}

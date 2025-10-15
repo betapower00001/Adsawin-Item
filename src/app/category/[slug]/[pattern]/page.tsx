@@ -28,7 +28,7 @@ export default async function PatternPage({ params }: PatternPageProps) {
 
   return (
     <div className={styles.patternPage}>
-      <PatternCarousel products={patternData.products} />
+      <PatternCarousel products={patternData.products} slug={slug} />
 
       <h1 className={styles.title}>
         {patternData.name} <span>({category.name})</span>
