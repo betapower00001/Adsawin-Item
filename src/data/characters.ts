@@ -8,7 +8,7 @@ export const categories = [
         name: "ลายชมพูหวาน",
         img: "/01-Lost-in-Space Template-01.jpg",
         products: [
-          { name: "Crybaby Ver.1", img: "/01-Lost-in-Space Template-02.jpg" },
+          { name: "Crybaby Ver.1", img: "/Pic2Test.jpg" },
           { name: "Crybaby Black", img: "/01-Lost-in-Space Template-03.jpg" },
         ],
       },

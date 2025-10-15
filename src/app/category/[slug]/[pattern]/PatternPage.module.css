@@ -1,24 +1,31 @@
 .patternPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   text-align: center;
   background-color: #fafafa;
   color: #333;
 }
 
+/* หัวข้ออยู่ใต้สไลด์ */
 .title {
   font-size: 2rem;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
 }
 
 .title span {
   color: #c9a062;
 }
 
+/* สไลด์ */
 .carouselWrapper {
   position: relative;
   overflow: hidden;
   cursor: grab;
+  width: 100%;
 }
 
 .carouselInner {
@@ -35,13 +42,15 @@
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  object-position: center;
 }
 
+/* ปุ่มลูกศร */
 .navButton {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   color: white;
   border: none;
   font-size: 2rem;
@@ -49,6 +58,11 @@
   border-radius: 50%;
   cursor: pointer;
   z-index: 10;
+  transition: background 0.3s;
+}
+
+.navButton:hover {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .prev {
@@ -59,9 +73,10 @@
   right: 10px;
 }
 
+/* จุดสถานะภาพ */
 .dots {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .dot {
@@ -72,12 +87,14 @@
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 .dot.active {
   background: #c9a062;
 }
 
+/* หน้าข้อความไม่พบ */
 .notFound {
   display: flex;
   flex-direction: column;
@@ -85,6 +102,7 @@
   justify-content: center;
   height: 60vh;
   color: #555;
+  text-align: center;
 }
 
 .notFound h1 {

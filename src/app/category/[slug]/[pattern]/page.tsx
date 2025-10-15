@@ -28,10 +28,11 @@ export default async function PatternPage({ params }: PatternPageProps) {
 
   return (
     <div className={styles.patternPage}>
+      <PatternCarousel products={patternData.products} />
+
       <h1 className={styles.title}>
         {patternData.name} <span>({category.name})</span>
       </h1>
-      <PatternCarousel products={patternData.products} />
     </div>
   );
 }
