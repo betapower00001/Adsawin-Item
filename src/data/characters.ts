@@ -1,17 +1,17 @@
 export const categories = [
   {
     slug: "%E0%B8%9B%E0%B8%A5%E0%B8%B1%E0%B9%8A%E0%B8%81%E0%B9%84%E0%B8%9F%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%B1%E0%B9%88%E0%B8%87b2b",
-    name: "ปลั๊กไฟตามสั่งb2b",
+    name: "ปลั๊กไฟตามสั่ง B2B",
     patterns: [
       {
         id: "pink-sweet",
-        name: "ลายชมพูหวาน",
-        img: "/1_0.jpg",
+        name: "ลายมูเตรู",
+        img: "/1_0.png",
         products: [
           { name: "Crybaby Ver.1", img: "/2_0.jpg" },
-          { name: "Crybaby Black", img: "/3_0.jpg" },
-          { name: "Crybaby Black", img: "/4_0.jpg" },
-          { name: "Crybaby Black", img: "/5_0.jpg" },
+          { name: "Crybaby Ver.2", img: "/3_0.jpg" },
+          { name: "Crybaby Ver.3", img: "/4_0.jpg" },
+          { name: "Crybaby Ver.4", img: "/5_0.jpg" },
 
         ],
       },
