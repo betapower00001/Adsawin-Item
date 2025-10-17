@@ -47,16 +47,54 @@
   margin-bottom: 40px;
 }
 
-/* กริดตัวละคร */
+/* ✅ กริด */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   width: 100%;
   margin-bottom: 50px;
 }
 
+/* ✅ ปุ่มบน 2 ปุ่มแรก — ยาวเท่ากัน + รูปชิดซ้าย */
+.grid a:nth-child(1),
+.grid a:nth-child(2) {
+  grid-column: span 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.grid a:nth-child(1) .cardBox,
+.grid a:nth-child(2) .cardBox {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  gap: 30px; /* ระยะห่างระหว่างรูปกับข้อความ */
+}
+
+.grid a:nth-child(1) .imageWrapper,
+.grid a:nth-child(2) .imageWrapper {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+}
+
+/* การ์ดทั่วไป (แถวล่าง) */
 .cardBox {
+  width: 100%;
+  height: 100%;
   background: #fff;
   border-radius: 16px;
   padding: 20px;
@@ -74,18 +112,18 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 10px; /* เพิ่มระยะขอบนิดหน่อยให้ภาพไม่ชิดขอบ */
+  padding: 10px;
 }
 
 .image {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* ✅ เห็นภาพครบทั้งชิ้น ไม่โดนครอบตัด */
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
 .cardBox:hover .image {
-  transform: scale(1.03); /* ขยายเล็กน้อยเวลา hover */
+  transform: scale(1.03);
 }
 
 /* ปุ่ม CTA */
@@ -152,6 +190,19 @@
 
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid a:nth-child(1) .cardBox,
+  .grid a:nth-child(2) .cardBox {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .grid a:nth-child(1) .imageWrapper,
+  .grid a:nth-child(2) .imageWrapper {
+    width: 100%;
+    height: 140px;
   }
 
   .btn {
