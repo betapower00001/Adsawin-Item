@@ -64,24 +64,28 @@
   transition: all 0.25s ease;
 }
 
-.cardBox:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-}
-
 .imageWrapper {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 12px;
+  width: 100%;
+  height: 160px;
+  border-radius: 14px;
   overflow: hidden;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 10px; /* เพิ่มระยะขอบนิดหน่อยให้ภาพไม่ชิดขอบ */
 }
 
 .image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* ✅ เห็นภาพครบทั้งชิ้น ไม่โดนครอบตัด */
+  transition: transform 0.3s ease;
+}
+
+.cardBox:hover .image {
+  transform: scale(1.03); /* ขยายเล็กน้อยเวลา hover */
 }
 
 /* ปุ่ม CTA */

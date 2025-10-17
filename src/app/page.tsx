@@ -4,8 +4,8 @@ import CharacterGrid from "../Component/CharacterGrid";
 import { Container } from "react-bootstrap";
 
 const characters = [
-  { name: "ปลั๊กไฟตามสั่งB2B", img: "/112521.jpg" },
-  { name: "CATALOG", img: "/characters/monsters.png" },
+  { name: "ปลั๊กไฟตามสั่งB2B", img: "/MENU-ICON.png" },
+  { name: "CATALOG", img: "/MENU-ICON-CATALOG.png" },
   { name: "SEASONAL", img: "/characters/skullpanda.png" },
   { name: "MUTELU", img: "/characters/crybaby.png" },
   { name: "FASHION&TREND", img: "/characters/hirono.png" },

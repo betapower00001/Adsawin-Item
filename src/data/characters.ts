@@ -17,8 +17,26 @@ export const categories = [
       },
       {
         id: "black-white",
-        name: "ลายขาวดำ",
-        img: "/112521.jpg",
+        name: "ลายยักษ์เกี่ยวทรัพย์",
+        img: "/1-(2).jpg",
+        products: [
+          { name: "Crybaby Black", img: "/PicTest-1.jpg" },
+          { name: "Crybaby Black", img: "/PicTest-2.jpg" },
+          { name: "Crybaby Black", img: "/PicTest-3.jpg" },
+        ],
+      },
+      {
+        id: "black-white2",
+        name: "ลายเทพร่ำรวย",
+        img: "/Rolling In Money BG White-03.jpg",
+        products: [
+          { name: "Crybaby Black", img: "/01-Lost-in-Space Template-03.jpg" },
+        ],
+      },
+      {
+        id: "black-white3",
+        name: "ลายพระพิฆเนศ",
+        img: "/ads_nongneth-02.jpg",
         products: [
           { name: "Crybaby Black", img: "/01-Lost-in-Space Template-03.jpg" },
         ],
