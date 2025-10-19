@@ -8,7 +8,7 @@ const characters = [
   { name: "CATALOG", img: "/MENU-ICON-CATALOG.jpg" },
   { name: "SEASONAL", img: "/MENU-ICON-SEASONAL.png" },
   { name: "MUTELU", img: "/MENU-ICON.png" },
-  { name: "FASHION&TREND", img: "/MENU-ICON-Fashion.png" },
+  { name: "FASHION&TREND", img: "/MENU-ICON-TREND.png" },
   { name: "FUN&FANTASY", img: "/MENU-ICON-Fashion.png" },
   { name: "AUTHENTIC THAI", img: "/MENU-ICON-Thai.png" },
   { name: "OTAKU", img: "/MENU-ICON-Otaku.png" },
