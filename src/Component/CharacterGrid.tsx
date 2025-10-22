@@ -45,9 +45,12 @@ export default function CharacterGrid({ characters }: Props) {
                     <Image
                       src={item.img}
                       alt={item.name}
-                      width={120}
-                      height={120}
+                      width={1024}       // ✅ ใช้ขนาดต้นฉบับ
+                      height={1536}
+                      quality={100}      // ✅ บังคับไม่บีบภาพ
+                      priority           // ✅ ให้โหลดภาพชัดก่อน
                       className={styles.image}
+                      sizes="(max-width: 768px) 100vw, 25vw"  // ✅ ช่วยให้ภาพเลือกขนาดเหมาะกับจอ
                     />
                   </div>
                   <h6>{item.name}</h6>
