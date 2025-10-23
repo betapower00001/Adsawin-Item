@@ -31,10 +31,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  /* ❌ เอา overflow: hidden ออกเพื่อไม่ให้การ์ดโดนตัด */
 }
 
-/* หัวข้อ */
 .title {
   font-size: 42px;
   font-weight: 800;
@@ -43,14 +42,13 @@
   letter-spacing: -0.5px;
 }
 
-/* กริดหลัก */
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   width: 100%;
   margin-bottom: 50px;
-  overflow: hidden;
+  /* ❌ เอา overflow: hidden ออก */
 }
 
 /* ✅ ปุ่มบน 2 ปุ่มแรก */
@@ -88,7 +86,6 @@
   padding: 10px;
 }
 
-/* ✅ ตัวอักษรในปุ่ม */
 .cardBox h6 {
   font-size: 18px;
   font-weight: 700;
@@ -97,13 +94,11 @@
   line-height: 1.3;
 }
 
-/* ✅ ขยายเฉพาะ 2 ปุ่มบนให้เด่นขึ้น */
 .grid a:nth-child(1) h6,
 .grid a:nth-child(2) h6 {
   font-size: 25px;
 }
 
-/* การ์ดทั่วไป */
 .cardBox {
   width: 100%;
   height: 100%;
@@ -113,6 +108,14 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.25s ease;
   overflow: hidden;
+  position: relative; /* ✅ เพื่อให้ z-index ทำงาน */
+  z-index: 1;
+}
+
+.cardBox:hover {
+  transform: scale(1.05) translateY(-5px);
+  z-index: 10; /* ✅ ลอยขึ้นมาด้านบน */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 .imageWrapper {
@@ -129,7 +132,7 @@
   padding: 10px;
 }
 
-/* ✅ จัดภาพและวิดีโอให้เต็มกรอบ */
+/* ✅ ภาพและวิดีโอเต็มกรอบ */
 .imageWrapper img,
 .imageWrapper video {
   position: absolute;
@@ -142,7 +145,7 @@
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* ✅ แสดงภาพนิ่งก่อน hover */
+/* ✅ แสดงภาพก่อน hover */
 .imageWrapper video {
   opacity: 0;
   pointer-events: none;
@@ -158,7 +161,7 @@
   transform: scale(1.05);
 }
 
-/* ✅ ปรับแถวล่างให้ภาพเต็มและเป็นจตุรัส */
+/* ✅ แถวล่างให้เต็มจอและเป็นจัตุรัส */
 .grid a:nth-child(n+3) .cardBox {
   position: relative;
   padding: 0;
@@ -219,7 +222,6 @@
   border: none;
 }
 
-/* ปุ่มหลัก */
 .primary {
   background: linear-gradient(90deg, #0d6efd, #3a8bff);
   color: #fff;
@@ -232,7 +234,6 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* ปุ่มรอง */
 .secondary {
   background: #fff;
   border: 2px solid #dee2e6;
