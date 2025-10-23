@@ -21,7 +21,7 @@ const characters = [
   {
     name: "MUTELU",
     img: "/MENU-ICON.jpg",
-    video: "/videos/mutelu.mp4",
+    video: "/MenuMp4.mp4",
   },
   {
     name: "FASHION&TREND",
