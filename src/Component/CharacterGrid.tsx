@@ -42,27 +42,19 @@ export default function CharacterGrid({ characters }: Props) {
               <Link key={index} href={`/category/${slug}`}>
                 <motion.div
                   className={styles.cardBox}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: "spring", stiffness: 900, damping: 20 }}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
                   <div className={styles.imageWrapper}>
                     {item.video ? (
                       <video
                         className={styles.image}
-                        poster={item.img} // ✅ แสดงภาพนิ่งก่อนเล่น
+                        poster={item.img}
                         muted
                         loop
-                        preload="metadata"
-                        onMouseEnter={(e) => {
-                          const video = e.currentTarget;
-                          video.currentTime = 0;
-                          video.play().catch(() => {}); // ✅ ป้องกัน AbortError
-                        }}
-                        onMouseLeave={(e) => {
-                          const video = e.currentTarget;
-                          video.pause();
-                          video.load(); // ✅ โหลดใหม่เพื่อกลับไปแสดง poster
-                        }}
+                        autoPlay
+                        playsInline
+                        preload="auto"
                       >
                         <source src={item.video} type="video/mp4" />
                       </video>
