@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./page.module.css";
+import { useState } from "react";
 
 interface Character {
   name: string;
@@ -15,6 +16,8 @@ interface Props {
 }
 
 export default function CharacterGrid({ characters }: Props) {
+  const [hovered, setHovered] = useState<number | null>(null);
+
   return (
     <section className={styles.page}>
       <motion.div
@@ -44,27 +47,40 @@ export default function CharacterGrid({ characters }: Props) {
                   className={styles.cardBox}
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                  onMouseEnter={() => setHovered(index)}
+                  onMouseLeave={() => setHovered(null)}
                 >
-                  <div className={styles.imageWrapper}>
-                    {item.video ? (
-                      <video
-                        className={styles.image}
-                        poster={item.img}
-                        muted
-                        loop
-                        autoPlay
-                        playsInline
-                        preload="auto"
-                      >
-                        <source src={item.video} type="video/mp4" />
-                      </video>
-                    ) : (
-                      <img
-                        src={item.img}
-                        alt={item.name}
-                        className={styles.image}
-                      />
-                    )}
+                  <div className={`${styles.imageWrapper} relative`}>
+                    {/* Image (พื้นหลังเริ่มต้น) */}
+                    <motion.img
+                      src={item.img}
+                      alt={item.name}
+                      className={`${styles.image} absolute inset-0`}
+                      initial={{ opacity: 1 }}
+                      animate={{ opacity: hovered === index ? 0 : 1 }}
+                      transition={{ duration: 0.4, ease: "easeInOut" }}
+                    />
+
+                    {/* Video (เฟดเข้าเมื่อ hover) */}
+                    <AnimatePresence>
+                      {item.video && hovered === index && (
+                        <motion.video
+                          key="video"
+                          className={`${styles.image} absolute inset-0`}
+                          muted
+                          loop
+                          autoPlay
+                          playsInline
+                          preload="auto"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 0.4, ease: "easeInOut" }}
+                        >
+                          <source src={item.video} type="video/mp4" />
+                        </motion.video>
+                      )}
+                    </AnimatePresence>
                   </div>
                   <h6>{item.name}</h6>
                 </motion.div>
