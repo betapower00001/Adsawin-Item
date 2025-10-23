@@ -31,7 +31,7 @@ const characters = [
   {
     name: "FUN&FANTASY",
     img: "/MENU-ICON-Fashion.png",
-    video: "/videos/funfantasy.mp4",
+    video: "/Menu-fan.mp4",
   },
   {
     name: "AUTHENTIC THAI",
@@ -51,7 +51,7 @@ const characters = [
   {
     name: "PETS",
     img: "/MENU-ICON-PET.jpg",
-    video: "/videos/pets.mp4",
+    video: "/Menu-Pet.mp4",
   },
 ];
 
