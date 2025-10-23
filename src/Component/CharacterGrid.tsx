@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import styles from "./page.module.css";
@@ -8,6 +7,7 @@ import styles from "./page.module.css";
 interface Character {
   name: string;
   img: string;
+  video?: string;
 }
 
 interface Props {
@@ -33,25 +33,46 @@ export default function CharacterGrid({ characters }: Props) {
 
         <div className={styles.grid}>
           {characters.map((item, index) => {
-            const slug = item.name.toLowerCase().replace(/\s+/g, "-").replace(/\./g, "");
+            const slug = item.name
+              .toLowerCase()
+              .replace(/\s+/g, "-")
+              .replace(/\./g, "");
+
             return (
               <Link key={index} href={`/category/${slug}`}>
                 <motion.div
                   className={styles.cardBox}
-                  whileHover={{ scale: 1.15 }}
+                  whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 900, damping: 20 }}
                 >
                   <div className={styles.imageWrapper}>
-                    <Image
-                      src={item.img}
-                      alt={item.name}
-                      width={1024}       // ✅ ใช้ขนาดต้นฉบับ
-                      height={1536}
-                      quality={100}      // ✅ บังคับไม่บีบภาพ
-                      priority           // ✅ ให้โหลดภาพชัดก่อน
-                      className={styles.image}
-                      sizes="(max-width: 768px) 100vw, 25vw"  // ✅ ช่วยให้ภาพเลือกขนาดเหมาะกับจอ
-                    />
+                    {item.video ? (
+                      <video
+                        className={styles.image}
+                        poster={item.img} // ✅ แสดงภาพนิ่งก่อนเล่น
+                        muted
+                        loop
+                        preload="metadata"
+                        onMouseEnter={(e) => {
+                          const video = e.currentTarget;
+                          video.currentTime = 0;
+                          video.play().catch(() => {}); // ✅ ป้องกัน AbortError
+                        }}
+                        onMouseLeave={(e) => {
+                          const video = e.currentTarget;
+                          video.pause();
+                          video.load(); // ✅ โหลดใหม่เพื่อกลับไปแสดง poster
+                        }}
+                      >
+                        <source src={item.video} type="video/mp4" />
+                      </video>
+                    ) : (
+                      <img
+                        src={item.img}
+                        alt={item.name}
+                        className={styles.image}
+                      />
+                    )}
                   </div>
                   <h6>{item.name}</h6>
                 </motion.div>
