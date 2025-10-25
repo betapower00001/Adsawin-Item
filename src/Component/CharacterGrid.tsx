@@ -26,14 +26,17 @@ export default function CharacterGrid({ characters }: Props) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <motion.h1
-          className={styles.title}
+        {/* 🔹 ส่วนหัวมีภาพอยู่ข้างหน้า */}
+        <motion.div
+          className={styles.titleWithIcon}
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          เลือกหมวดหมู่
-        </motion.h1>
+          <img src="/Icon-what-your.png" alt="หมวดหมู่" className={styles.titleIcon} />
+          <h1 className={styles.title}>เลือกหมวดหมู่</h1>
+        </motion.div>
 
+        {/* 🔹 กริดทั้งหมด */}
         <div className={styles.grid}>
           {characters.map((item, index) => {
             const slug = item.name
@@ -41,32 +44,36 @@ export default function CharacterGrid({ characters }: Props) {
               .replace(/\s+/g, "-")
               .replace(/\./g, "");
 
+            const isBottomTwo =
+              index === characters.length - 1 || index === characters.length - 2;
+
             return (
               <Link key={index} href={`/category/${slug}`}>
                 <motion.div
-                  className={styles.cardBox}
+                  className={`${styles.cardBox} ${isBottomTwo ? styles.largeCard : ""}`}
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                   onMouseEnter={() => setHovered(index)}
                   onMouseLeave={() => setHovered(null)}
                 >
-                  <div className={`${styles.imageWrapper} relative`}>
-                    {/* Image (พื้นหลังเริ่มต้น) */}
+                  <div className={styles.imageWrapper}>
                     <motion.img
                       src={item.img}
                       alt={item.name}
-                      className={`${styles.image} absolute inset-0`}
+                      className={styles.image}
                       initial={{ opacity: 1 }}
-                      animate={{ opacity: hovered === index ? 0 : 1 }}
+                      animate={{
+                        opacity: item.video && hovered === index ? 0 : 1,
+                        scale: !item.video && hovered === index ? 1.05 : 1,
+                      }}
                       transition={{ duration: 0.4, ease: "easeInOut" }}
                     />
 
-                    {/* Video (เฟดเข้าเมื่อ hover) */}
                     <AnimatePresence>
                       {item.video && hovered === index && (
                         <motion.video
                           key="video"
-                          className={`${styles.image} absolute inset-0`}
+                          className={styles.image}
                           muted
                           loop
                           autoPlay

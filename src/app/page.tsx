@@ -47,12 +47,12 @@ const characters = [
   },
   {
     name: "ปลั๊กไฟตามสั่งB2B",
-    img: "/MENU-ICON-CATALOG.png",
+    img: "/MENU-ICON-Our-Creation.jpg",
   },
   {
     name: "CATALOG",
     img: "/MENU-ICON-CATALOG.jpg",
-    video: "/videos/catalog.mp4",
+    
   },
 ];
 

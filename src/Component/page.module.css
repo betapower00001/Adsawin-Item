@@ -230,6 +230,20 @@
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
+.titleWithIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.titleIcon {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
 
 /* ===================== Responsive ===================== */
 @media (max-width: 768px) {
