@@ -6,18 +6,35 @@
   min-height: 100vh;
   width: 100%;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #eef3ff 0%, #cfd9ff 50%, #ffffff 100%);
-  background-size: 200% 200%;
-  animation: gradientMove 8s ease-in-out infinite;
   text-align: center;
   color: #333;
-  overflow-x: hidden; /* ป้องกันเลื่อนขวา */
+  overflow-x: hidden;
+  position: relative;
+
+  /* gradient โปร่งแสง + ภาพพื้นหลัง */
+  background:
+    radial-gradient(circle at center, rgba(240, 210, 255, 0) 0%, rgba(242, 237, 247, 0) 100%),
+    url('/BG-1.jpg') no-repeat center center;
+  background-size: cover; 
+
+
+
+  /* animation: gradientMove 8s ease-in-out infinite;*/
 }
 
+
 @keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .container {
@@ -230,6 +247,7 @@
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
+
 .titleWithIcon {
   display: flex;
   align-items: center;
@@ -247,9 +265,13 @@
 
 /* ===================== Responsive ===================== */
 @media (max-width: 768px) {
-  .title { font-size: 32px; }
+  .title {
+    font-size: 32px;
+  }
 
-  .grid { grid-template-columns: repeat(2, 1fr); }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .grid a:nth-last-child(2) .cardBox,
   .grid a:nth-last-child(1) .cardBox {
@@ -282,5 +304,7 @@
 }
 
 @media (max-width: 480px) {
-  .grid { grid-template-columns: 1fr; }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }

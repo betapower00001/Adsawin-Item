@@ -11,7 +11,7 @@ const characters = [
     video: "/MENU-ICON-SEASONAL.mp4",
   },
   {
-    name: "FUN&FANTASY",
+    name: "FUN & FANTASY",
     img: "/MENU-ICON-Fantasy.png",
     video: "/Menu-fan.mp4",
   },
@@ -36,7 +36,7 @@ const characters = [
     video: "/MENU-ICON-Food.mp4",
   },
   {
-    name: "FASHION&TREND",
+    name: "FASHION & TREND",
     img: "/MENU-ICON-Fashion.png",
     video: "/MENU-ICON-FASHION-TREND.mp4",
   },
@@ -46,7 +46,7 @@ const characters = [
     video: "/MENU-ICON-PET.mp4",
   },
   {
-    name: "ปลั๊กไฟตามสั่งB2B",
+    name: "ผลงานของเรา",
     img: "/MENU-ICON-Our-Creation.jpg",
   },
   {

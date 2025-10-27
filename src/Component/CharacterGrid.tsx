@@ -33,7 +33,7 @@ export default function CharacterGrid({ characters }: Props) {
           animate={{ opacity: 1, y: 0 }}
         >
           <img src="/Icon-what-your.png" alt="หมวดหมู่" className={styles.titleIcon} />
-          <h1 className={styles.title}>What Your Vibe?</h1>
+          <h1 className={styles.title}>ปลั๊กของคุณเป็นแนวไหน?</h1>
         </motion.div>
 
         {/* 🔹 กริดทั้งหมด */}
