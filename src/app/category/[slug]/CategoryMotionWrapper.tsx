@@ -9,7 +9,8 @@ import styles from "@/app/category/CategoryPage.module.css";
 interface Category {
   name: string;
   slug: string;
-  patterns: { id: string; name: string; img: string }[];
+  detail: string; // ✅ รายละเอียดของหมวดหมู่
+  patterns: { id: string; name: string; img: string; detail?: string }[]; // ✅ เพิ่ม detail ของแต่ละลาย (optional)
 }
 
 export default function CategoryMotionWrapper({ category }: { category: Category }) {
@@ -50,13 +51,14 @@ export default function CategoryMotionWrapper({ category }: { category: Category
           </motion.button>
         </div>
 
-        <motion.h1
-          className={styles.title}
+        <motion.div
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
         >
-          ลายทั้งหมดของ {category.name}
-        </motion.h1>
+          <h1 className={styles.title}>ลายทั้งหมดของ {category.name}</h1>
+          <p className={styles.detail}>{category.detail}</p> {/* ✅ ใช้ category.detail */}
+        </motion.div>
 
         <div className={styles.grid}>
           {category.patterns.map((p) => (
@@ -79,6 +81,7 @@ export default function CategoryMotionWrapper({ category }: { category: Category
                 />
               </div>
               <p className={styles.name}>{p.name}</p>
+              {p.detail && <p className={styles.patternDetail}>{p.detail}</p>} {/* ✅ แสดง detail ของแต่ละลาย ถ้ามี */}
             </motion.div>
           ))}
         </div>

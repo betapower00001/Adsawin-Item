@@ -1,3 +1,5 @@
+import { details } from "framer-motion/client";
+
 export const categories = [
   {
     slug: "%E0%B8%9C%E0%B8%A5%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B2",
@@ -6,6 +8,7 @@ export const categories = [
       {
         id: "pink-sweet",
         name: "ลายมูเตรู",
+        detail: "ลายเสริมดวง เรียกทรัพย์ เหมาะกับสายมูตัวจริง",
         img: "/1_0.png",
         products: [
           { name: "Crybaby Ver.1", img: "/2_0.jpg" },
@@ -51,6 +54,8 @@ export const categories = [
       {
         id: "Back-to-school",
         name: "Back to school",
+        detail: "กลับห้องเรียนพร้อมไฟเต็มแม็กซ์ ปลั๊กลายพิเศษที่มีแค่เปิดเทอมนี้เท่านั้น",
+
         img: "/Back-to-school-1.jpg",
         products: [
           { name: "Dimoo Dream", img: "/112521.jpg" },
@@ -61,6 +66,8 @@ export const categories = [
         id: "Christmas",
         name: "Christmas",
         img: "/Christmas-1.jpg",
+        detail: "กลับห้องเรียนพร้อมไฟเต็มแม็กซ์ ปลั๊กลายพิเศษที่มีแค่เปิดเทอมนี้เท่านั้น",
+
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
@@ -70,6 +77,8 @@ export const categories = [
         id: "Have-a-nice-Fall",
         name: "Have a nice Fall",
         img: "/Have-a-nice-Fall-1.jpg",
+        detail: "เมื่อฤดูร้อนลาลับ ป่าใหญ่ก็เปลี่ยนสี ฝูงสัตว์ออกมาต้อนรับสายลมเย็นในงานเลี้ยง",
+
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
@@ -79,6 +88,7 @@ export const categories = [
         id: "Hop-to-Prosperity",
         name: "Hop to Prosperity",
         img: "/Hop-to-Prosperity-1.jpg",
+        detail:"เริ่มต้นปีใหม่ไฟแรง เฮงรับตรุษจีนกับปลั๊กลายมงคลลิมิตเต็ด",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
@@ -88,6 +98,7 @@ export const categories = [
         id: "Next-Level-Christmas",
         name: "Next Level Christmas",
         img: "/Next-Level-Christmas-1.jpg",
+        detail:"งานนี้คลองเปรมไม่เหงา เพราะหมู่เฮามีซานต้ามาเยือน บอกเลย โก่ง ตึง ตึง นะหนมน้า",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
@@ -97,6 +108,7 @@ export const categories = [
         id: "Santa-Mafia",
         name: "Santa Mafia",
         img: "/Santa-Mafia-1.jpg",
+        detail:"ลืมคริสมาสที่คุณเคยเห็นไปได้เลย ซานต้ามาเฟีย ที่นี่ ที่เดียว Limited Edition เฉพาะช่วงคริสมาสนี้เท่านั้น",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
@@ -106,6 +118,7 @@ export const categories = [
         id: "Spooky-Halloween",
         name: "Spooky Halloween",
         img: "/Spooky-Halloween-1.jpg",
+        detail:"Fright but Fun คืนนี้หลอนให้สุด แล้วสนุกให้เต็ม หลอนแบบชิคๆ สนุกแบบคิวท์ๆ ฮาโลวีนนี้จัดเต็ม",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
@@ -115,15 +128,17 @@ export const categories = [
         id: "Summer-of-Love",
         name: "Summer of Love",
         img: "/Summer-of-Love-1.jpg",
+        detail:"เติมพลังไม่ขาดตอน ให้ร้อนรัก แดดแรงแค่ไหนก็ไม่กลัวด้วยปลั๊กไฟซัมเมอร์",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
         ],
       },
-            {
+      {
         id: "Trick-or-Treat",
         name: "Trick or Treat",
         img: "/Trick-or-Treat-1.jpg",
+        detail:"เติมพลังไม่ขาดตอน ให้ร้อนรัก แดดแรงแค่ไหนก็ไม่กลัวด้วยปลั๊กไฟซัมเมอร์",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
