@@ -6,11 +6,18 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import styles from "@/app/category/CategoryPage.module.css";
 
+interface Pattern {
+  id: string;
+  name: string;
+  img: string;
+  detail?: string; // ✅ optional
+}
+
 interface Category {
   name: string;
   slug: string;
-  detail: string; // ✅ รายละเอียดของหมวดหมู่
-  patterns: { id: string; name: string; img: string; detail?: string }[]; // ✅ เพิ่ม detail ของแต่ละลาย (optional)
+  detail?: string; // ✅ optional
+  patterns: Pattern[];
 }
 
 export default function CategoryMotionWrapper({ category }: { category: Category }) {
@@ -57,7 +64,7 @@ export default function CategoryMotionWrapper({ category }: { category: Category
           transition={{ duration: 0.6 }}
         >
           <h1 className={styles.title}>ลายทั้งหมดของ {category.name}</h1>
-          <p className={styles.detail}>{category.detail}</p> {/* ✅ ใช้ category.detail */}
+          {category.detail && <p className={styles.detail}>{category.detail}</p>}
         </motion.div>
 
         <div className={styles.grid}>
@@ -81,7 +88,7 @@ export default function CategoryMotionWrapper({ category }: { category: Category
                 />
               </div>
               <p className={styles.name}>{p.name}</p>
-              {p.detail && <p className={styles.patternDetail}>{p.detail}</p>} {/* ✅ แสดง detail ของแต่ละลาย ถ้ามี */}
+              {p.detail && <p className={styles.patternDetail}>{p.detail}</p>}
             </motion.div>
           ))}
         </div>
