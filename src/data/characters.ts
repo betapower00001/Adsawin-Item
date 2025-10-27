@@ -43,41 +43,87 @@ export const categories = [
       },
     ],
   },
+  /*-----------seasonal-------------*/
   {
     slug: "seasonal",
     name: "SEASONAL",
     patterns: [
       {
-        id: "dream",
-        name: "ลายดรีมแฟนตาซี--ลายเส้น",
-        img: "/112521.jpg",
+        id: "Back-to-school",
+        name: "Back to school",
+        img: "/Back-to-school-1.jpg",
         products: [
           { name: "Dimoo Dream", img: "/112521.jpg" },
           { name: "Dimoo Sleep", img: "/characters/dimoo2.png" },
         ],
       },
       {
-        id: "night-sky",
-        name: "ลายท้องฟ้ายามค่ำนะจ๊ะ",
-        img: "/112521.jpg",
+        id: "Christmas",
+        name: "Christmas",
+        img: "/Christmas-1.jpg",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
         ],
       },
       {
-        id: "night-sky-1",
-        name: "ลายท้องฟ้ายามค่ำ-1",
-        img: "/112521.jpg",
+        id: "Have-a-nice-Fall",
+        name: "Have a nice Fall",
+        img: "/Have-a-nice-Fall-1.jpg",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
         ],
       },
       {
-        id: "night-sky-2",
-        name: "ลายท้องฟ้ายามค่ำ-2",
-        img: "/112521.jpg",
+        id: "Hop-to-Prosperity",
+        name: "Hop to Prosperity",
+        img: "/Hop-to-Prosperity-1.jpg",
+        products: [
+          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
+          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+        ],
+      },
+      {
+        id: "Next-Level-Christmas",
+        name: "Next Level Christmas",
+        img: "/Next-Level-Christmas-1.jpg",
+        products: [
+          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
+          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+        ],
+      },
+      {
+        id: "Santa-Mafia",
+        name: "Santa Mafia",
+        img: "/Santa-Mafia-1.jpg",
+        products: [
+          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
+          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+        ],
+      },
+      {
+        id: "Spooky-Halloween",
+        name: "Spooky Halloween",
+        img: "/Spooky-Halloween-1.jpg",
+        products: [
+          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
+          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+        ],
+      },
+      {
+        id: "Summer-of-Love",
+        name: "Summer of Love",
+        img: "/Summer-of-Love-1.jpg",
+        products: [
+          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
+          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+        ],
+      },
+            {
+        id: "Trick-or-Treat",
+        name: "Trick or Treat",
+        img: "/Trick-or-Treat-1.jpg",
         products: [
           { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
           { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
