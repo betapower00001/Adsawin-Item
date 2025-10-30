@@ -1,38 +1,46 @@
-import PatternCarousel from "./PatternCarousel";
+"use client";
+
+import React from "react";
+import PatternGallery from "./PatternGallery";
 import { categories } from "@/data/characters";
-import styles from "./PatternPage.module.css";
 
-interface Params {
-  slug: string;
-  pattern: string;
-}
+export default function PatternPage({
+  params: paramsPromise,
+}: {
+  params: Promise<{ slug: string; pattern: string }>;
+}) {
+  // 🔹 ใช้ React.use() unwrap params
+  const params = React.use(paramsPromise);
 
-interface PatternPageProps {
-  params: Promise<Params>; // Promise
-}
+  // 🔹 หา category และ pattern ที่ตรงกับพารามิเตอร์
+  const category = categories.find((c) => c.slug === params.slug);
+  const pattern = category?.patterns.find((p) => p.id === params.pattern);
 
-export default async function PatternPage({ params }: PatternPageProps) {
-  const { slug, pattern } = await params; // ต้อง await
-
-  const category = categories.find((c) => c.slug === slug) || null;
-  const patternData = category?.patterns.find((p) => p.id === pattern) || null;
-
-  if (!category || !patternData) {
+  // 🔹 ถ้าไม่พบ
+  if (!category || !pattern)
     return (
-      <div className={styles.notFound}>
-        <h1>ไม่พบลายนี้</h1>
-        <p>ลองตรวจสอบ URL หรือลองเลือกลายใหม่อีกครั้ง</p>
+      <div
+        style={{
+          height: "80vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "1.5rem",
+          color: "#666",
+        }}
+      >
+        ไม่พบลายนี้
       </div>
     );
-  }
+
+  // ✅ ใช้ detailProducts ถ้ามี, ถ้าไม่มีให้ fallback ไปใช้ detail เดิม
+  const detailText = pattern.detailProducts ?? pattern.detail ?? "";
 
   return (
-    <div className={styles.patternPage}>
-      <PatternCarousel products={patternData.products} slug={slug} />
-
-      <h1 className={styles.title}>
-        {patternData.name} <span>({category.name})</span>
-      </h1>
-    </div>
+    <PatternGallery
+      products={pattern.products}
+      name={pattern.name}
+      detail={detailText}
+    />
   );
 }

@@ -10,13 +10,14 @@ interface Pattern {
   id: string;
   name: string;
   img: string;
-  detail?: string; // ✅ optional
+  detail?: string;       // สำหรับหน้า pattern list
+  detailProducts?: string; // ใช้เฉพาะหน้า PatternGallery/Page
 }
 
 interface Category {
   name: string;
   slug: string;
-  detail?: string; // ✅ optional
+  detail?: string;
   patterns: Pattern[];
 }
 
@@ -88,6 +89,7 @@ export default function CategoryMotionWrapper({ category }: { category: Category
                 />
               </div>
               <p className={styles.name}>{p.name}</p>
+              {/* ✅ แสดงเฉพาะ detail */}
               {p.detail && <p className={styles.patternDetail}>{p.detail}</p>}
             </motion.div>
           ))}

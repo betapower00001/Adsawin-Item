@@ -1,112 +1,199 @@
-.patternPage {
+.galleryContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 0;
-  text-align: center;
-  background-color: #fafafa;
-  color: #333;
+  align-items: flex-start;
+  gap: 60px;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+  padding: 60px 40px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
-/* หัวข้ออยู่ใต้สไลด์ */
+/* ==== ซ้าย: ภาพใหญ่ ==== */
+.leftPanel {
+  flex: 1.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 90%;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.mainImage {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.imageWrapper:hover .mainImage {
+  transform: scale(1.03);
+}
+
+/* ==== ขวา ==== */
+.rightPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 500px;
+}
+
 .title {
   font-size: 2rem;
-  font-weight: bold;
-  margin: 20px 0 40px 0;
-}
-
-.title span {
-  color: #c9a062;
-}
-
-/* สไลด์ */
-.carouselWrapper {
-  position: relative;
-  overflow: hidden;
-  cursor: grab;
-  width: 100vw; /* ให้เต็มหน้าจอ */
-  height: 100vh;
-}
-
-.carouselInner {
-  display: flex;
-}
-
-.card {
-  flex: 0 0 100%;
-  max-width: 100%;
-  cursor: pointer;
-}
-
-.cardImage {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* ปุ่มลูกศร */
-.navButton {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  border: none;
-  font-size: 2rem;
-  padding: 0 15px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10;
-  transition: background 0.3s;
-}
-
-.navButton:hover {
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-/* จุดสถานะภาพ */
-.dots {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: #ccc;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.dot.active {
-  background: #c9a062;
-}
-
-/* หน้าข้อความไม่พบ */
-.notFound {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 60vh;
-  color: #555;
-  text-align: center;
-}
-
-.notFound h1 {
-  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
   margin-bottom: 10px;
+}
+
+.detail {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* ==== แถบภาพย่อ ==== */
+.thumbScroll {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #c9a062 transparent;
+  padding-bottom: 10px;
+}
+
+/* สำหรับเบราว์เซอร์ที่ใช้ Webkit (Chrome, Edge, Safari) */
+.thumbScroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.thumbScroll::-webkit-scrollbar-thumb {
+  background-color: #c9a062;
+  border-radius: 4px;
+}
+
+.thumbContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 14px;
+  min-width: max-content;
+}
+
+.thumb {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.thumb:hover {
+  transform: scale(1.05);
+}
+
+.thumb.active {
+  border-color: #c9a062;
+  box-shadow: 0 0 10px rgba(201, 160, 98, 0.3);
+}
+
+.thumbImage {
+  object-fit: cover;
+}
+
+/* ==== Responsive ==== */
+
+/* แท็บเล็ต */
+@media (max-width: 1024px) {
+  .galleryContainer {
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .detail {
+    font-size: 0.95rem;
+  }
+}
+
+/* มือถือ */
+@media (max-width: 768px) {
+  .galleryContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .leftPanel {
+    width: 100%;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .rightPanel {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .thumbContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .thumb {
+    width: 90px;
+    height: 90px;
+  }
+
+  .thumbScroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 5px;
+  }
+
+  .thumbScroll::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .thumbScroll::-webkit-scrollbar-thumb {
+    background-color: #c9a062;
+    border-radius: 3px;
+  }
+}
+
+/* จอเล็กมาก */
+@media (max-width: 480px) {
+  .thumb {
+    width: 75px;
+    height: 75px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .detail {
+    font-size: 0.9rem;
+  }
 }
