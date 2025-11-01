@@ -1,12 +1,15 @@
 /*PatternGallery.module.css*/
-/* ====== พื้นหลังเต็มหน้าจอ ====== */
+/* ====== พื้นหลังเต็มหน้าจอ (เปลี่ยนเป็นภาพ) ====== */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
   font-family: sans-serif;
+  background: url("/BG-1.jpg") no-repeat center center fixed; /* ✅ ใส่ภาพพื้นหลังที่ต้องการ */
+  background-size: cover; /* ✅ ให้ภาพขยายเต็มจอ */
+  background-attachment: fixed; /* ✅ ทำให้ภาพไม่เลื่อนตามสกอล์ */
 }
+
 
 /* ====== พื้นหลังและเลย์เอาต์หลัก ====== */
 .galleryContainer {
