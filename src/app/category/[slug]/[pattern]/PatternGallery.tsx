@@ -1,10 +1,9 @@
-/*PatternGallery.tsx*/
-
 "use client";
 
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter, useParams } from "next/navigation";
 import styles from "./PatternGallery.module.css";
 
 interface Product {
@@ -20,6 +19,8 @@ interface Props {
 
 export default function PatternGallery({ products, name, detail }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const router = useRouter();
+  const { slug } = useParams();
 
   if (!products || products.length === 0) {
     return <div className={styles.galleryContainer}>ไม่มีภาพสำหรับแสดงผล</div>;
@@ -27,8 +28,21 @@ export default function PatternGallery({ products, name, detail }: Props) {
 
   return (
     <div className={styles.galleryContainer}>
-      {/* ====== ซ้าย: ภาพใหญ่ ====== */}
+      {/* ====== ซ้าย: ปุ่มกลับ + ภาพใหญ่ ====== */}
       <div className={styles.leftPanel}>
+        {/* 🔙 ปุ่มกลับอยู่เหนือภาพใหญ่ */}
+        <div className={styles.backButtonWrapper}>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => router.push(`/category/${slug}`)}
+            className={styles.backButton}
+          >
+            🔙 กลับไปหน้าเลือกลาย
+          </motion.button>
+        </div>
+
+        {/* ====== ภาพใหญ่ ====== */}
         <div className={styles.imageWrapper}>
           <AnimatePresence mode="wait">
             <motion.div
@@ -52,7 +66,7 @@ export default function PatternGallery({ products, name, detail }: Props) {
         </div>
       </div>
 
-      {/* ====== ขวา: หัวข้อ + รายละเอียด + thumbnails ====== */}
+      {/* ====== ขวา: ข้อมูล + thumbnails ====== */}
       <div className={styles.rightPanel}>
         <div className={styles.textSection}>
           <h2 className={styles.title}>{name}</h2>
@@ -68,7 +82,6 @@ export default function PatternGallery({ products, name, detail }: Props) {
               className={`${styles.thumb} ${i === selectedIndex ? styles.active : ""}`}
               onClick={() => i !== selectedIndex && setSelectedIndex(i)}
             >
-              {/* ✅ แก้ส่วนนี้แล้ว: ภาพคม ชัด ไม่เบลอ */}
               <Image
                 src={prod.img}
                 alt={prod.name}
@@ -76,7 +89,6 @@ export default function PatternGallery({ products, name, detail }: Props) {
                 className={styles.thumbImage}
                 sizes="200px"
                 quality={90}
-                priority={false}
               />
             </motion.div>
           ))}

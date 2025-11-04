@@ -32,32 +32,42 @@ export default function CategoryMotionWrapper({ category }: { category: Category
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        {/* 🔙 ปุ่มกลับหน้าแรก */}
+        {/* 🔙 ปุ่มกลับหน้าแรก (เวอร์ชันทันสมัย) */}
         <div style={{ textAlign: "left", marginBottom: "20px" }}>
           <motion.button
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => router.push("/")}
             style={{
-              background: "#333",
+              background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
               color: "#fff",
-              padding: "10px 20px",
-              borderRadius: "8px",
+              padding: "10px 24px",
+              borderRadius: "12px",
               border: "none",
               cursor: "pointer",
-              fontWeight: 500,
-              fontSize: "0.95rem",
-              transition: "background 0.3s, transform 0.2s",
+              fontWeight: 600,
+              fontSize: "1rem",
+              boxShadow: "0 4px 12px rgba(99, 102, 241, 0.3)",
+              backdropFilter: "blur(6px)",
+              transition: "all 0.3s ease",
             }}
-            onMouseEnter={(e) =>
-              ((e.target as HTMLButtonElement).style.background = "#555")
-            }
-            onMouseLeave={(e) =>
-              ((e.target as HTMLButtonElement).style.background = "#333")
-            }
+            onMouseEnter={(e) => {
+              (e.target as HTMLButtonElement).style.background =
+                "linear-gradient(135deg, #4f46e5, #7c3aed)";
+              (e.target as HTMLButtonElement).style.boxShadow =
+                "0 6px 16px rgba(99, 102, 241, 0.45)";
+            }}
+            onMouseLeave={(e) => {
+              (e.target as HTMLButtonElement).style.background =
+                "linear-gradient(135deg, #6366f1, #8b5cf6)";
+              (e.target as HTMLButtonElement).style.boxShadow =
+                "0 4px 12px rgba(99, 102, 241, 0.3)";
+            }}
           >
             🏠 กลับหน้าแรก
           </motion.button>
         </div>
+
 
         <motion.div
           initial={{ opacity: 0, y: -30 }}

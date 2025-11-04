@@ -1,22 +1,20 @@
-/*PatternGallery.module.css*/
 /* ====== พื้นหลังเต็มหน้าจอ (เปลี่ยนเป็นภาพ) ====== */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url("/BG-1.jpg") no-repeat center center fixed; /* ✅ ใส่ภาพพื้นหลังที่ต้องการ */
-  background-size: cover; /* ✅ ให้ภาพขยายเต็มจอ */
-  background-attachment: fixed; /* ✅ ทำให้ภาพไม่เลื่อนตามสกอล์ */
+  background: url("/BG-1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
 }
-
 
 /* ====== พื้นหลังและเลย์เอาต์หลัก ====== */
 .galleryContainer {
   display: flex;
-  justify-content: center; /* กึ่งกลางแนวนอน */
-  align-items: flex-start; /* panels เริ่มจากด้านบน */
-  gap: 40px;               /* ระยะห่างระหว่างซ้าย-ขวา */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
@@ -25,15 +23,42 @@ html, body {
   box-sizing: border-box;
 }
 
-/* ====== ซ้าย: ภาพใหญ่ ====== */
+/* ====== ซ้าย: ปุ่ม + ภาพใหญ่ ====== */
 .leftPanel {
   flex: 2;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
   max-width: 720px;
 }
 
+/* ✅ ปุ่มกลับอยู่ด้านบน ไม่ทับภาพ */
+.backButtonWrapper {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.backButton {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.45);
+}
+
+/* ====== ภาพใหญ่ ====== */
 .imageWrapper {
   position: relative;
   width: 100%;
@@ -67,9 +92,8 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   max-width: 420px;
-  height: auto;          /* ✅ ให้สูงตามเนื้อหา */
-  max-height: none;      /* ✅ ไม่จำกัดความสูง */
-  overflow: visible;     /* ✅ ปิด scroll ในโซนขวา */
+  height: auto;
+  overflow: visible;
 }
 
 .textSection {
@@ -84,7 +108,7 @@ html, body {
 }
 
 .detail {
-  color: #666;
+  color: #222;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -92,11 +116,10 @@ html, body {
 /* ====== thumbnails 2 คอลัมน์ ====== */
 .thumbGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* ✅ 2 คอลัมน์ถาวร */
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
   flex-grow: 1;
-  overflow: visible; /* ✅ ปิด scroll */
-  padding-right: 0;
+  overflow: visible;
 }
 
 .thumb {
@@ -142,7 +165,11 @@ html, body {
 
   .leftPanel {
     width: 100%;
-    justify-content: center;
+    align-items: center;
+  }
+
+  .backButtonWrapper {
+    text-align: center;
   }
 
   .imageWrapper {

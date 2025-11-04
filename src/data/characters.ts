@@ -81,6 +81,8 @@ export const categories: Category[] = [
           { name: "Back-to-school 2", img: "/seasonal/Back-to-school/back-to-school-3.jpg" },
           { name: "Back-to-school 3", img: "/seasonal/Back-to-school/back-to-school-4.jpg" },
           { name: "Back-to-school 4", img: "/seasonal/Back-to-school/back-to-school-5.jpg" },
+          { name: "Back-to-school 4", img: "/seasonal/Back-to-school/back-to-school-6.jpg" },
+
         ],
       },
       {
@@ -99,10 +101,14 @@ export const categories: Category[] = [
         name: "Have a nice Fall",
         detail: "ลายฤดูร้อนลาลับ",
         detailProducts: "เมื่อฤดูร้อนลาลับ ป่าใหญ่ก็เปลี่ยนสี ฝูงสัตว์ออกมาต้อนรับสายลมเย็นในงานเลี้ยง",
-        img: "/Have-a-nice-Fall-1.jpg",
+        img: "/seasonal/Have-a-nice-Fall/BG-Template 3-1-01.jpg",
         products: [
-          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
-          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+          { name: "Have-a-nice-Fall 1", img: "/seasonal/Have-a-nice-Fall/BG-Template 3-1-03.jpg" },
+          { name: "Have-a-nice-Fall 2", img: "/seasonal/Have-a-nice-Fall/BG-Template 3-1-04.jpg" },
+          { name: "Have-a-nice-Fall 3", img: "/seasonal/Have-a-nice-Fall/BG-Template 3-1-05.jpg" },
+          { name: "Have-a-nice-Fall 4", img: "/seasonal/Have-a-nice-Fall/BG-Template 3-1-06.jpg" },
+          { name: "Have-a-nice-Fall 5", img: "/seasonal/Have-a-nice-Fall/BG-Template 3-1-07.jpg" },
+
         ],
       },
       {
@@ -110,10 +116,13 @@ export const categories: Category[] = [
         name: "Hop to Prosperity",
         detail: "ลายเริ่มต้นปีใหม่",
         detailProducts: "เริ่มต้นปีใหม่ไฟแรง เฮงรับตรุษจีนกับปลั๊กลายมงคลลิมิตเต็ด",
-        img: "/Hop-to-Prosperity-1.jpg",
+        img: "/seasonal/Hop-to-Prosperity/Hop-to-prosperity-01.jpg",
         products: [
-          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
-          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+          { name: "Hop-to-Prosperity 1", img: "/seasonal/Hop-to-Prosperity/Hop-to-prosperity-02.jpg" },
+          { name: "Hop-to-Prosperity 2", img: "/seasonal/Hop-to-Prosperity/Hop-to-prosperity-03.jpg" },
+          { name: "Hop-to-Prosperity 3", img: "/seasonal/Hop-to-Prosperity/Hop-to-prosperity-04.jpg" },
+          { name: "Hop-to-Prosperity 4", img: "/seasonal/Hop-to-Prosperity/Hop-to-prosperity-05.jpg" },
+          { name: "Hop-to-Prosperity 5", img: "/seasonal/Hop-to-Prosperity/Hop-to-prosperity-06.jpg" },
         ],
       },
       {
@@ -121,10 +130,13 @@ export const categories: Category[] = [
         name: "Next Level Christmas",
         detail: "ลายคริสมาสมาเยียน",
         detailProducts: "งานนี้คลองเปรมไม่เหงา เพราะหมู่เฮามีซานต้ามาเยือน บอกเลย โก่ง ตึง ตึง นะหนมน้า",
-        img: "/Next-Level-Christmas-1.jpg",
+        img: "/seasonal/Next-Level-Christmas/Next Level Chrisstmas-01.jpg",
         products: [
-          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
-          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+          { name: "Next-Level-Christmas 1", img: "/seasonal/Next-Level-Christmas/Next Level Chrisstmas-02.jpg" },
+          { name: "Next-Level-Christmas 2", img: "/seasonal/Next-Level-Christmas/Next Level Chrisstmas-03.jpg" },
+          { name: "Next-Level-Christmas 3", img: "/seasonal/Next-Level-Christmas/Next Level Chrisstmas-04.jpg" },
+          { name: "Next-Level-Christmas 4", img: "/seasonal/Next-Level-Christmas/Next Level Chrisstmas-05.jpg" },
+          { name: "Next-Level-Christmas 5", img: "/seasonal/Next-Level-Christmas/Next Level Chrisstmas-06.jpg" },
         ],
       },
       {
@@ -132,10 +144,13 @@ export const categories: Category[] = [
         name: "Santa Mafia",
         detail: "ลายมาเฟียซานต้า",
         detailProducts: "ลืมคริสมาสที่คุณเคยเห็นไปได้เลย ซานต้ามาเฟีย ที่นี่ ที่เดียว Limited Edition เฉพาะช่วงคริสมาสนี้เท่านั้น",
-        img: "/Santa-Mafia-1.jpg",
+        img: "/seasonal/Santa-Mafia/It's-Christmas-Ain't-it1.jpg",
         products: [
-          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
-          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+          { name: "Santa-Mafia 1", img: "/seasonal/Santa-Mafia/It's-Christmas-Ain't-it2.jpg" },
+          { name: "Santa-Mafia 2", img: "/seasonal/Santa-Mafia/It's-Christmas-Ain't-it3.jpg" },
+          { name: "Santa-Mafia 3", img: "/seasonal/Santa-Mafia/It's-Christmas-Ain't-it4.jpg" },
+          { name: "Santa-Mafia 4", img: "/seasonal/Santa-Mafia/It's-Christmas-Ain't-it5.jpg" },
+          { name: "Santa-Mafia 5", img: "/seasonal/Santa-Mafia/It's-Christmas-Ain't-it6.jpg" },
         ],
       },
       {
@@ -143,10 +158,13 @@ export const categories: Category[] = [
         name: "Spooky Halloween",
         detail: "ลายวันฮาโลวีนอันน่าขนลุก",
         detailProducts: "Fright but Fun คืนนี้หลอนให้สุด แล้วสนุกให้เต็ม หลอนแบบชิคๆ สนุกแบบคิวท์ๆ ฮาโลวีนนี้จัดเต็ม",
-        img: "/Spooky-Halloween-1.jpg",
+        img: "/seasonal/Spooky-Halloween/Template2-1.jpg",
         products: [
-          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
-          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+          { name: "Spooky-Halloween 1", img: "/seasonal/Spooky-Halloween/Template2-2.jpg" },
+          { name: "Spooky-Halloween 2", img: "/seasonal/Spooky-Halloween/Template2-03.jpg" },
+          { name: "Spooky-Halloween 3", img: "/seasonal/Spooky-Halloween/Template2-04.jpg" },
+          { name: "Spooky-Halloween 4", img: "/seasonal/Spooky-Halloween/Template2-05.jpg" },
+          { name: "Spooky-Halloween 5", img: "/seasonal/Spooky-Halloween/Template2-06.jpg" },
         ],
       },
       {
@@ -154,10 +172,14 @@ export const categories: Category[] = [
         name: "Summer of Love",
         detail: "ลายฤดูร้อนแห่งความรัก",
         detailProducts: "เติมพลังไม่ขาดตอน ให้ร้อนรัก แดดแรงแค่ไหนก็ไม่กลัวด้วยปลั๊กไฟซัมเมอร์",
-        img: "/Summer-of-Love-1.jpg",
+        img: "/seasonal/Summer-of-Love/summer of love-01.jpg",
         products: [
-          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
-          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+          { name: "DSummer-of-Love 1", img: "/seasonal/Summer-of-Love/summer of love-02.jpg" },
+          { name: "DSummer-of-Love 2", img: "/seasonal/Summer-of-Love/summer of love-03.jpg" },
+          { name: "DSummer-of-Love 3", img: "/seasonal/Summer-of-Love/summer of love-04.jpg" },
+          { name: "DSummer-of-Love 4", img: "/seasonal/Summer-of-Love/summer of love-05.jpg" },
+          { name: "DSummer-of-Love 5", img: "/seasonal/Summer-of-Love/summer of love-06.jpg" },
+
         ],
       },
       {
@@ -165,10 +187,14 @@ export const categories: Category[] = [
         name: "Trick or Treat",
         detail: "ลายคืนวันฮาโลวีนหลอกหรือเลี้ยง",
         detailProducts: "เติมพลังไม่ขาดตอน ให้ร้อนรัก แดดแรงแค่ไหนก็ไม่กลัวด้วยปลั๊กไฟซัมเมอร์",
-        img: "/Trick-or-Treat-1.jpg",
+        img: "/seasonal/Trick-or-Treat/Cat Hallo Ween-01.jpg",
         products: [
-          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
-          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+          { name: "Trick-or-Treat 1", img: "/seasonal/Trick-or-Treat/Cat Hallo Ween-02.jpg" },
+          { name: "Trick-or-Treat 2", img: "/seasonal/Trick-or-Treat/Cat Hallo Ween-03.jpg" },
+          { name: "Trick-or-Treat 3", img: "/seasonal/Trick-or-Treat/Cat Hallo Ween-04.jpg" },
+          { name: "Trick-or-Treat 4", img: "/seasonal/Trick-or-Treat/Cat Hallo Ween-05.jpg" },
+          { name: "Trick-or-Treat 5", img: "/seasonal/Trick-or-Treat/Cat Hallo Ween-06.jpg" },
+
         ],
       },
     ],
