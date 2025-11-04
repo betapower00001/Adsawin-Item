@@ -18,6 +18,7 @@ export interface Category {
   slug: string;
   name: string;
   detail?: string;
+  downloadUrl?: string; // ✅ เพิ่มฟิลด์นี้
   patterns: Pattern[];
 }
 
@@ -65,6 +66,12 @@ export const categories: Category[] = [
         ],
       },
     ],
+  },
+  {
+    slug: "catalog",
+    name: "ดาวน์โหลดแคตตาล็อก",
+    downloadUrl: "/files/catalog.pdf",  // ✅ เพิ่มบรรทัดนี้
+    patterns: [],
   },
   {
     slug: "seasonal",

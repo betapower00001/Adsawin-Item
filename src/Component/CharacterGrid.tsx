@@ -32,7 +32,11 @@ export default function CharacterGrid({ characters }: Props) {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <img src="/Icon-what-your.png" alt="หมวดหมู่" className={styles.titleIcon} />
+          <img
+            src="/Icon-what-your.png"
+            alt="หมวดหมู่"
+            className={styles.titleIcon}
+          />
           <h1 className={styles.title}>ปลั๊กของคุณเป็นแนวไหน?</h1>
         </motion.div>
 
@@ -47,50 +51,67 @@ export default function CharacterGrid({ characters }: Props) {
             const isBottomTwo =
               index === characters.length - 1 || index === characters.length - 2;
 
-            return (
-              <Link key={index} href={`/category/${slug}`}>
-                <motion.div
-                  className={`${styles.cardBox} ${isBottomTwo ? styles.largeCard : ""}`}
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  onMouseEnter={() => setHovered(index)}
-                  onMouseLeave={() => setHovered(null)}
-                >
-                  <div className={styles.imageWrapper}>
-                    <motion.img
-                      src={item.img}
-                      alt={item.name}
-                      className={styles.image}
-                      initial={{ opacity: 1 }}
-                      animate={{
-                        opacity: item.video && hovered === index ? 0 : 1,
-                        scale: !item.video && hovered === index ? 1.05 : 1,
-                      }}
-                      transition={{ duration: 0.4, ease: "easeInOut" }}
-                    />
+            // ✅ เช็กว่าหมวดนี้เป็นดาวน์โหลดไหม (ชื่อมีคำว่า catalog)
+            const isDownload = item.name.toLowerCase().includes("catalog");
 
-                    <AnimatePresence>
-                      {item.video && hovered === index && (
-                        <motion.video
-                          key="video"
-                          className={styles.image}
-                          muted
-                          loop
-                          autoPlay
-                          playsInline
-                          preload="auto"
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          exit={{ opacity: 0 }}
-                          transition={{ duration: 0.4, ease: "easeInOut" }}
-                        >
-                          <source src={item.video} type="video/mp4" />
-                        </motion.video>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                  <h6>{item.name}</h6>
-                </motion.div>
+            // ✅ path ของไฟล์ที่ต้องการให้ดาวน์โหลด
+            const downloadUrl = "/files/catalog.pdf";
+
+            const CardContent = (
+              <motion.div
+                className={`${styles.cardBox} ${
+                  isBottomTwo ? styles.largeCard : ""
+                }`}
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                onMouseEnter={() => setHovered(index)}
+                onMouseLeave={() => setHovered(null)}
+              >
+                <div className={styles.imageWrapper}>
+                  <motion.img
+                    src={item.img}
+                    alt={item.name}
+                    className={styles.image}
+                    initial={{ opacity: 1 }}
+                    animate={{
+                      opacity: item.video && hovered === index ? 0 : 1,
+                      scale: !item.video && hovered === index ? 1.05 : 1,
+                    }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                  />
+
+                  <AnimatePresence>
+                    {item.video && hovered === index && (
+                      <motion.video
+                        key="video"
+                        className={styles.image}
+                        muted
+                        loop
+                        autoPlay
+                        playsInline
+                        preload="auto"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.4, ease: "easeInOut" }}
+                      >
+                        <source src={item.video} type="video/mp4" />
+                      </motion.video>
+                    )}
+                  </AnimatePresence>
+                </div>
+                <h6>{item.name}</h6>
+              </motion.div>
+            );
+
+            // ✅ ใช้ <a> ถ้าเป็นหมวดดาวน์โหลด, ถ้าไม่ใช่ ใช้ <Link>
+            return isDownload ? (
+              <a key={index} href={downloadUrl} download>
+                {CardContent}
+              </a>
+            ) : (
+              <Link key={index} href={`/category/${slug}`}>
+                {CardContent}
               </Link>
             );
           })}
