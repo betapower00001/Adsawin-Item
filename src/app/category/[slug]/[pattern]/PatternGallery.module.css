@@ -113,15 +113,33 @@ html, body {
   line-height: 1.6;
 }
 
-/* ====== thumbnails 2 คอลัมน์ ====== */
+/* ====== thumbnails (แสดงได้ 6 แถวก่อนขึ้น scrollbar) ====== */
 .thumbGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px;
   flex-grow: 1;
-  overflow: visible;
+  overflow-y: auto;
+  padding-right: 6px;
+  padding-bottom: 10px; /* ✅ กัน hover แล้วไม่ชนขอบ */
+  scrollbar-width: thin;
+  scrollbar-color: #c9a062 transparent;
+  max-height: 700px; /* ✅ เผื่อพื้นที่ hover แล้วไม่เกิด scroll */
 }
 
+/* ✅ scrollbar สำหรับ Chrome, Edge, Safari */
+.thumbGrid::-webkit-scrollbar {
+  width: 8px;
+}
+.thumbGrid::-webkit-scrollbar-thumb {
+  background-color: #c9a062;
+  border-radius: 4px;
+}
+.thumbGrid::-webkit-scrollbar-thumb:hover {
+  background-color: #b08956;
+}
+
+/* ====== thumbnail ====== */
 .thumb {
   position: relative;
   aspect-ratio: 1 / 1;
@@ -182,6 +200,7 @@ html, body {
   }
 }
 
+/* ====== มือถือ (แนวนอนเลื่อน) ====== */
 @media (max-width: 600px) {
   .title {
     font-size: 1.6rem;
@@ -191,7 +210,34 @@ html, body {
     font-size: 0.9rem;
   }
 
+  /* ✅ เรียงภาพแนวนอนและเลื่อนได้ */
   .thumbGrid {
+    display: flex;
+    flex-direction: row;
     gap: 14px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-height: none;
+    padding: 6px 4px 10px 0;
+    scroll-snap-type: x mandatory;
+  }
+
+  .thumb {
+    flex: 0 0 42%;
+    scroll-snap-align: start;
+  }
+
+  /* ✅ scrollbar แนวนอน */
+  .thumbGrid::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .thumbGrid::-webkit-scrollbar-thumb {
+    background-color: #c9a062;
+    border-radius: 3px;
+  }
+
+  .thumbGrid::-webkit-scrollbar-thumb:hover {
+    background-color: #b08956;
   }
 }

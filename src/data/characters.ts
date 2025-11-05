@@ -28,25 +28,51 @@ export const categories: Category[] = [
     name: "ปลั๊กไฟตามสั่ง B2B",
     patterns: [
       {
-        id: "pink-sweet",
-        name: "ลายมูเตรู",
-        detail: "ลายเสริมดวง เรียกทรัพย์ เหมาะกับสายมูตัวจริง",
-        img: "/1_0.png",
+        id: "Agriculture",
+        name: "การเกษตร",
+        detail: "การเกษตร",
+        img: "/Oem/agriculture/agriculture-1.jpg",
         products: [
-          { name: "Crybaby Ver.1", img: "/2_0.jpg" },
-          { name: "Crybaby Ver.2", img: "/3_0.jpg" },
-          { name: "Crybaby Ver.3", img: "/4_0.jpg" },
-          { name: "Crybaby Ver.4", img: "/5_0.jpg" },
+          { name: "Agriculture 1", img: "/Oem/agriculture/agriculture-1.jpg" },
+          { name: "Agriculture 1", img: "/Oem/agriculture/agriculture-2.jpg" },
+          { name: "Agriculture 2", img: "/Oem/agriculture/agriculture-3.jpg" },
+          { name: "Agriculture 3", img: "/Oem/agriculture/agriculture-4.jpg" },
         ],
       },
       {
-        id: "black-white",
-        name: "ลายยักษ์เกี่ยวทรัพย์",
-        img: "/1-(2).jpg",
+        id: "technology",
+        name: "เทคโนโลยี",
+        img: "/Oem/technology/technology-1.jpg",
         products: [
-          { name: "Crybaby Black", img: "/PicTest-1.jpg" },
-          { name: "Crybaby Black", img: "/PicTest-2.jpg" },
-          { name: "Crybaby Black", img: "/PicTest-3.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-1.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-2.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-3.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-4.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-5.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-6.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-7.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-8.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-9.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-10.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-11.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-12.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-13.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-14.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-15.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-16.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-17.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-18.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-19.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-20.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-21.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-22.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-23.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-24.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-25.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-26.jpg" },
+          { name: "technology 1", img: "/Oem/technology/technology-27.jpg" },
+
+
         ],
       },
       {
@@ -88,7 +114,7 @@ export const categories: Category[] = [
           { name: "Back-to-school 2", img: "/seasonal/Back-to-school/back-to-school-3.jpg" },
           { name: "Back-to-school 3", img: "/seasonal/Back-to-school/back-to-school-4.jpg" },
           { name: "Back-to-school 4", img: "/seasonal/Back-to-school/back-to-school-5.jpg" },
-          { name: "Back-to-school 4", img: "/seasonal/Back-to-school/back-to-school-6.jpg" },
+          { name: "Back-to-school 5", img: "/seasonal/Back-to-school/back-to-school-6.jpg" },
 
         ],
       },
@@ -206,4 +232,204 @@ export const categories: Category[] = [
       },
     ],
   },
+
+  {
+    slug: "fan-fantasy",
+    name: "FAN FANTASY",
+    patterns: [
+      {
+        id: "Meow-fruit",
+        name: "Meow Fruit",
+        detail: "ลายผลไม้เหมียว",
+        detailProducts: "ถ้าคุณคือทาสที่มองไปทางไหนก็เจอแต่เจ้าเหมียว...คุณมาถูกทางแล้ว! ปลั๊ก All Cats are made of Fruits...คุณอะ ทำถึง! เพราะถ้าไม่รักจริง...จะมองเห็นน้องแมวในผลไม้ได้ยังไง!",
+        img: "/fantasy/Meow-fruit/Meow-fruit-1.jpg",
+        products: [
+          { name: "Meow-fruit 1", img: "/fantasy/Meow-fruit/Meow-fruit-2.jpg" },
+          { name: "Meow-fruit 2", img: "/fantasy/Meow-fruit/Meow-fruit-3.jpg" },
+          { name: "Meow-fruit 3", img: "/fantasy/Meow-fruit/Meow-fruit-4.jpg" },
+          { name: "Meow-fruit 4", img: "/fantasy/Meow-fruit/Meow-fruit-5.jpg" },
+          { name: "Meow-fruit 5", img: "/fantasy/Meow-fruit/Meow-fruit-6.jpg" },
+
+        ],
+      },
+      {
+        id: "Cute-Mermaid",
+        name: "Cute Mermaid",
+        detail: "ลายเงือกน้อย",
+        detailProducts: "เงือกน้อยคอยรัก",
+        img: "/fantasy/Cute-Mermaid/Cute-Mermaid-1.jpg",
+        products: [
+          { name: "Cute-Mermaid 1", img: "/fantasy/Cute-Mermaid/Cute-Mermaid-2.jpg" },
+          { name: "Cute-Mermaid 2", img: "/fantasy/Cute-Mermaid/Cute-Mermaid-3.jpg" },
+          { name: "Cute-Mermaid 3", img: "/fantasy/Cute-Mermaid/Cute-Mermaid-4.jpg" },
+          { name: "Cute-Mermaid 4", img: "/fantasy/Cute-Mermaid/Cute-Mermaid-5.jpg" },
+          { name: "Cute-Mermaid 5", img: "/fantasy/Cute-Mermaid/Cute-Mermaid-6.jpg" },
+
+        ],
+      },
+      {
+        id: "Dream-park",
+        name: "Dream Park",
+        detail: "ลายสวนสนุก",
+        detailProducts: "สวนสนุกแห่งความฝัน",
+        img: "/fantasy/Dream-park/Dream-park-1.jpg",
+        products: [
+          { name: "Dream-park 1", img: "/fantasy/Dream-park/Dream-park-2.jpg" },
+          { name: "Dream-park 2", img: "/fantasy/Dream-park/Dream-park-3.jpg" },
+          { name: "Dream-park 3", img: "/fantasy/Dream-park/Dream-park-4.jpg" },
+          { name: "Dream-park 4", img: "/fantasy/Dream-park/Dream-park-5.jpg" },
+          { name: "Dream-park 5", img: "/fantasy/Dream-park/Dream-park-6.jpg" },
+
+        ],
+      },
+      {
+        id: "Galaxy-Watcher",
+        name: "Galaxy Watcher",
+        detail: "ลายกาแลคซี่",
+        detailProducts: "-",
+        img: "/fantasy/Galaxy-Watcher/Galaxy-Watcher-1.png",
+        products: [
+          { name: "Galaxy-Watcher 1", img: "/fantasy/Galaxy-Watcher/Galaxy-Watcher-2.png" },
+          { name: "Galaxy-Watcher 2", img: "/fantasy/Galaxy-Watcher/Galaxy-Watcher-3.png" },
+          { name: "Galaxy-Watcher 3", img: "/fantasy/Galaxy-Watcher/Galaxy-Watcher-4.png" },
+          { name: "Galaxy-Watcher 4", img: "/fantasy/Galaxy-Watcher/Galaxy-Watcher-5.png" },
+          { name: "Galaxy-Watcher 5", img: "/fantasy/Galaxy-Watcher/Galaxy-Watcher-6.png" },
+        ],
+      },
+      {
+        id: "Just-a-cute-Duck",
+        name: "Just a cute Duck",
+        detail: "ลายเป็ดน้อย",
+        detailProducts: "-",
+        img: "/fantasy/Just-a-cute-Duck/Just-a-cute-Duck-1.jpg",
+        products: [
+          { name: "Just-a-cute-Duck 1", img: "/fantasy/Just-a-cute-Duck/Just-a-cute-Duck-2.jpg" },
+          { name: "Just-a-cute-Duck 2", img: "/fantasy/Just-a-cute-Duck/Just-a-cute-Duck-3.jpg" },
+          { name: "Just-a-cute-Duck 3", img: "/fantasy/Just-a-cute-Duck/Just-a-cute-Duck-4.jpg" },
+          { name: "Just-a-cute-Duck 4", img: "/fantasy/Just-a-cute-Duck/Just-a-cute-Duck-5.jpg" },
+          { name: "Just-a-cute-Duckr 5", img: "/fantasy/Just-a-cute-Duck/Just-a-cute-Duck-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Lost-in-Space",
+        name: "Lost in Space",
+        detail: "ลาย Lost in Space",
+        detailProducts: "-",
+        img: "/fantasy/Lost-in-Space/Lost-in-Space-1.jpg",
+        products: [
+          { name: "Lost-in-Space 1", img: "/fantasy/Lost-in-Space/Lost-in-Space-2.jpg" },
+          { name: "Lost-in-Space 2", img: "/fantasy/Lost-in-Space/Lost-in-Space-3.jpg" },
+          { name: "Lost-in-Space 3", img: "/fantasy/Lost-in-Space/Lost-in-Space-4.jpg" },
+          { name: "Lost-in-Space 4", img: "/fantasy/Lost-in-Space/Lost-in-Space-5.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Magical-Moment",
+        name: "Magical Moment",
+        detail: "ลาย Magical Moment",
+        detailProducts: "-",
+        img: "/fantasy/Magical-Moment/Magical-Moment-1.jpg",
+        products: [
+          { name: "Magical-Moment 1", img: "/fantasy/Magical-Moment/Magical-Moment-2.jpg" },
+          { name: "Magical-Moment 2", img: "/fantasy/Magical-Moment/Magical-Moment-3.jpg" },
+          { name: "Magical-Moment 3", img: "/fantasy/Magical-Moment/Magical-Moment-4.jpg" },
+          { name: "Magical-Moment 4", img: "/fantasy/Magical-Moment/Magical-Moment-5.jpg" },
+          { name: "Magical-Moment 5", img: "/fantasy/Magical-Moment/Magical-Moment-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "MoMo-and-the-panguin-gang",
+        name: "MoMo and the panguin gang",
+        detail: "ลาย MoMo and the panguin gang",
+        detailProducts: "-",
+        img: "/fantasy/MoMo/MoMo-1.jpg",
+        products: [
+          { name: "MoMo 1", img: "/fantasy/MoMo/MoMo-2.jpg" },
+          { name: "MoMo 2", img: "/fantasy/MoMo/MoMo-3.jpg" },
+          { name: "MoMo 3", img: "/fantasy/MoMo/MoMo-4.jpg" },
+          { name: "MoMo 4", img: "/fantasy/MoMo/MoMo-5.jpg" },
+          { name: "MoMo 5", img: "/fantasy/MoMo/MoMo-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "One-night-with-meteer-shower",
+        name: "One night with meteer shower",
+        detail: "ลาย One night with meteer shower",
+        detailProducts: "-",
+        img: "/fantasy/One-night/One-night-1.jpg",
+        products: [
+          { name: "One-night 1", img: "/fantasy/One-night/One-night-2.jpg" },
+          { name: "One-night 2", img: "/fantasy/One-night/One-night-3.jpg" },
+          { name: "One-night 3", img: "/fantasy/One-night/One-night-4.jpg" },
+          { name: "One-night 4", img: "/fantasy/One-night/One-night-5.jpg" },
+          { name: "One-night 5", img: "/fantasy/One-night/One-night-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Red-Riding-Hood",
+        name: "Red Riding Hood",
+        detail: "ลาย Red Riding Hood",
+        detailProducts: "-",
+        img: "/fantasy/Red-Riding-Hood/Red-Riding-Hood-1.jpg",
+        products: [
+          { name: "Red-Riding-Hood 1", img: "/fantasy/Red-Riding-Hood/Red-Riding-Hood-2.jpg" },
+          { name: "Red-Riding-Hood 2", img: "/fantasy/Red-Riding-Hood/Red-Riding-Hood-3.jpg" },
+          { name: "Red-Riding-Hood 3", img: "/fantasy/Red-Riding-Hood/Red-Riding-Hood-4.jpg" },
+          { name: "Red-Riding-Hood 4", img: "/fantasy/Red-Riding-Hood/Red-Riding-Hood-5.jpg" },
+          { name: "Red-Riding-Hood 5", img: "/fantasy/Red-Riding-Hood/Red-Riding-Hood-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "The-Ocean-Odyssey",
+        name: "The Ocean Odyssey",
+        detail: "ลาย The Ocean Odyssey",
+        detailProducts: "-",
+        img: "/fantasy/The-Ocean/The-Ocean-Odyssey-1.jpg",
+        products: [
+          { name: "The-Ocean-Odyssey 1", img: "/fantasy/The-Ocean/The-Ocean-Odyssey-2.jpg" },
+          { name: "The-Ocean-Odyssey 2", img: "/fantasy/The-Ocean/The-Ocean-Odyssey-3.jpg" },
+          { name: "The-Ocean-Odyssey 3", img: "/fantasy/The-Ocean/The-Ocean-Odyssey-4.jpg" },
+          { name: "The-Ocean-Odyssey 4", img: "/fantasy/The-Ocean/The-Ocean-Odyssey-5.jpg" },
+          { name: "The-Ocean-Odyssey 5", img: "/fantasy/The-Ocean/The-Ocean-Odyssey-6.jpg" },
+
+        ],
+      },
+    ],
+  },
+
+  {
+    slug: "otaku",
+    name: "OTAKU",
+    patterns: [
+      {
+        id: "Back-to-school",
+        name: "Back to school",
+        detail: "ลายกลับห้องเรียนหน้า",
+        detailProducts: "กลับห้องเรียนพร้อมไฟเต็มแม็กซ์ ปลั๊กลายพิเศษที่มีแค่เปิดเทอมนี้เท่านั้น",
+        img: "/seasonal/Back-to-school/back-to-school-1.jpg",
+        products: [
+          { name: "Back-to-school 1", img: "/seasonal/Back-to-school/back-to-school-2.jpg" },
+          { name: "Back-to-school 2", img: "/seasonal/Back-to-school/back-to-school-3.jpg" },
+          { name: "Back-to-school 3", img: "/seasonal/Back-to-school/back-to-school-4.jpg" },
+          { name: "Back-to-school 4", img: "/seasonal/Back-to-school/back-to-school-5.jpg" },
+          { name: "Back-to-school 4", img: "/seasonal/Back-to-school/back-to-school-6.jpg" },
+
+        ],
+      },
+
+    ],
+  },
+
 ];

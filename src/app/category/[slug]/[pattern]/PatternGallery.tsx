@@ -38,7 +38,7 @@ export default function PatternGallery({ products, name, detail }: Props) {
             onClick={() => router.push(`/category/${slug}`)}
             className={styles.backButton}
           >
-            🔙 กลับไปหน้าเลือกลาย
+            🔙 กลับไปหน้าเลือกลาย.
           </motion.button>
         </div>
 

@@ -11,7 +11,7 @@ const characters = [
     video: "/MENU-ICON-SEASONAL.mp4",
   },
   {
-    name: "FUN & FANTASY",
+    name: "FAN FANTASY",
     img: "/MENU-ICON-Fantasy.png",
     video: "/Menu-fan.mp4",
   },
