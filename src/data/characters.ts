@@ -1214,4 +1214,255 @@ export const categories: Category[] = [
   },
 
 
+
+  {
+    slug: "pets",
+    name: "PETS",
+    patterns: [
+      {
+        id: "black-cat",
+        name: "black cat",
+        detail: "ลาย black cat",
+        detailProducts: "-",
+        img: "/Pets/black-cat/black-cat-1.jpg",
+        products: [
+          { name: "black-cat 1", img: "/Pets/black-cat/black-cat-2.jpg" },
+          { name: "black-cat 2", img: "/Pets/black-cat/black-cat-3.jpg" },
+          { name: "black-cat 3", img: "/Pets/black-cat/black-cat-4.jpg" },
+          { name: "black-cat 4", img: "/Pets/black-cat/black-cat-5.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Bunny-Carrot",
+        name: "Bunny Carrot",
+        detail: "ลาย Bunny Carrot",
+        detailProducts: "-",
+        img: "/Pets/Bunny-Carrot/Bunny-Carrot-1.jpg",
+        products: [
+          { name: "Bunny-Carrot 1", img: "/Pets/Bunny-Carrot/Bunny-Carrot-2.jpg" },
+          { name: "Bunny-Carrot 2", img: "/Pets/Bunny-Carrot/Bunny-Carrot-3.jpg" },
+          { name: "Bunny-Carrot 3", img: "/Pets/Bunny-Carrot/Bunny-Carrot-4.jpg" },
+          { name: "Bunny-Carrot 4", img: "/Pets/Bunny-Carrot/Bunny-Carrot-5.jpg" },
+          { name: "Bunny-Carrot 5", img: "/Pets/Bunny-Carrot/Bunny-Carrot-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Bunny-Painter",
+        name: "Bunny Painter",
+        detail: "ลาย Bunny Painter",
+        detailProducts: "-",
+        img: "/Pets/Bunny-Painter/Bunny-Painter-1.jpg",
+        products: [
+          { name: "Bunny-Painter 1", img: "/Pets/Bunny-Painter/Bunny-Painter-2.jpg" },
+          { name: "Bunny-Painter 2", img: "/Pets/Bunny-Painter/Bunny-Painter-3.jpg" },
+          { name: "Bunny-Painter 3", img: "/Pets/Bunny-Painter/Bunny-Painter-4.jpg" },
+          { name: "Bunny-Painter 4", img: "/Pets/Bunny-Painter/Bunny-Painter-5.jpg" },
+          { name: "Bunny-Painter 5", img: "/Pets/Bunny-Painter/Bunny-Painter-6.jpg" },
+
+        ],
+      },
+      {
+        id: "Cat-World",
+        name: "Cat World",
+        detail: "ลาย Cat World",
+        detailProducts: "-",
+        img: "/Pets/Cat-World/Cat-World-1.jpg",
+        products: [
+          { name: "Cat-World 1", img: "/Pets/Cat-World/Cat-World-2.jpg" },
+          { name: "Cat-World 2", img: "/Pets/Cat-World/Cat-World-3.jpg" },
+          { name: "Cat-World 3", img: "/Pets/Cat-World/Cat-World-4.jpg" },
+          { name: "Cat-World 4", img: "/Pets/Cat-World/Cat-World-5.jpg" },
+          { name: "Cat-World 5", img: "/Pets/Cat-World/Cat-World-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Cats-Lover",
+        name: "Cats Lover",
+        detail: "ลาย Cats Lover",
+        detailProducts: "-",
+        img: "/Pets/Cats-Lover/Cats-Lover-1.jpg",
+        products: [
+          { name: "Cats-Lover 1", img: "/Pets/Cats-Lover/Cats-Lover-2.jpg" },
+          { name: "Cats-Lover 2", img: "/Pets/Cats-Lover/Cats-Lover-3.jpg" },
+          { name: "Cats-Lover 3", img: "/Pets/Cats-Lover/Cats-Lover-4.jpg" },
+          { name: "Cats-Lover 4", img: "/Pets/Cats-Lover/Cats-Lover-5.jpg" },
+          { name: "Cats-Lover 5", img: "/Pets/Cats-Lover/Cats-Lover-6.jpg" },
+        ],
+      },
+
+      {
+        id: "Cat-weekend",
+        name: "Cat weekend",
+        detail: "ลาย Cat weekend",
+        detailProducts: "-",
+        img: "/Pets/Cat-weekend/Cat-weekend-1.jpg",
+        products: [
+          { name: "Cat-weekend 1", img: "/Pets/Cat-weekend/Cat-weekend-2.jpg" },
+          { name: "Cat-weekend 2", img: "/Pets/Cat-weekend/Cat-weekend-3.jpg" },
+          { name: "Cat-weekend 3", img: "/Pets/Cat-weekend/Cat-weekend-4.jpg" },
+          { name: "Cat-weekend 4", img: "/Pets/Cat-weekend/Cat-weekend-5.jpg" },
+          { name: "Cat-weekend 5", img: "/Pets/Cat-weekend/Cat-weekend-6.jpg" },
+        ],
+      },
+
+      {
+        id: "Cat-whisperer",
+        name: "Cat whisperer",
+        detail: "ลาย Cat whisperer",
+        detailProducts: "-",
+        img: "/Pets/Cat-whisperer/Cat-whisperer-1.jpg",
+        products: [
+          { name: "Cat-whisperer 1", img: "/Pets/Cat-whisperer/Cat-whisperer-2.jpg" },
+          { name: "Cat-whisperer 2", img: "/Pets/Cat-whisperer/Cat-whisperer-3.jpg" },
+          { name: "Cat-whisperer 3", img: "/Pets/Cat-whisperer/Cat-whisperer-4.jpg" },
+          { name: "Cat-whisperer 4", img: "/Pets/Cat-whisperer/Cat-whisperer-5.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Circus",
+        name: "Circus",
+        detail: "ลาย Circus",
+        detailProducts: "-",
+        img: "/Pets/Circus/Circus-1.jpg",
+        products: [
+          { name: "Circus 1", img: "/Pets/Circus/Circus-2.jpg" },
+          { name: "Circus 2", img: "/Pets/Circus/Circus-3.jpg" },
+          { name: "Circus 3", img: "/Pets/Circus/Circus-4.jpg" },
+          { name: "Circus 4", img: "/Pets/Circus/Circus-5.jpg" },
+          { name: "Circus 5", img: "/Pets/Circus/Circus-6.jpg" },
+        ],
+      },
+
+      {
+        id: "Colorful",
+        name: "Colorful",
+        detail: "ลาย Colorful",
+        detailProducts: "-",
+        img: "/Pets/Colorful/Colorful-1.jpg",
+        products: [
+          { name: "Colorful 1", img: "/Pets/Colorful/Colorful-2.jpg" },
+          { name: "Colorful 2", img: "/Pets/Colorful/Colorful-3.jpg" },
+          { name: "Colorful 3", img: "/Pets/Colorful/Colorful-4.jpg" },
+          { name: "Colorful 4", img: "/Pets/Colorful/Colorful-5.jpg" },
+          { name: "Colorful 5", img: "/Pets/Colorful/Colorful-6.jpg" },
+        ],
+      },
+
+      {
+        id: "Croaky",
+        name: "Croaky",
+        detail: "ลาย Croaky",
+        detailProducts: "-",
+        img: "/Pets/Croaky/Croaky-1.jpg",
+        products: [
+          { name: "Croaky 1", img: "/Pets/Croaky/Croaky-2.jpg" },
+          { name: "Croaky 2", img: "/Pets/Croaky/Croaky-3.jpg" },
+          { name: "Croaky 3", img: "/Pets/Croaky/Croaky-4.jpg" },
+          { name: "Croaky 4", img: "/Pets/Croaky/Croaky-5.jpg" },
+          { name: "Croaky 5", img: "/Pets/Croaky/Croaky-6.jpg" },
+        ],
+      },
+
+      {
+        id: "Cutie-animals",
+        name: "Cutie animals",
+        detail: "ลาย Cutie animals",
+        detailProducts: "-",
+        img: "/Pets/Cutie-animals/Cutie-animals-1.jpg",
+        products: [
+          { name: "Cutie-animals 1", img: "/Pets/Cutie-animals/Cutie-animals-2.jpg" },
+          { name: "Cutie-animals 2", img: "/Pets/Cutie-animals/Cutie-animals-3.jpg" },
+          { name: "Cutie-animals 3", img: "/Pets/Cutie-animals/Cutie-animals-4.jpg" },
+          { name: "Cutie-animals 4", img: "/Pets/Cutie-animals/Cutie-animals-5.jpg" },
+          { name: "Cutie-animals 5", img: "/Pets/Cutie-animals/Cutie-animals-6.jpg" },
+        ],
+      },
+
+      {
+        id: "Dogs-Happy",
+        name: "Dogs-Happy",
+        detail: "ลาย Dogs-Happy",
+        detailProducts: "-",
+        img: "/Pets/Dogs-Happy/Dogs-Happy-1.jpg",
+        products: [
+          { name: "Dogs-Happy 1", img: "/Pets/Dogs-Happy/Dogs-Happy-2.jpg" },
+          { name: "Dogs-Happy 2", img: "/Pets/Dogs-Happy/Dogs-Happy-3.jpg" },
+          { name: "Dogs-Happy 3", img: "/Pets/Dogs-Happy/Dogs-Happy-4.jpg" },
+          { name: "Dogs-Happy 4", img: "/Pets/Dogs-Happy/Dogs-Happy-5.jpg" },
+          { name: "Dogs-Happy 5", img: "/Pets/Dogs-Happy/Dogs-Happy-6.jpg" },
+        ],
+      },
+
+      {
+        id: "Hedgehog",
+        name: "Hedgehog",
+        detail: "ลาย Hedgehog",
+        detailProducts: "-",
+        img: "/Pets/Hedgehog/Hedgehog-1.jpg",
+        products: [
+          { name: "Hedgehog 1", img: "/Pets/Hedgehog/Hedgehog-2.jpg" },
+          { name: "Hedgehog 2", img: "/Pets/Hedgehog/Hedgehog-3.jpg" },
+          { name: "Hedgehog 3", img: "/Pets/Hedgehog/Hedgehog-4.jpg" },
+          { name: "Hedgehog 4", img: "/Pets/Hedgehog/Hedgehog-5.jpg" },
+          { name: "Hedgehog 5", img: "/Pets/Hedgehog/Hedgehog-6.jpg" },
+        ],
+      },
+
+      {
+        id: "Just-bee",
+        name: "Just bee",
+        detail: "ลาย Just bee",
+        detailProducts: "-",
+        img: "/Pets/Just-bee/Just-bee-1.jpg",
+        products: [
+          { name: "Just-bee 1", img: "/Pets/Just-bee/Just-bee-2.jpg" },
+          { name: "Just-bee 2", img: "/Pets/Just-bee/Just-bee-3.jpg" },
+          { name: "Just-bee 3", img: "/Pets/Just-bee/Just-bee-4.jpg" },
+          { name: "Just-bee 4", img: "/Pets/Just-bee/Just-bee-5.jpg" },
+          { name: "Just-bee 5", img: "/Pets/Just-bee/Just-bee-6.jpg" },
+        ],
+      },
+
+      {
+        id: "Just-Bird",
+        name: "Just Bird",
+        detail: "ลาย Just Bird",
+        detailProducts: "-",
+        img: "/Pets/Just-Bird/Just-Bird-1.jpg",
+        products: [
+          { name: "Just-Bird 1", img: "/Pets/Just-Bird/Just-Bird-2.jpg" },
+          { name: "Just-Bird 2", img: "/Pets/Just-Bird/Just-Bird-3.jpg" },
+          { name: "Just-Bird 3", img: "/Pets/Just-Bird/Just-Bird-4.jpg" },
+          { name: "Just-Bird 4", img: "/Pets/Just-Bird/Just-Bird-5.jpg" },
+          { name: "Just-Bird 5", img: "/Pets/Just-Bird/Just-Bird-6.jpg" },
+        ],
+      },
+
+      {
+        id: "Korean-cat",
+        name: "Korean cat",
+        detail: "ลาย Korean cat",
+        detailProducts: "-",
+        img: "/Pets/Korean-cat/Korean-cat-1.jpg",
+        products: [
+          { name: "Korean-cat 1", img: "/Pets/Korean-cat/Korean-cat-2.jpg" },
+          { name: "Korean-cat 2", img: "/Pets/Korean-cat/Korean-cat-3.jpg" },
+          { name: "Korean-cat 3", img: "/Pets/Korean-cat/Korean-cat-4.jpg" },
+          { name: "Korean-cat 4", img: "/Pets/Korean-cat/Korean-cat-5.jpg" },
+        ],
+      },
+
+    ],
+  },
+
+
+
 ];
