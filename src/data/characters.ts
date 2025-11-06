@@ -589,6 +589,8 @@ export const categories: Category[] = [
           { name: "Lord-Ganesha-v2 2", img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-3.jpg" },
           { name: "Lord-Ganesha-v2 3", img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-4.jpg" },
           { name: "Lord-Ganesha-v2 4", img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-5.jpg" },
+          { name: "Lord-Ganesha-v2 5", img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-6.jpg" },
+
         ],
       },
 
