@@ -234,8 +234,8 @@ export const categories: Category[] = [
   },
 
   {
-    slug: "fan-fantasy",
-    name: "FAN FANTASY",
+    slug: "fun-fantasy",
+    name: "FUN FANTASY",
     patterns: [
       {
         id: "Meow-fruit",
