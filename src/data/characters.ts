@@ -414,17 +414,17 @@ export const categories: Category[] = [
     name: "OTAKU",
     patterns: [
       {
-        id: "kaiju",
+        id: "kai-ju",
         name: "Kaiju",
         detail: "ลาย Kaiju",
         detailProducts: "-",
-        img: "/Otaku/kaijuu/kaiju-1.jpg",
+        img: "/Otaku/kai-ju/kai-ju-1.jpg",
         products: [
-          { name: "kaiju 1", img: "/Otaku/red-giant/red-giant-2.jpg" },
-          { name: "kaiju 2", img: "/Otaku/kaijuu/kaiju-3.jpg" },
-          { name: "kaiju 3", img: "/Otaku/kaijuu/kaiju-4.jpg" },
-          { name: "kaiju 4", img: "/Otaku/kaijuu/kaiju-5.jpg" },
-          { name: "kaiju 5", img: "/Otaku/kaijuu/kaiju-6.jpg" },
+          { name: "kai-ju 1", img: "/Otaku/kai-ju/kai-ju-2.jpg" },
+          { name: "kai-ju 2", img: "/Otaku/kai-ju/kai-ju-3.jpg" },
+          { name: "kai-ju 3", img: "/Otaku/kai-ju/kai-ju-4.jpg" },
+          { name: "kai-ju 4", img: "/Otaku/kai-ju/kai-ju-5.jpg" },
+          { name: "kai-ju 5", img: "/Otaku/kai-ju/kai-ju-6.jpg" },
 
         ],
       },
