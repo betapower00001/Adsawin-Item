@@ -414,17 +414,244 @@ export const categories: Category[] = [
     name: "OTAKU",
     patterns: [
       {
-        id: "Back-to-school",
-        name: "Back to school",
-        detail: "ลายกลับห้องเรียนหน้า",
-        detailProducts: "กลับห้องเรียนพร้อมไฟเต็มแม็กซ์ ปลั๊กลายพิเศษที่มีแค่เปิดเทอมนี้เท่านั้น",
-        img: "/seasonal/Back-to-school/back-to-school-1.jpg",
+        id: "kaiju",
+        name: "Kaiju",
+        detail: "ลาย Kaiju",
+        detailProducts: "-",
+        img: "/Otaku/kaiju/kaiju-1.jpg",
         products: [
-          { name: "Back-to-school 1", img: "/seasonal/Back-to-school/back-to-school-2.jpg" },
-          { name: "Back-to-school 2", img: "/seasonal/Back-to-school/back-to-school-3.jpg" },
-          { name: "Back-to-school 3", img: "/seasonal/Back-to-school/back-to-school-4.jpg" },
-          { name: "Back-to-school 4", img: "/seasonal/Back-to-school/back-to-school-5.jpg" },
-          { name: "Back-to-school 4", img: "/seasonal/Back-to-school/back-to-school-6.jpg" },
+          { name: "Kaiju 1", img: "/Otaku/kaiju/kaiju-2.jpg" },
+          { name: "kaiju 2", img: "/Otaku/kaiju/kaiju-3.jpg" },
+          { name: "Kaiju 3", img: "/Otaku/kaiju/kaiju-4.jpg" },
+          { name: "Kaiju 4", img: "/Otaku/kaiju/kaiju-5.jpg" },
+          { name: "Kaiju 5", img: "/Otaku/kaiju/kaiju-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "red-giant",
+        name: "Red giant",
+        detail: "ลาย Red giant",
+        detailProducts: "-",
+        img: "/Otaku/red-giant/red-giant-1.jpg",
+        products: [
+          { name: "red-giant 1", img: "/Otaku/red-giant/red-giant-2.jpg" },
+          { name: "red-giant 2", img: "/Otaku/red-giant/red-giant-3.jpg" },
+          { name: "red-giant 3", img: "/Otaku/red-giant/red-giant-4.jpg" },
+          { name: "red-giant 4", img: "/Otaku/red-giant/red-giant-5.jpg" },
+          { name: "red-giant 4", img: "/Otaku/red-giant/red-giant-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Rising-Sun",
+        name: "Rising Sun",
+        detail: "ลาย Rising Sun",
+        detailProducts: "-",
+        img: "/Otaku/Rising-Sun/Rising-Sun-1.jpg",
+        products: [
+          { name: "Rising-Sun 1", img: "/Otaku/Rising-Sun/Rising-Sun-2.jpg" },
+          { name: "Rising-Sun 2", img: "/Otaku/Rising-Sun/Rising-Sun-3.jpg" },
+          { name: "Rising-Sun 3", img: "/Otaku/Rising-Sun/Rising-Sun-4.jpg" },
+          { name: "Rising-Sun 4", img: "/Otaku/Rising-Sun/Rising-Sun-5.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Shushi",
+        name: "Shushi",
+        detail: "ลาย Shushi",
+        detailProducts: "-",
+        img: "/Otaku/Shushi/Shushi-1.jpg",
+        products: [
+          { name: "Shushi 1", img: "/Otaku/Shushi/Shushi-2.jpg" },
+          { name: "Shushi 2", img: "/Otaku/Shushi/Shushi-3.jpg" },
+          { name: "Shushi 3", img: "/Otaku/Shushi/Shushi-4.jpg" },
+          { name: "Shushi 4", img: "/Otaku/Shushi/Shushi-5.jpg" },
+          { name: "Shushi 5", img: "/Otaku/Shushi/Shushi-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Shushi-meow",
+        name: "Shushi Meow",
+        detail: "ลาย Shushi",
+        detailProducts: "-",
+        img: "/Otaku/Shushi-meow/Shushi-meow-1.jpg",
+        products: [
+          { name: "Shushi-meow 1", img: "/Otaku/Shushi-meow/Shushi-meow-2.jpg" },
+          { name: "Shushi-meow 2", img: "/Otaku/Shushi-meow/Shushi-meow-3.jpg" },
+          { name: "Shushi-meow 3", img: "/Otaku/Shushi-meow/Shushi-meow-4.jpg" },
+          { name: "Shushi-meow 4", img: "/Otaku/Shushi-meow/Shushi-meow-5.jpg" },
+          { name: "Shushi-meow 5", img: "/Otaku/Shushi-meow/Shushi-meow-6.jpg" },
+
+        ],
+      },
+
+
+    ],
+  },
+
+  {
+    slug: "mutelu",
+    name: "MUTELU",
+    patterns: [
+      {
+        id: "Cai-Shen-Ye",
+        name: "Cai Shen Ye",
+        detail: "ลาย Cai Shen Ye",
+        detailProducts: "-",
+        img: "/Mutelu/Cai-Shen-Ye/Cai-Shen-Ye-1.jpg",
+        products: [
+          { name: "Cai-Shen-Ye 1", img: "/Mutelu/Cai-Shen-Ye/Cai-Shen-Ye-2.jpg" },
+          { name: "Cai-Shen-Ye 2", img: "/Mutelu/Cai-Shen-Ye/Cai-Shen-Ye-3.jpg" },
+          { name: "Cai-Shen-Ye 3", img: "/Mutelu/Cai-Shen-Ye/Cai-Shen-Ye-4.jpg" },
+          { name: "Cai-Shen-Ye 4", img: "/Mutelu/Cai-Shen-Ye/Cai-Shen-Ye-5.jpg" },
+          { name: "Cai-Shen-Ye 5", img: "/Mutelu/Cai-Shen-Ye/Cai-Shen-Ye-6.jpg" },
+
+        ],
+      },
+      {
+        id: "Fortune-cards",
+        name: "Fortune cards",
+        detail: "ลาย Fortune cards",
+        detailProducts: "-",
+        img: "/Mutelu/Fortune-cards/Fortune-cards-1.jpg",
+        products: [
+          { name: "Fortune-cards 1", img: "/Mutelu/Fortune-cards/Fortune-cards-2.jpg" },
+          { name: "Fortune-cards 2", img: "/Mutelu/Fortune-cards/Fortune-cards-3.jpg" },
+          { name: "Fortune-cards 3", img: "/Mutelu/Fortune-cards/Fortune-cards-4.jpg" },
+          { name: "Fortune-cards 4", img: "/Mutelu/Fortune-cards/Fortune-cards-5.jpg" },
+          { name: "Fortune-cards 5", img: "/Mutelu/Fortune-cards/Fortune-cards-6.jpg" },
+
+        ],
+      },
+      {
+        id: "Ganesha2",
+        name: "Ganesha2",
+        detail: "ลาย Ganesha2",
+        detailProducts: "-",
+        img: "/Mutelu/Ganesha2/Ganesha2-1.jpg",
+        products: [
+          { name: "Ganesha2 1", img: "/Mutelu/Ganesha2/Ganesha2-2.jpg" },
+          { name: "Ganesha2 2", img: "/Mutelu/Ganesha2/Ganesha2-3.jpg" },
+          { name: "Ganesha2 3", img: "/Mutelu/Ganesha2/Ganesha2-4.jpg" },
+          { name: "Ganesha2 4", img: "/Mutelu/Ganesha2/Ganesha2-5.jpg" },
+          { name: "Ganesha2 5", img: "/Mutelu/Ganesha2/Ganesha2-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Gypsy-cards",
+        name: "Gypsy Cards",
+        detail: "ลาย Gypsy-cards",
+        detailProducts: "-",
+        img: "/Mutelu/Gypsy-cards/Gypsy-cards-1.jpg",
+        products: [
+          { name: "Gypsy-cards 1", img: "/Mutelu/Gypsy-cards/Ganesha2-2.jpg" },
+          { name: "Gypsy-cards 2", img: "/Mutelu/Gypsy-cards/Ganesha2-3.jpg" },
+          { name: "Gypsy-cards 3", img: "/Mutelu/Gypsy-cards/Ganesha2-4.jpg" },
+          { name: "Gypsy-cards 4", img: "/Mutelu/Gypsy-cards/Ganesha2-5.jpg" },
+          { name: "Gypsy-cards 5", img: "/Mutelu/Gypsy-cards/Ganesha2-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Lord-Ganesha-v1",
+        name: "Lord Ganesha v1",
+        detail: "ลาย Lord Ganesha v1",
+        detailProducts: "-",
+        img: "/Mutelu/Lord-Ganeshav1/Lord-Ganesha-v1-1.jpg",
+        products: [
+          { name: "Lord-Ganeshav1 1", img: "/Mutelu/Lord-Ganeshav1/Lord-Ganesha-v1-2.jpg" },
+          { name: "Lord-Ganeshav1 2", img: "/Mutelu/Lord-Ganeshav1/Lord-Ganesha-v1-3.jpg" },
+          { name: "Lord-Ganeshav1 3", img: "/Mutelu/Lord-Ganeshav1/Lord-Ganesha-v1-4.jpg" },
+          { name: "Lord-Ganeshav1 4", img: "/Mutelu/Lord-Ganeshav1/Lord-Ganesha-v1-5.jpg" },
+          { name: "Lord-Ganeshav1 5", img: "/Mutelu/Lord-Ganeshav1/Lord-Ganesha-v1-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Lord-Ganesha-v2",
+        name: "Lord Ganesha v2",
+        detail: "ลาย Lord Ganesha v2",
+        detailProducts: "-",
+        img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-1.jpg",
+        products: [
+          { name: "Lord-Ganesha-v2 1", img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-2.jpg" },
+          { name: "Lord-Ganesha-v2 2", img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-3.jpg" },
+          { name: "Lord-Ganesha-v2 3", img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-4.jpg" },
+          { name: "Lord-Ganesha-v2 4", img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-5.jpg" },
+        ],
+      },
+
+      {
+        id: "Love-Card",
+        name: "Love Card",
+        detail: "ลาย Love Card",
+        detailProducts: "-",
+        img: "/Mutelu/Love-Card/Love-Card-1.jpg",
+        products: [
+          { name: "Love-Card 1", img: "/Mutelu/Love-Card/Love-Card-2.jpg" },
+          { name: "Love-Card 2", img: "/Mutelu/Love-Card/Love-Card-3.jpg" },
+          { name: "Love-Card 3", img: "/Mutelu/Love-Card/Love-Card-4.jpg" },
+          { name: "Love-Card 4", img: "/Mutelu/Love-Card/Love-Card-5.jpg" },
+          { name: "Love-Card 5", img: "/Mutelu/Love-Card/Love-Card-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Men-Love-Card",
+        name: "Men Love Card",
+        detail: "ลาย Men Love Card",
+        detailProducts: "-",
+        img: "/Mutelu/Men-Love-Card/Love-Card-1.jpg",
+        products: [
+          { name: "Men-Love-Card 1", img: "/Mutelu/Men-Love-Card/Love-Card-2.jpg" },
+          { name: "Men-Love-Card 2", img: "/Mutelu/Men-Love-Card/Love-Card-3.jpg" },
+          { name: "Men-Love-Card 3", img: "/Mutelu/Men-Love-Card/Love-Card-4.jpg" },
+          { name: "Men-Love-Card 4", img: "/Mutelu/Men-Love-Card/Love-Card-5.jpg" },
+          { name: "Men-Love-Card 5", img: "/Mutelu/Men-Love-Card/Love-Card-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Thao-Wessuwan",
+        name: "Thao Wessuwan",
+        detail: "ลาย Thao Wessuwan",
+        detailProducts: "-",
+        img: "/Mutelu/Thao-Wessuwan/Thao-Wessuwan-1.jpg",
+        products: [
+          { name: "Thao-Wessuwan 1", img: "/Mutelu/Thao-Wessuwan/Thao-Wessuwan-2.jpg" },
+          { name: "Thao-Wessuwan 2", img: "/Mutelu/Thao-Wessuwan/Thao-Wessuwan-3.jpg" },
+          { name: "Thao-Wessuwan 3", img: "/Mutelu/Thao-Wessuwan/Thao-Wessuwan-4.jpg" },
+          { name: "Thao-Wessuwan 4", img: "/Mutelu/Thao-Wessuwan/Thao-Wessuwan-5.jpg" },
+          { name: "Thao-Wessuwan 5", img: "/Mutelu/Thao-Wessuwan/Thao-Wessuwan-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Walth-Money",
+        name: "Walth Money",
+        detail: "ลาย Walth Money",
+        detailProducts: "-",
+        img: "/Mutelu/Walth-Money/Walth-Money-1.jpg",
+        products: [
+          { name: "Walth-Money 1", img: "/Mutelu/Walth-Money/Walth-Money-2.jpg" },
+          { name: "Walth-Money 2", img: "/Mutelu/Walth-Money/Walth-Money-3.jpg" },
+          { name: "Walth-Money 3", img: "/Mutelu/Walth-Money/Walth-Money-4.jpg" },
+          { name: "Walth-Money 4", img: "/Mutelu/Walth-Money/Walth-Money-5.jpg" },
+          { name: "Walth-Money 5", img: "/Mutelu/Walth-Money/Walth-Money-6.jpg" },
 
         ],
       },
