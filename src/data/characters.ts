@@ -420,7 +420,7 @@ export const categories: Category[] = [
         detailProducts: "-",
         img: "/Otaku/kaijuu/kaiju-1.jpg",
         products: [
-          { name: "kaiju 1", img: "/Otaku/kaijuu/kaiju-2.jpg" },
+          { name: "kaiju 1", img: "/Otaku/red-giant/red-giant-2.jpg" },
           { name: "kaiju 2", img: "/Otaku/kaijuu/kaiju-3.jpg" },
           { name: "kaiju 3", img: "/Otaku/kaijuu/kaiju-4.jpg" },
           { name: "kaiju 4", img: "/Otaku/kaijuu/kaiju-5.jpg" },
