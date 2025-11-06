@@ -415,8 +415,8 @@ export const categories: Category[] = [
     patterns: [
       {
         id: "kai-ju",
-        name: "Kaiju",
-        detail: "ลาย Kaiju",
+        name: "Kai ju",
+        detail: "ลาย Kai-ju",
         detailProducts: "-",
         img: "/Otaku/kai-ju/kai-ju-1.jpg",
         products: [
