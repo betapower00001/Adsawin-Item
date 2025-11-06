@@ -658,7 +658,101 @@ export const categories: Category[] = [
         ],
       },
 
+
+
+
+
+
+
     ],
   },
+
+  {
+    slug: "authentic-thai",
+    name: "AUTHENTIC THAI",
+    patterns: [
+      {
+        id: "Elephant-San",
+        name: "Elephant San",
+        detail: "ลาย Elephant-San",
+        detailProducts: "-",
+        img: "/Authentic-thai/Elephant-San/Elephant-San-1.jpg",
+        products: [
+          { name: "Elephant-San 1", img: "/Authentic-thai/Elephant-San/Elephant-San-2.jpg" },
+          { name: "Elephant-San 2", img: "/Authentic-thai/Elephant-San/Elephant-San-3.jpg" },
+          { name: "Elephant-San 3", img: "/Authentic-thai/Elephant-San/Elephant-San-4.jpg" },
+          { name: "Elephant-San 4", img: "/Authentic-thai/Elephant-San/Elephant-San-5.jpg" },
+          { name: "Elephant-San 5", img: "/Authentic-thai/Elephant-San/Elephant-San-6.jpg" },
+
+        ],
+      },
+      {
+        id: "End-of-month",
+        name: "End of month",
+        detail: "ลาย End of month",
+        detailProducts: "-",
+        img: "/Authentic-thai/End-of-month/End-1.jpg",
+        products: [
+          { name: "End-of-month 1", img: "/Authentic-thai/End-of-month/End-2.jpg" },
+          { name: "End-of-month 2", img: "/Authentic-thai/End-of-month/End-3.jpg" },
+          { name: "End-of-month 3", img: "/Authentic-thai/End-of-month/End-4.jpg" },
+          { name: "End-of-month 4", img: "/Authentic-thai/End-of-month/End-5.jpg" },
+          { name: "End-of-month 5", img: "/Authentic-thai/End-of-month/End-6.jpg" },
+
+        ],
+      },
+      {
+        id: "KrungThep",
+        name: "KrungThep",
+        detail: "ลาย KrungThep",
+        detailProducts: "-",
+        img: "/Authentic-thai/KrungThep/KrungThep-1.jpg",
+        products: [
+          { name: "KrungThep 1", img: "/Authentic-thai/KrungThep/KrungThep-2.jpg" },
+          { name: "KrungThep 2", img: "/Authentic-thai/KrungThep/KrungThep-3.jpg" },
+          { name: "KrungThep 3", img: "/Authentic-thai/KrungThep/KrungThep-4.jpg" },
+          { name: "KrungThep 4", img: "/Authentic-thai/KrungThep/KrungThep-5.jpg" },
+          { name: "KrungThep 5", img: "/Authentic-thai/KrungThep/KrungThep-6.jpg" },
+
+        ],
+      },
+      {
+        id: "Mango-Rice",
+        name: "Mango Rice",
+        detail: "ลาย Mango Rice",
+        detailProducts: "-",
+        img: "/Authentic-thai/Mango-Rice/Mango-Rice-1.jpg",
+        products: [
+          { name: "Mango-Rice 1", img: "/Authentic-thai/Mango-Rice/Mango-Rice-2.jpg" },
+          { name: "Mango-Rice 2", img: "/Authentic-thai/Mango-Rice/Mango-Rice-3.jpg" },
+          { name: "Mango-Rice 3", img: "/Authentic-thai/Mango-Rice/Mango-Rice-4.jpg" },
+          { name: "Mango-Rice 4", img: "/Authentic-thai/Mango-Rice/Mango-Rice-5.jpg" },
+          { name: "Mango-Rice 5", img: "/Authentic-thai/Mango-Rice/Mango-Rice-6.jpg" },
+
+        ],
+      },
+
+            {
+        id: "Monk",
+        name: "Monk",
+        detail: "ลาย Monk",
+        detailProducts: "-",
+        img: "/Authentic-thai/Monk/Monk-1.jpg",
+        products: [
+          { name: "Monk 1", img: "/Authentic-thai/Monk/Monk-2.jpg" },
+          { name: "Monk 2", img: "/Authentic-thai/Monk/Monk-3.jpg" },
+          { name: "Monk 3", img: "/Authentic-thai/Monk/Monk-4.jpg" },
+          { name: "Monk 4", img: "/Authentic-thai/Monk/Monk-5.jpg" },
+          { name: "Monk 5", img: "/Authentic-thai/Monk/Monk-6.jpg" },
+
+        ],
+      },
+
+    ],
+  },
+
+
+
+
 
 ];
