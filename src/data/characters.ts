@@ -953,7 +953,6 @@ export const categories: Category[] = [
 
         ],
       },
-
       {
         id: "Cute-Ghost",
         name: "Cute Ghost",
@@ -969,7 +968,6 @@ export const categories: Category[] = [
 
         ],
       },
-
       {
         id: "End-of-month",
         name: "End of month",
@@ -985,7 +983,6 @@ export const categories: Category[] = [
 
         ],
       },
-
       {
         id: "GAME-OVER",
         name: "GAME OVER",
@@ -1001,7 +998,6 @@ export const categories: Category[] = [
 
         ],
       },
-
       {
         id: "Graffiti",
         name: "Graffiti",
@@ -1017,7 +1013,6 @@ export const categories: Category[] = [
 
         ],
       },
-
       {
         id: "Happy-in-Forest",
         name: "Happy in Forest",
@@ -1033,8 +1028,6 @@ export const categories: Category[] = [
 
         ],
       },
-
-
       {
         id: "Happy-Life",
         name: "Happy Life",
@@ -1110,8 +1103,6 @@ export const categories: Category[] = [
 
         ],
       },
-
-
       {
         id: "Opulently-Peony",
         name: "Opulently Peony",
@@ -1127,7 +1118,6 @@ export const categories: Category[] = [
 
         ],
       },
-
       {
         id: "Pick-Up",
         name: "Pick Up",
@@ -1143,7 +1133,6 @@ export const categories: Category[] = [
 
         ],
       },
-
       {
         id: "Rock-Roll-FEV",
         name: "Rock & Roll FEV",
@@ -1159,8 +1148,6 @@ export const categories: Category[] = [
 
         ],
       },
-
-
       {
         id: "Salaryman-DL",
         name: "Salaryman DL",
@@ -1176,8 +1163,6 @@ export const categories: Category[] = [
 
         ],
       },
-
-
       {
         id: "Swim-with-me",
         name: "Swim with me",
@@ -1193,8 +1178,6 @@ export const categories: Category[] = [
 
         ],
       },
-
-
       {
         id: "Toxic-Love",
         name: "Toxic Love",
@@ -1210,8 +1193,6 @@ export const categories: Category[] = [
 
         ],
       },
-
-
       {
         id: "Want-to-travel",
         name: "Want to travel",
