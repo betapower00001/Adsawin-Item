@@ -863,6 +863,76 @@ export const categories: Category[] = [
     ],
   },
 
+  {
+    slug: "food",
+    name: "Food",
+    patterns: [
+      {
+        id: "Candy-Addict",
+        name: "Candy Addict",
+        detail: "ลาย Candy Addict",
+        detailProducts: "-",
+        img: "/Food/Candy-Addict/Candy-Addict-1.jpg",
+        products: [
+          { name: "Candy-Addict 1", img: "/Food/Candy-Addict/Candy-Addict-2.jpg" },
+          { name: "Candy-Addict 2", img: "/Food/Candy-Addict/Candy-Addict-3.jpg" },
+          { name: "Candy-Addict 3", img: "/Food/Candy-Addict/Candy-Addict-4.jpg" },
+          { name: "Candy-Addict 4", img: "/Food/Candy-Addict/Candy-Addict-5.jpg" },
+          { name: "Candy-Addict 5", img: "/Food/Candy-Addict/Candy-Addict-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Shushi",
+        name: "Shushi",
+        detail: "ลาย Shushi",
+        detailProducts: "-",
+        img: "/Otaku/Shushi/Shushi-1.jpg",
+        products: [
+          { name: "Shushi 1", img: "/Otaku/Shushi/Shushi-2.jpg" },
+          { name: "Shushi 2", img: "/Otaku/Shushi/Shushi-3.jpg" },
+          { name: "Shushi 3", img: "/Otaku/Shushi/Shushi-4.jpg" },
+          { name: "Shushi 4", img: "/Otaku/Shushi/Shushi-5.jpg" },
+          { name: "Shushi 5", img: "/Otaku/Shushi/Shushi-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Fat-Or-Bold",
+        name: "Fat Or Bold",
+        detail: "ลาย Fat Or Bold",
+        detailProducts: "-",
+        img: "/Food/Fat-Or-Bold/Fat-Or-Bold-1.jpg",
+        products: [
+          { name: "Fat-Or-Bold 1", img: "/Food/Fat-Or-Bold/Fat-Or-Bold-2.jpg" },
+          { name: "Fat-Or-Bold 2", img: "/Food/Fat-Or-Bold/Fat-Or-Bold-3.jpg" },
+          { name: "Fat-Or-Bold 3", img: "/Food/Fat-Or-Bold/Fat-Or-Bold-4.jpg" },
+          { name: "Fat-Or-Bold 4", img: "/Food/Fat-Or-Bold/Fat-Or-Bold-5.jpg" },
+          { name: "Fat-Or-Bold 5", img: "/Food/Fat-Or-Bold/Fat-Or-Bold-6.jpg" },
+
+        ],
+      },
+      {
+        id: "In-Carbs-We-Trust",
+        name: "In Carbs We Trust",
+        detail: "ลาย In Carbs We Trust",
+        detailProducts: "-",
+        img: "/Food/In-Carbs-We-Trust/Trust-1.jpg",
+        products: [
+          { name: "In-Carbs-We-Trust 1", img: "/Food/In-Carbs-We-Trust/Trust-2.jpg" },
+          { name: "In-Carbs-We-Trust 2", img: "/Food/In-Carbs-We-Trust/Trust-3.jpg" },
+          { name: "In-Carbs-We-Trust 3", img: "/Food/In-Carbs-We-Trust/Trust-4.jpg" },
+          { name: "In-Carbs-We-Trust 4", img: "/Food/In-Carbs-We-Trust/Trust-5.jpg" },
+
+        ],
+      },
+
+      
+    ],
+  },
+
 
 
 
