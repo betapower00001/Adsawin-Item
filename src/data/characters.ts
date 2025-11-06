@@ -732,7 +732,7 @@ export const categories: Category[] = [
         ],
       },
 
-            {
+      {
         id: "Monk",
         name: "Monk",
         detail: "ลาย Monk",
@@ -747,6 +747,118 @@ export const categories: Category[] = [
 
         ],
       },
+
+      {
+        id: "Papaya-Pok-Pok",
+        name: "Papaya Pok Pok",
+        detail: "ลาย Papaya Pok Pok",
+        detailProducts: "-",
+        img: "/Authentic-thai/Papaya-Pok-Pok/Papaya-1.jpg",
+        products: [
+          { name: "Papaya-Pok-Pok 1", img: "/Authentic-thai/Papaya-Pok-Pok/Papaya-2.jpg" },
+          { name: "Papaya-Pok-Pok 2", img: "/Authentic-thai/Papaya-Pok-Pok/Papaya-3.jpg" },
+          { name: "Papaya-Pok-Pok 4", img: "/Authentic-thai/Papaya-Pok-Pok/Papaya-5.jpg" },
+          { name: "Papaya-Pok-Pok 5", img: "/Authentic-thai/Papaya-Pok-Pok/Papaya-6.jpg" },
+          { name: "Papaya-Pok-Pok 3", img: "/Authentic-thai/Papaya-Pok-Pok/Papaya-4.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Ramayana",
+        name: "Ramayana",
+        detail: "ลาย Ramayana",
+        detailProducts: "-",
+        img: "/Authentic-thai/Ramayana/Ramayana-1.png",
+        products: [
+          { name: "Ramayana 1", img: "/Authentic-thai/Ramayana/Ramayana-2.png" },
+          { name: "Ramayana 2", img: "/Authentic-thai/Ramayana/Ramayana-3.png" },
+          { name: "Ramayana 3", img: "/Authentic-thai/Ramayana/Ramayana-4.png" },
+          { name: "Ramayana 4", img: "/Authentic-thai/Ramayana/Ramayana-5.png" },
+
+        ],
+      },
+
+      {
+        id: "Songkran",
+        name: "Songkran",
+        detail: "ลาย Songkran",
+        detailProducts: "-",
+        img: "/Authentic-thai/Songkran/Songkran-1.jpg",
+        products: [
+          { name: "Songkran 1", img: "/Authentic-thai/Songkran/Songkran-2.jpg" },
+          { name: "Songkran 2", img: "/Authentic-thai/Songkran/Songkran-3.jpg" },
+          { name: "Songkran 3", img: "/Authentic-thai/Songkran/Songkran-4.jpg" },
+          { name: "Songkran 4", img: "/Authentic-thai/Songkran/Songkran-5.jpg" },
+          { name: "Songkran 5", img: "/Authentic-thai/Songkran/Songkran-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Spooky-Thai-Ghost",
+        name: "Spooky Thai Ghost",
+        detail: "ลาย Spooky Thai Ghost",
+        detailProducts: "-",
+        img: "/Authentic-thai/Spooky-Thai-Ghost/Spooky-1.jpg",
+        products: [
+          { name: "Spooky-Thai-Ghost 1", img: "/Authentic-thai/Spooky-Thai-Ghost/Spooky-2.jpg" },
+          { name: "Spooky-Thai-Ghost 2", img: "/Authentic-thai/Spooky-Thai-Ghost/Spooky-3.jpg" },
+          { name: "Spooky-Thai-Ghost 3", img: "/Authentic-thai/Spooky-Thai-Ghost/Spooky-4.jpg" },
+          { name: "Spooky-Thai-Ghost 4", img: "/Authentic-thai/Spooky-Thai-Ghost/Spooky-5.jpg" },
+          { name: "Spooky-Thai-Ghost 5", img: "/Authentic-thai/Spooky-Thai-Ghost/Spooky-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Thai-Floating-mk",
+        name: "Thai Floating mk",
+        detail: "ลาย Thai Floating mk",
+        detailProducts: "-",
+        img: "/Authentic-thai/Thai-Floating-mk/Floating-1.jpg",
+        products: [
+          { name: "Thai-Floating-mk 1", img: "/Authentic-thai/Thai-Floating-mk/Floating-2.jpg" },
+          { name: "Thai-Floating-mk 2", img: "/Authentic-thai/Thai-Floating-mk/Floating-3.jpg" },
+          { name: "Thai-Floating-mk 3", img: "/Authentic-thai/Thai-Floating-mk/Floating-4.jpg" },
+          { name: "Thai-Floating-mk 4", img: "/Authentic-thai/Thai-Floating-mk/Floating-5.jpg" },
+          { name: "Thai-Floating-mk 5", img: "/Authentic-thai/Thai-Floating-mk/Floating-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Tom-Yum",
+        name: "Tom Yum",
+        detail: "ลาย Tom Yum",
+        detailProducts: "-",
+        img: "/Authentic-thai/Tom-Yum/Tom-Yum-1.jpg",
+        products: [
+          { name: "Tom-Yum 1", img: "/Authentic-thai/Tom-Yum/Tom-Yum-2.jpg" },
+          { name: "Tom-Yum 2", img: "/Authentic-thai/Tom-Yum/Tom-Yum-3.jpg" },
+          { name: "Tom-Yum 3", img: "/Authentic-thai/Tom-Yum/Tom-Yum-4.jpg" },
+          { name: "Tom-Yum 4", img: "/Authentic-thai/Tom-Yum/Tom-Yum-5.jpg" },
+          { name: "Tom-Yum 5", img: "/Authentic-thai/Tom-Yum/Tom-Yum-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Tuk-Tuk",
+        name: "Tuk Tuk",
+        detail: "ลาย Tuk Tuk",
+        detailProducts: "-",
+        img: "/Authentic-thai/Tuk-Tuk/Tuk-Tuk-1.jpg",
+        products: [
+          { name: "Tuk-Tuk 1", img: "/Authentic-thai/Tuk-Tuk/Tuk-Tuk-2.jpg" },
+          { name: "Tuk-Tuk 2", img: "/Authentic-thai/Tuk-Tuk/Tuk-Tuk-3.jpg" },
+          { name: "Tuk-Tuk 3", img: "/Authentic-thai/Tuk-Tuk/Tuk-Tuk-4.jpg" },
+          { name: "Tuk-Tuk 4", img: "/Authentic-thai/Tuk-Tuk/Tuk-Tuk-5.jpg" },
+          { name: "Tuk-Tuk 5", img: "/Authentic-thai/Tuk-Tuk/Tuk-Tuk-6.jpg" },
+
+        ],
+      },
+
 
     ],
   },
