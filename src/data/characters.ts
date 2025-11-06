@@ -929,12 +929,308 @@ export const categories: Category[] = [
         ],
       },
 
-      
+
     ],
   },
 
 
+  {
+    slug: "fashion-trend",
+    name: "FASHION TREND",
+    patterns: [
+      {
+        id: "Blossom",
+        name: "Blossom",
+        detail: "ลาย Blossom",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Blossom/Blossom-1.jpg",
+        products: [
+          { name: "Blossom 1", img: "/Fashion-Trend/Blossom/Blossom-2.jpg" },
+          { name: "Blossom 2", img: "/Fashion-Trend/Blossom/Blossom-3.jpg" },
+          { name: "Blossom 3", img: "/Fashion-Trend/Blossom/Blossom-4.jpg" },
+          { name: "Blossom 4", img: "/Fashion-Trend/Blossom/Blossom-5.jpg" },
+          { name: "Blossom 5", img: "/Fashion-Trend/Blossom/Blossom-6.jpg" },
 
+        ],
+      },
+
+      {
+        id: "Cute-Ghost",
+        name: "Cute Ghost",
+        detail: "ลาย Cute Ghost",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Cute-Ghost/Cute-Ghost-1.jpg",
+        products: [
+          { name: "Cute-Ghost 1", img: "/Fashion-Trend/Cute-Ghost/Cute-Ghost-2.jpg" },
+          { name: "Cute-Ghost 2", img: "/Fashion-Trend/Cute-Ghost/Cute-Ghost-3.jpg" },
+          { name: "Cute-Ghost 3", img: "/Fashion-Trend/Cute-Ghost/Cute-Ghost-4.jpg" },
+          { name: "Cute-Ghost 4", img: "/Fashion-Trend/Cute-Ghost/Cute-Ghost-5.jpg" },
+          { name: "Cute-Ghost 5", img: "/Fashion-Trend/Cute-Ghost/Cute-Ghost-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "End-of-month",
+        name: "End of month",
+        detail: "ลาย End of month",
+        detailProducts: "-",
+        img: "/Fashion-Trend/End-of-month/End-of-month-1.jpg",
+        products: [
+          { name: "End-of-month 1", img: "/Fashion-Trend/End-of-month/End-of-month-2.jpg" },
+          { name: "End-of-month 2", img: "/Fashion-Trend/End-of-month/End-of-month-3.jpg" },
+          { name: "End-of-month 3", img: "/Fashion-Trend/End-of-month/End-of-month-4.jpg" },
+          { name: "End-of-month 4", img: "/Fashion-Trend/End-of-month/End-of-month-5.jpg" },
+          { name: "End-of-month 5", img: "/Fashion-Trend/End-of-month/End-of-month-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "GAME-OVER",
+        name: "GAME OVER",
+        detail: "ลาย GAME OVER",
+        detailProducts: "-",
+        img: "/Fashion-Trend/GAME-OVER/GAME-OVER-1.jpg",
+        products: [
+          { name: "GAME-OVER 1", img: "/Fashion-Trend/GAME-OVER/GAME-OVER-2.jpg" },
+          { name: "GAME-OVER 2", img: "/Fashion-Trend/GAME-OVER/GAME-OVER-3.jpg" },
+          { name: "GAME-OVER 3", img: "/Fashion-Trend/GAME-OVER/GAME-OVER-4.jpg" },
+          { name: "GAME-OVER 4", img: "/Fashion-Trend/GAME-OVER/GAME-OVER-5.jpg" },
+          { name: "GAME-OVER 5", img: "/Fashion-Trend/GAME-OVER/GAME-OVER-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Graffiti",
+        name: "Graffiti",
+        detail: "ลาย Graffiti",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Graffiti/Graffiti-1.jpg",
+        products: [
+          { name: "Graffiti 1", img: "/Fashion-Trend/Graffiti/Graffiti-2.jpg" },
+          { name: "Graffiti 2", img: "/Fashion-Trend/Graffiti/Graffiti-3.jpg" },
+          { name: "Graffiti 3", img: "/Fashion-Trend/Graffiti/Graffiti-4.jpg" },
+          { name: "Graffiti 4", img: "/Fashion-Trend/Graffiti/Graffiti-5.jpg" },
+          { name: "Graffiti 5", img: "/Fashion-Trend/Graffiti/Graffiti-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Happy-in-Forest",
+        name: "Happy in Forest",
+        detail: "ลาย Happy in Forest",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Happy-in-Forest/Happy-in-Forest-1.jpg",
+        products: [
+          { name: "Happy-in-Forest 1", img: "/Fashion-Trend/Happy-in-Forest/Happy-in-Forest-2.jpg" },
+          { name: "Happy-in-Forest 2", img: "/Fashion-Trend/Happy-in-Forest/Happy-in-Forest-3.jpg" },
+          { name: "Happy-in-Forest 3", img: "/Fashion-Trend/Happy-in-Forest/Happy-in-Forest-4.jpg" },
+          { name: "Happy-in-Forest 4", img: "/Fashion-Trend/Happy-in-Forest/Happy-in-Forest-5.jpg" },
+          { name: "Happy-in-Forest 5", img: "/Fashion-Trend/Happy-in-Forest/Happy-in-Forest-6.jpg" },
+
+        ],
+      },
+
+
+      {
+        id: "Happy-Life",
+        name: "Happy Life",
+        detail: "ลาย Happy Life",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Happy-Life/Happy-Life-1.png",
+        products: [
+          { name: "Happy-Life 1", img: "/Fashion-Trend/Happy-Life/Happy-Life-2.png" },
+          { name: "Happy-Life 2", img: "/Fashion-Trend/Happy-Life/Happy-Life-3.png" },
+          { name: "Happy-Life 3", img: "/Fashion-Trend/Happy-Life/Happy-Life-4.png" },
+          { name: "Happy-Life 4", img: "/Fashion-Trend/Happy-Life/Happy-Life-5.png" },
+          { name: "Happy-Life 5", img: "/Fashion-Trend/Happy-Life/Happy-Life-6.png" },
+
+        ],
+      },
+      {
+        id: "Hygge",
+        name: "Hygge",
+        detail: "ลาย Hygge",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Hygge/Hygge-1.jpg",
+        products: [
+          { name: "Hygge 1", img: "/Fashion-Trend/Hygge/Hygge-2.jpg" },
+          { name: "Hygge 2", img: "/Fashion-Trend/Hygge/Hygge-3.jpg" },
+          { name: "Hygge 3", img: "/Fashion-Trend/Hygge/Hygge-4.jpg" },
+          { name: "Hygge 4", img: "/Fashion-Trend/Hygge/Hygge-5.jpg" },
+
+        ],
+      },
+
+      {
+        id: "LGBTQ",
+        name: "LGBTQ",
+        detail: "ลาย LGBTQ",
+        detailProducts: "-",
+        img: "/Fashion-Trend/LGBTQ/LGBTQ-1.jpg",
+        products: [
+          { name: "LGBTQ 1", img: "/Fashion-Trend/LGBTQ/LGBTQ-2.jpg" },
+          { name: "LGBTQ 2", img: "/Fashion-Trend/LGBTQ/LGBTQ-3.jpg" },
+          { name: "LGBTQ 3", img: "/Fashion-Trend/LGBTQ/LGBTQ-4.jpg" },
+          { name: "LGBTQ 4", img: "/Fashion-Trend/LGBTQ/LGBTQ-5.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Love-Wins",
+        name: "Love-Wins",
+        detail: "ลาย Love-Wins",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Love-Wins/Love-Wins-1.jpg",
+        products: [
+          { name: "Love-Wins 1", img: "/Fashion-Trend/Love-Wins/Love-Wins-2.jpg" },
+          { name: "Love-Wins 2", img: "/Fashion-Trend/Love-Wins/Love-Wins-3.jpg" },
+          { name: "Love-Wins 3", img: "/Fashion-Trend/Love-Wins/Love-Wins-4.jpg" },
+          { name: "Love-Wins 4", img: "/Fashion-Trend/Love-Wins/Love-Wins-5.jpg" },
+          { name: "Love-Wins 5", img: "/Fashion-Trend/Love-Wins/Love-Wins-6.jpg" },
+
+        ],
+      },
+      {
+        id: "Narm-Laem",
+        name: "Narm Laem",
+        detail: "ลาย Narm Laem",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Narm-Laem/Narm-Laem-1.jpg",
+        products: [
+          { name: "Narm-Laem 1", img: "/Fashion-Trend/Narm-Laem/Narm-Laem-2.jpg" },
+          { name: "Narm-Laem 2", img: "/Fashion-Trend/Narm-Laem/Narm-Laem-3.jpg" },
+          { name: "Narm-Laem 3", img: "/Fashion-Trend/Narm-Laem/Narm-Laem-4.jpg" },
+          { name: "Narm-Laem 4", img: "/Fashion-Trend/Narm-Laem/Narm-Laem-5.jpg" },
+          { name: "Narm-Laem 5", img: "/Fashion-Trend/Narm-Laem/Narm-Laem-6.jpg" },
+
+        ],
+      },
+
+
+      {
+        id: "Opulently-Peony",
+        name: "Opulently Peony",
+        detail: "ลาย Opulently Peony",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Opulently-Peony/Opulently-Peony-1.jpg",
+        products: [
+          { name: "Opulently-Peony 1", img: "/Fashion-Trend/Opulently-Peony/Opulently-Peony-2.png" },
+          { name: "Opulently-Peony 2", img: "/Fashion-Trend/Opulently-Peony/Opulently-Peony-3.png" },
+          { name: "Opulently-Peony 3", img: "/Fashion-Trend/Opulently-Peony/Opulently-Peony-4.png" },
+          { name: "Opulently-Peony 4", img: "/Fashion-Trend/Opulently-Peony/Opulently-Peony-5.png" },
+          { name: "Opulently-Peony 5", img: "/Fashion-Trend/Opulently-Peony/Opulently-Peony-6.png" },
+
+        ],
+      },
+
+      {
+        id: "Pick-Up",
+        name: "Pick Up",
+        detail: "ลาย Pick Up",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Pick-Up/Pick-Up-1.jpg",
+        products: [
+          { name: "Pick-Up 1", img: "/Fashion-Trend/Pick-Up/Pick-Up-2.jpg" },
+          { name: "Pick-Up 2", img: "/Fashion-Trend/Pick-Up/Pick-Up-3.jpg" },
+          { name: "Pick-Up 3", img: "/Fashion-Trend/Pick-Up/Pick-Up-4.jpg" },
+          { name: "Pick-Up 4", img: "/Fashion-Trend/Pick-Up/Pick-Up-5.jpg" },
+          { name: "Pick-Up 5", img: "/Fashion-Trend/Pick-Up/Pick-Up-6.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Rock-Roll-FEV",
+        name: "Rock & Roll FEV",
+        detail: "ลาย Rock & Roll FEV",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Rock-Roll-FEV/Rock-Roll-FEV-1.jpg",
+        products: [
+          { name: "Rock-Roll-FEV 1", img: "/Fashion-Trend/Rock-Roll-FEV/Rock-Roll-FEV-2.jpg" },
+          { name: "Rock-Roll-FEV 2", img: "/Fashion-Trend/Rock-Roll-FEV/Rock-Roll-FEV-3.jpg" },
+          { name: "Rock-Roll-FEV 3", img: "/Fashion-Trend/Rock-Roll-FEV/Rock-Roll-FEV-4.jpg" },
+          { name: "Rock-Roll-FEV 4", img: "/Fashion-Trend/Rock-Roll-FEV/Rock-Roll-FEV-5.jpg" },
+          { name: "Rock-Roll-FEV 5", img: "/Fashion-Trend/Rock-Roll-FEV/Rock-Roll-FEV-6.jpg" },
+
+        ],
+      },
+
+
+      {
+        id: "Salaryman-DL",
+        name: "Salaryman DL",
+        detail: "ลาย Salaryman DL",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Salaryman-DL/Salaryman-DL-1.png",
+        products: [
+          { name: "Salaryman-DL 1", img: "/Fashion-Trend/Salaryman-DL/Salaryman-DL-2.png" },
+          { name: "Salaryman-DL 2", img: "/Fashion-Trend/Salaryman-DL/Salaryman-DL-3.png" },
+          { name: "Salaryman-DL 3", img: "/Fashion-Trend/Salaryman-DL/Salaryman-DL-4.png" },
+          { name: "Salaryman-DL 4", img: "/Fashion-Trend/Salaryman-DL/Salaryman-DL-5.png" },
+          { name: "Salaryman-DL 5", img: "/Fashion-Trend/Salaryman-DL/Salaryman-DL-6.png" },
+
+        ],
+      },
+
+
+      {
+        id: "Swim-with-me",
+        name: "Swim with me",
+        detail: "ลาย Swim with me",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Swim-with-me/Swim-with-me-1.jpg",
+        products: [
+          { name: "Swim-with-me 1", img: "/Fashion-Trend/Swim-with-me/Swim-with-me-2.jpg" },
+          { name: "Swim-with-me 2", img: "/Fashion-Trend/Swim-with-me/Swim-with-me-3.jpg" },
+          { name: "Swim-with-me 3", img: "/Fashion-Trend/Swim-with-me/Swim-with-me-4.jpg" },
+          { name: "Swim-with-me 4", img: "/Fashion-Trend/Swim-with-me/Swim-with-me-5.jpg" },
+          { name: "Swim-with-me 5", img: "/Fashion-Trend/Swim-with-me/Swim-with-me-6.jpg" },
+
+        ],
+      },
+
+
+      {
+        id: "Toxic-Love",
+        name: "Toxic Love",
+        detail: "ลาย Toxic Love",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Toxic-Love/Toxic-Love-1.jpg",
+        products: [
+          { name: "Toxic-Love 1", img: "/Fashion-Trend/Toxic-Love/Toxic-Love-2.jpg" },
+          { name: "Toxic-Love 2", img: "/Fashion-Trend/Toxic-Love/Toxic-Love-3.jpg" },
+          { name: "Toxic-Love 3", img: "/Fashion-Trend/Toxic-Love/Toxic-Love-4.jpg" },
+          { name: "Toxic-Love 4", img: "/Fashion-Trend/Toxic-Love/Toxic-Love-5.jpg" },
+          { name: "Toxic-Love 5", img: "/Fashion-Trend/Toxic-Love/Toxic-Love-6.jpg" },
+
+        ],
+      },
+
+
+      {
+        id: "Want-to-travel",
+        name: "Want to travel",
+        detail: "ลาย Want to travel",
+        detailProducts: "-",
+        img: "/Fashion-Trend/Want-to-travel/Want-to-travel-1.jpg",
+        products: [
+          { name: "Want-to-travel 1", img: "/Fashion-Trend/Want-to-travel/Want-to-travel-2.jpg" },
+          { name: "Want-to-travel 2", img: "/Fashion-Trend/Want-to-travel/Want-to-travel-3.jpg" },
+          { name: "Want-to-travel 3", img: "/Fashion-Trend/Want-to-travel/Want-to-travel-4.jpg" },
+          { name: "Want-to-travel 4", img: "/Fashion-Trend/Want-to-travel/Want-to-travel-5.jpg" },
+          { name: "Want-to-travel 5", img: "/Fashion-Trend/Want-to-travel/Want-to-travel-6.jpg" },
+
+        ],
+      },
+
+
+    ],
+  },
 
 
 ];

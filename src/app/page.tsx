@@ -36,7 +36,7 @@ const characters = [
     video: "/MENU-ICON-Food.mp4",
   },
   {
-    name: "FASHION & TREND",
+    name: "FASHION TREND",
     img: "/MENU-ICON-Fashion.png",
     video: "/MENU-ICON-FASHION-TREND.mp4",
   },
