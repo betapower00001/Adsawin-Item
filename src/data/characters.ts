@@ -418,7 +418,7 @@ export const categories: Category[] = [
         name: "Kai Ju",
         detail: "ลาย Kai Ju",
         detailProducts: "-",
-        img: "/Otaku/kai-ju/kai-ju-1.jpg",
+        img: "/Otaku/kai-ju/kai-ju.jpg",
         products: [
           { name: "kai-ju 1", img: "/Otaku/kai-ju/kai-ju-2.jpg" },
           { name: "kai-ju 2", img: "/Otaku/kai-ju/kai-ju-3.jpg" },
