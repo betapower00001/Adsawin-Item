@@ -81,6 +81,8 @@ export const categories: Category[] = [
         products: [
           { name: "finance 1", img: "/Oem/finance/Super-rich.jpg" },
           { name: "finance 2", img: "/Oem/finance/Super-rich2.jpg" },
+          { name: "finance 2", img: "/Oem/finance/Super-rich3.png" },
+
         ],
       },
       {

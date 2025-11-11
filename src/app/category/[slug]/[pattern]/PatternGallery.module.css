@@ -1,5 +1,6 @@
 /* ====== พื้นหลังเต็มหน้าจอ (เปลี่ยนเป็นภาพ) ====== */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ html, body {
 
 /* ====== พื้นหลังและเลย์เอาต์หลัก ====== */
 .galleryContainer {
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -31,6 +33,7 @@ html, body {
   justify-content: flex-start;
   align-items: flex-end;
   max-width: 720px;
+
 }
 
 /* ✅ ปุ่มกลับอยู่ด้านบน ไม่ทับภาพ */
@@ -38,25 +41,43 @@ html, body {
   width: 100%;
   text-align: left;
   margin-bottom: 16px;
+
 }
 
 .backButton {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
-  color: #fff;
-  padding: 10px 24px;
-  border-radius: 12px;
-  border: none;
-  cursor: pointer;
+  font-family: "Anuphan", sans-serif;
+  padding: 12px 28px;
+  border-radius: 14px;
   font-weight: 600;
-  font-size: 1rem;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
-  transition: all 0.3s ease;
+  font-size: 1.05rem;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.12);
+  color: #3b3737ff;
+  letter-spacing: 0.3px;
+  transition: all 0.25s ease;
+  box-shadow:
+    0 8px 25px rgba(155, 120, 255, 0.35),
+    inset 0 0 0 0 rgba(255,255,255,0.4);
 }
 
 .backButton:hover {
-  background: linear-gradient(135deg, #4f46e5, #7c3aed);
-  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.45);
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 10px 28px rgba(155, 120, 255, 0.45),
+    inset 0 0 12px rgba(255,255,255,0.5);
+  transform: translateY(-2px);
 }
+
+.backButton:active {
+  transform: scale(0.96);
+  box-shadow:
+    0 6px 20px rgba(155, 120, 255, 0.3),
+    inset 0 0 8px rgba(253, 243, 243, 0.4);
+}
+
 
 /* ====== ภาพใหญ่ ====== */
 .imageWrapper {
@@ -121,20 +142,24 @@ html, body {
   flex-grow: 1;
   overflow-y: auto;
   padding-right: 6px;
-  padding-bottom: 10px; /* ✅ กัน hover แล้วไม่ชนขอบ */
+  padding-bottom: 10px;
+  /* ✅ กัน hover แล้วไม่ชนขอบ */
   scrollbar-width: thin;
   scrollbar-color: #c9a062 transparent;
-  max-height: 700px; /* ✅ เผื่อพื้นที่ hover แล้วไม่เกิด scroll */
+  max-height: 700px;
+  /* ✅ เผื่อพื้นที่ hover แล้วไม่เกิด scroll */
 }
 
 /* ✅ scrollbar สำหรับ Chrome, Edge, Safari */
 .thumbGrid::-webkit-scrollbar {
   width: 8px;
 }
+
 .thumbGrid::-webkit-scrollbar-thumb {
   background-color: #c9a062;
   border-radius: 4px;
 }
+
 .thumbGrid::-webkit-scrollbar-thumb:hover {
   background-color: #b08956;
 }

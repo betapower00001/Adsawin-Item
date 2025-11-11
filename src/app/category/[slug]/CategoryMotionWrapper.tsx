@@ -32,41 +32,49 @@ export default function CategoryMotionWrapper({ category }: { category: Category
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        {/* 🔙 ปุ่มกลับหน้าแรก (เวอร์ชันทันสมัย) */}
+        {/* 🔙 ปุ่มกลับหน้าแรก (Glass + Glow Style) */}
         <div style={{ textAlign: "left", marginBottom: "20px" }}>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => router.push("/")}
+
             style={{
-              background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
-              color: "#fff",
-              padding: "10px 24px",
-              borderRadius: "12px",
-              border: "none",
-              cursor: "pointer",
+              fontFamily: "'Anuphan', sans-serif",
+              padding: "12px 28px",
+              borderRadius: "14px",
               fontWeight: 600,
-              fontSize: "1rem",
-              boxShadow: "0 4px 12px rgba(99, 102, 241, 0.3)",
-              backdropFilter: "blur(6px)",
-              transition: "all 0.3s ease",
+              fontSize: "1.05rem",
+              cursor: "pointer",
+              border: "1px solid rgba(255, 255, 255, 0.35)",
+              backdropFilter: "blur(14px)",
+              background: "rgba(255, 255, 255, 0.12)",
+              color: "#3b3737ff",
+              letterSpacing: "0.3px",
+              transition: "all 0.25s ease",
+              boxShadow:
+                "0 8px 25px rgba(155, 120, 255, 0.35), inset 0 0 0 0 rgba(255,255,255,0.4)",
             }}
+
             onMouseEnter={(e) => {
-              (e.target as HTMLButtonElement).style.background =
-                "linear-gradient(135deg, #4f46e5, #7c3aed)";
+              (e.target as HTMLButtonElement).style.background = "rgba(255, 255, 255, 0.18)";
+              (e.target as HTMLButtonElement).style.border = "1px solid rgba(255, 255, 255, 0.6)";
               (e.target as HTMLButtonElement).style.boxShadow =
-                "0 6px 16px rgba(99, 102, 241, 0.45)";
+                "0 10px 28px rgba(155, 120, 255, 0.45), inset 0 0 12px rgba(255,255,255,0.5)";
             }}
+
             onMouseLeave={(e) => {
-              (e.target as HTMLButtonElement).style.background =
-                "linear-gradient(135deg, #6366f1, #8b5cf6)";
+              (e.target as HTMLButtonElement).style.background = "rgba(255, 255, 255, 0.12)";
+              (e.target as HTMLButtonElement).style.border =
+                "1px solid rgba(255, 255, 255, 0.35)";
               (e.target as HTMLButtonElement).style.boxShadow =
-                "0 4px 12px rgba(99, 102, 241, 0.3)";
+                "0 8px 25px rgba(155, 120, 255, 0.35), inset 0 0 0 0 rgba(255,255,255,0.4)";
             }}
           >
-            🏠 กลับหน้าแรก
+            🏠 หน้าแรก
           </motion.button>
         </div>
+
 
 
         <motion.div
