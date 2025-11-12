@@ -59,9 +59,8 @@ export default function CharacterGrid({ characters }: Props) {
 
             const CardContent = (
               <motion.div
-                className={`${styles.cardBox} ${
-                  isBottomTwo ? styles.largeCard : ""
-                }`}
+                className={`${styles.cardBox} ${isBottomTwo ? styles.largeCard : ""
+                  }`}
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 onMouseEnter={() => setHovered(index)}
@@ -106,14 +105,15 @@ export default function CharacterGrid({ characters }: Props) {
 
             // ✅ ใช้ <a> ถ้าเป็นหมวดดาวน์โหลด, ถ้าไม่ใช่ ใช้ <Link>
             return isDownload ? (
-              <a key={index} href={downloadUrl} download>
+              <Link key={index} href="/catalog">
                 {CardContent}
-              </a>
+              </Link>
             ) : (
               <Link key={index} href={`/category/${slug}`}>
                 {CardContent}
               </Link>
             );
+
           })}
         </div>
       </motion.div>
