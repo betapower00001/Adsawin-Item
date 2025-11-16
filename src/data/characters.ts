@@ -30,7 +30,7 @@ export const categories: Category[] = [
       {
         id: "Energy",
         name: "Energy",
-        detail: "Energy",
+        detail: "พลังงานและสิ่งแวดล้อม",
         img: "/Oem/Energy/1.jpg",
         products: [
           { name: "Energy 1", img: "/Oem/Energy/1.jpg" },
@@ -43,6 +43,7 @@ export const categories: Category[] = [
       {
         id: "Health",
         name: "Health",
+        detail: "การแพทย์และสุขภาพ",
         img: "/Oem/Health/1.jpg",
         products: [
           { name: "Health 1", img: "/Oem/Health/1.jpg" },
@@ -57,6 +58,7 @@ export const categories: Category[] = [
       {
         id: "Guarantee",
         name: "Guarantee",
+        detail: "ประกัน",
         img: "/Oem/Guarantee/1.jpg",
         products: [
           { name: "Guarantee 1", img: "/Oem/Guarantee/1.jpg" },
@@ -68,6 +70,7 @@ export const categories: Category[] = [
       {
         id: "Agriculture",
         name: "Agriculture",
+        detail: "การเกษตร",
         img: "/Oem/Agriculture/1.jpg",
         products: [
           { name: "Agriculture 1", img: "/Oem/Agriculture/1.jpg" },
@@ -82,6 +85,7 @@ export const categories: Category[] = [
       {
         id: "Estate",
         name: "Estate",
+        detail: "อสังหาริมทรัพย์",
         img: "/Oem/Estate/1.jpg",
         products: [
           { name: "Estate 1", img: "/Oem/Estate/1.jpg" },
@@ -92,6 +96,7 @@ export const categories: Category[] = [
       {
         id: "Transport",
         name: "Transport",
+        detail: "ขนส่งยานยนต์",
         img: "/Oem/Transport/1.jpg",
         products: [
           { name: "Transport 1", img: "/Oem/Transport/1.jpg" },
@@ -106,6 +111,7 @@ export const categories: Category[] = [
       {
         id: "Politics",
         name: "Politics",
+        detail: "สังคม การเมือง",
         img: "/Oem/Politics/1.jpg",
         products: [
           { name: "Politics 1", img: "/Oem/Politics/1.jpg" },
@@ -124,6 +130,7 @@ export const categories: Category[] = [
       {
         id: "Copyrighted",
         name: "Copyrighted",
+        detail: "ลายลิขสิทธิ์",
         img: "/Oem/Copyrighted/1.jpg",
         products: [
           { name: "Copyrighted 1", img: "/Oem/Copyrighted/1.jpg" },
@@ -145,6 +152,7 @@ export const categories: Category[] = [
       {
         id: "Music",
         name: "Music",
+        detail: "ดนตรี ศิลปะ แฟชั่น การแสดง อีเวนท์",
         img: "/Oem/Music/1.jpg",
         products: [
           { name: "Music 1", img: "/Oem/Music/1.jpg" },
@@ -165,6 +173,7 @@ export const categories: Category[] = [
       {
         id: "Bank",
         name: "Bank",
+        detail: "การเงิน และธนาคาร",
         img: "/Oem/Bank/1.jpg",
         products: [
           { name: "Bank 1", img: "/Oem/Bank/1.jpg" },
@@ -175,6 +184,7 @@ export const categories: Category[] = [
       {
         id: "Technology",
         name: "Technology",
+        detail: "เทคโลโลยี และการสื่อสาร",
         img: "/Oem/Technology/1.jpg",
         products: [
           { name: "Technology 1", img: "/Oem/Technology/1.jpg" },
@@ -196,6 +206,7 @@ export const categories: Category[] = [
       {
         id: "Study",
         name: "Study",
+        detail: "การศึกษา",
         img: "/Oem/Study/1.jpg",
         products: [
           { name: "Study 1", img: "/Oem/Study/1.jpg" },
@@ -212,6 +223,7 @@ export const categories: Category[] = [
       {
         id: "Service",
         name: "Service",
+        detail: "ข้าราชการ และรัฐวิสาหกิจ",
         img: "/Oem/Service/1.jpg",
         products: [
           { name: "Service 1", img: "/Oem/Service/1.jpg" },
@@ -226,15 +238,17 @@ export const categories: Category[] = [
       {
         id: "Travel",
         name: "Travel",
+        detail: "การท่องเที่ยว และกีฬา",
         img: "/Oem/Travel/1.jpg",
         products: [
           { name: "Travel 1", img: "/Oem/Travel/1.jpg" },
 
         ],
       },
-            {
+      {
         id: "Food",
         name: "Food",
+        detail: "อาหาร และเครื่องดื่ม",
         img: "/Oem/Food/1.jpg",
         products: [
           { name: "Food 1", img: "/Oem/Technology/1.jpg" },
