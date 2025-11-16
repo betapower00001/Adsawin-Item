@@ -755,7 +755,7 @@ export const categories: Category[] = [
           { name: "Gypsy-cardsv6 1", img: "/Mutelu/Gypsy-cards/Set06_AW01.png" },
           { name: "Gypsy-cardsv6 2", img: "/Mutelu/Gypsy-cards/Set06_AW02.png" },
           { name: "Gypsy-cardsv6 3", img: "/Mutelu/Gypsy-cards/Set06_AW03.png" },
-          { name: "Gypsy-cardsv6 4", img: "/Mutelu/Gypsy-cards/Set06_AW04.png" },
+          { name: "Gypsy-cardsv6 4", img: "/Mutelu/Gypsy-cards/Set6_AW04.png" },
           { name: "Gypsy-cardsv6 5", img: "/Mutelu/Gypsy-cards/Set06_AW05.png" },
 
           { name: "Gypsy-cardsv7 1", img: "/Mutelu/Gypsy-cards/Set07_AW01.png" },
