@@ -1,30 +1,119 @@
 export interface PatternItem {
   id: string;
   name: string;
-  img: string;
+  img: string;      // รูปลายเดี่ยว
+  preview: string;  // รูปลายที่ใส่ปลั๊กแล้ว
 }
 
-export interface PatternGroup {
-  [key: string]: PatternItem[];
+export interface PlugPatterns {
+  [plugType: string]: PatternItem[];
 }
 
-const patterns: PatternGroup = {
-  typeA: [
-    { id: "p1", name: "ลาย 1", img: "/patterns/typeA/p1.png" },
-    { id: "p2", name: "ลาย 2", img: "/patterns/typeA/p2.png" },
-    { id: "p3", name: "ลาย 3", img: "/patterns/typeA/p3.png" },
-    { id: "p4", name: "ลาย 4", img: "/patterns/typeA/p4.png" }
+export const patterns: PlugPatterns = {
+  universal: [
+    {
+      id: "back-to-school-1",
+      name: "Back to School 1",
+      img: "/seasonal/Back-to-school/back-to-school-1.jpg",
+      preview: "/plugs/universal/Back-to-school/back-to-school-1.png",
+    },
+    {
+      id: "back-to-school-3",
+      name: "Back to School 3",
+      img: "/seasonal/Back-to-school/back-to-school-3.jpg",
+      preview: "/plugs/universal/Back-to-school/back-to-school-3.png",
+    },
+    {
+      id: "back-to-school-4",
+      name: "Back to School 4",
+      img: "/seasonal/Back-to-school/back-to-school-4.jpg",
+      preview: "/plugs/universal/Back-to-school/back-to-school-4.png",
+    },
   ],
 
-  typeB: [
-    { id: "p1", name: "ลาย 1", img: "/patterns/typeB/p1.png" },
-    { id: "p2", name: "ลาย 2", img: "/patterns/typeB/p2.png" }
+  thai: [
+    {
+      id: "back-to-school-1",
+      name: "Back to School 1",
+      img: "/seasonal/Back-to-school/back-to-school-1.jpg",
+      preview: "/plugs/thai/Back-to-school/back-to-school-1.png",
+    },
+    {
+      id: "back-to-school-3",
+      name: "Back to School 3",
+      img: "/seasonal/Back-to-school/back-to-school-3.jpg",
+      preview: "/plugs/thai/Back-to-school/back-to-school-3.png",
+    },
+    {
+      id: "back-to-school-4",
+      name: "Back to School 4",
+      img: "/seasonal/Back-to-school/back-to-school-4.jpg",
+      preview: "/plugs/thai/Back-to-school/back-to-school-4.png",
+    },
   ],
 
-  typeC: [
-    { id: "p1", name: "ลาย 1", img: "/patterns/typeC/p1.png" },
-    { id: "p2", name: "ลาย 2", img: "/patterns/typeC/p2.png" }
-  ]
+  eu: [
+    {
+      id: "back-to-school-1",
+      name: "Back to School 1",
+      img: "/seasonal/Back-to-school/back-to-school-1.jpg",
+      preview: "/plugs/eu/Back-to-school/back-to-school-1.png",
+    },
+    {
+      id: "back-to-school-3",
+      name: "Back to School 3",
+      img: "/seasonal/Back-to-school/back-to-school-3.jpg",
+      preview: "/plugs/eu/Back-to-school/back-to-school-3.png",
+    },
+    {
+      id: "back-to-school-4",
+      name: "Back to School 4",
+      img: "/seasonal/Back-to-school/back-to-school-4.jpg",
+      preview: "/plugs/eu/Back-to-school/back-to-school-4.png",
+    },
+  ],
+
+  us: [
+    {
+      id: "back-to-school-1",
+      name: "Back to School 1",
+      img: "/seasonal/Back-to-school/back-to-school-1.jpg",
+      preview: "/plugs/us/Back-to-school/back-to-school-1.png",
+    },
+    {
+      id: "back-to-school-3",
+      name: "Back to School 3",
+      img: "/seasonal/Back-to-school/back-to-school-3.jpg",
+      preview: "/plugs/us/Back-to-school/back-to-school-3.png",
+    },
+    {
+      id: "back-to-school-4",
+      name: "Back to School 4",
+      img: "/seasonal/Back-to-school/back-to-school-4.jpg",
+      preview: "/plugs/us/Back-to-school/back-to-school-4.png",
+    },
+  ],
+
+  uk: [
+    {
+      id: "back-to-school-1",
+      name: "Back to School 1",
+      img: "/seasonal/Back-to-school/back-to-school-1.jpg",
+      preview: "/plugs/uk/Back-to-school/back-to-school-1.png",
+    },
+    {
+      id: "back-to-school-3",
+      name: "Back to School 3",
+      img: "/seasonal/Back-to-school/back-to-school-3.jpg",
+      preview: "/plugs/uk/Back-to-school/back-to-school-3.png",
+    },
+    {
+      id: "back-to-school-4",
+      name: "Back to School 4",
+      img: "/seasonal/Back-to-school/back-to-school-4.jpg",
+      preview: "/plugs/uk/Back-to-school/back-to-school-4.png",
+    },
+  ],
 };
 
 export default patterns;

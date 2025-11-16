@@ -1,20 +1,30 @@
+"use client";
+
 import Link from "next/link";
-import styles from "./plug.module.css";
 import plugTypes from "@/data/plugTypes";
+import styles from "./typeList.module.css";
 
+export default function PlugTypeListPage() {
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.title}>เลือกชนิดปลั๊ก</h1>
 
-export default function PlugTypePage() {
-return (
-<div className={styles.container}>
-<h1 className={styles.title}>เลือกชนิดปลั๊กไฟ</h1>
-<div className={styles.grid}>
-{plugTypes.map((type) => (
-<Link key={type.id} href={`/plug/${type.id}`} className={styles.card}>
-<img src={type.img} alt={type.name} />
-<p>{type.name}</p>
-</Link>
-))}
-</div>
-</div>
-);
+      <div className={styles.grid}>
+        {plugTypes.map((plug) => (
+          <Link
+            key={plug.id}
+            href={`/plug/${plug.id}`}
+            className={styles.card}
+          >
+            <img
+              src={plug.thumb}
+              className={styles.thumb}
+              alt={plug.name}
+            />
+            <div className={styles.name}>{plug.name}</div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
 }

@@ -4,7 +4,7 @@
 }
 
 .title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 30px;
 }
 
@@ -16,29 +16,29 @@
 }
 
 .card {
-  background: #fafafa;
-  border-radius: 14px;
-  padding: 20px;
   width: 180px;
+  padding: 20px;
+  border-radius: 16px;
+  background: #f7f7f7;
+  text-align: center;
   cursor: pointer;
   text-decoration: none;
   color: black;
-  transition: 0.2s;
+  transition: 0.2s ease;
 }
 
 .card:hover {
+  transform: translateY(-4px);
   background: #ececec;
-  transform: translateY(-3px);
 }
 
 .thumb {
-  width: 140px;
+  width: 130px;
   height: auto;
-  margin-bottom: 10px;
-  border-radius: 10px;
+  margin-bottom: 12px;
 }
 
 .name {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
