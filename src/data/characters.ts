@@ -53,6 +53,199 @@ export const categories: Category[] = [
         ],
       },
 
+
+      {
+        id: "Guarantee",
+        name: "Guarantee",
+        img: "/Oem/Guarantee/1.jpg",
+        products: [
+          { name: "Guarantee 1", img: "/Oem/Guarantee/1.jpg" },
+          { name: "Guarantee 2", img: "/Oem/Guarantee/2.jpg" },
+          { name: "Guarantee 3", img: "/Oem/Guarantee/3.jpg" },
+          { name: "Guarantee 4", img: "/Oem/Guarantee/4.jpg" },
+        ],
+      },
+      {
+        id: "Agriculture",
+        name: "Agriculture",
+        img: "/Oem/Agriculture/1.jpg",
+        products: [
+          { name: "Agriculture 1", img: "/Oem/Agriculture/1.jpg" },
+          { name: "Agriculture 2", img: "/Oem/Agriculture/2.jpg" },
+          { name: "Agriculture 3", img: "/Oem/Agriculture/3.jpg" },
+          { name: "Agriculture 4", img: "/Oem/Agriculture/4.jpg" },
+          { name: "Agriculture 5", img: "/Oem/Agriculture/5.jpg" },
+          { name: "Agriculture 6", img: "/Oem/Agriculture/6.jpg" },
+        ],
+      },
+
+      {
+        id: "Estate",
+        name: "Estate",
+        img: "/Oem/Estate/1.jpg",
+        products: [
+          { name: "Estate 1", img: "/Oem/Estate/1.jpg" },
+        ],
+      },
+
+
+      {
+        id: "Transport",
+        name: "Transport",
+        img: "/Oem/Transport/1.jpg",
+        products: [
+          { name: "Transport 1", img: "/Oem/Transport/1.jpg" },
+          { name: "Transport 2", img: "/Oem/Transport/2.jpg" },
+          { name: "Transport 3", img: "/Oem/Transport/3.jpg" },
+          { name: "Transport 4", img: "/Oem/Transport/4.jpg" },
+          { name: "Transport 5", img: "/Oem/Transport/5.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Politics",
+        name: "Politics",
+        img: "/Oem/Politics/1.jpg",
+        products: [
+          { name: "Politics 1", img: "/Oem/Politics/1.jpg" },
+          { name: "Politics 2", img: "/Oem/Politics/2.jpg" },
+          { name: "Politics 3", img: "/Oem/Politics/3.jpg" },
+          { name: "Politics 4", img: "/Oem/Politics/4.jpg" },
+          { name: "Politics 5", img: "/Oem/Politics/5.jpg" },
+          { name: "Politics 6", img: "/Oem/Politics/6.jpg" },
+          { name: "Politics 7", img: "/Oem/Politics/7.jpg" },
+          { name: "Politics 8", img: "/Oem/Politics/8.jpg" },
+          { name: "Politics 9", img: "/Oem/Politics/9.jpg" },
+
+        ],
+      },
+
+      {
+        id: "Copyrighted",
+        name: "Copyrighted",
+        img: "/Oem/Copyrighted/1.jpg",
+        products: [
+          { name: "Copyrighted 1", img: "/Oem/Copyrighted/1.jpg" },
+          { name: "Copyrighted 2", img: "/Oem/Copyrighted/2.jpg" },
+          { name: "Copyrighted 3", img: "/Oem/Copyrighted/3.jpg" },
+          { name: "Copyrighted 4", img: "/Oem/Copyrighted/4.jpg" },
+          { name: "Copyrighted 5", img: "/Oem/Copyrighted/5.jpg" },
+          { name: "Copyrighted 6", img: "/Oem/Copyrighted/6.jpg" },
+          { name: "Copyrighted 7", img: "/Oem/Copyrighted/7.jpg" },
+          { name: "Copyrighted 8", img: "/Oem/Copyrighted/8.jpg" },
+          { name: "Copyrighted 9", img: "/Oem/Copyrighted/9.jpg" },
+          { name: "Copyrighted 10", img: "/Oem/Copyrighted/10.jpg" },
+          { name: "Copyrighted 11", img: "/Oem/Copyrighted/11.jpg" },
+          { name: "Copyrighted 12", img: "/Oem/Copyrighted/12.jpg" },
+        ],
+      },
+
+
+      {
+        id: "Music",
+        name: "Music",
+        img: "/Oem/Music/1.jpg",
+        products: [
+          { name: "Music 1", img: "/Oem/Music/1.jpg" },
+          { name: "Music 2", img: "/Oem/Music/2.jpg" },
+          { name: "Music 3", img: "/Oem/Music/3.jpg" },
+          { name: "Music 4", img: "/Oem/Music/4.jpg" },
+          { name: "Music 5", img: "/Oem/Music/5.jpg" },
+          { name: "Music 6", img: "/Oem/Music/6.jpg" },
+          { name: "Music 7", img: "/Oem/Music/7.jpg" },
+          { name: "Music 8", img: "/Oem/Music/8.jpg" },
+          { name: "Music 9", img: "/Oem/Music/9.jpg" },
+          { name: "Music 10", img: "/Oem/Music/10.jpg" },
+
+        ],
+      },
+
+
+      {
+        id: "Bank",
+        name: "Bank",
+        img: "/Oem/Bank/1.jpg",
+        products: [
+          { name: "Bank 1", img: "/Oem/Bank/1.jpg" },
+          { name: "Bank 2", img: "/Oem/Bank/2.jpg" },
+
+        ],
+      },
+      {
+        id: "Technology",
+        name: "Technology",
+        img: "/Oem/Technology/1.jpg",
+        products: [
+          { name: "Technology 1", img: "/Oem/Technology/1.jpg" },
+          { name: "Technology 2", img: "/Oem/Technology/2.jpg" },
+          { name: "Technology 3", img: "/Oem/Technology/3.jpg" },
+          { name: "Technology 4", img: "/Oem/Technology/4.jpg" },
+          { name: "Technology 5", img: "/Oem/Technology/5.jpg" },
+          { name: "Technology 6", img: "/Oem/Technology/6.jpg" },
+          { name: "Technology 7", img: "/Oem/Technology/7.jpg" },
+          { name: "Technology 8", img: "/Oem/Technology/8.jpg" },
+          { name: "Technology 9", img: "/Oem/Technology/9.jpg" },
+          { name: "Technology 10", img: "/Oem/Technology/10.jpg" },
+          { name: "Technology 11", img: "/Oem/Technology/11.jpg" },
+          { name: "Technology 12", img: "/Oem/Technology/12.jpg" },
+
+
+        ],
+      },
+      {
+        id: "Study",
+        name: "Study",
+        img: "/Oem/Study/1.jpg",
+        products: [
+          { name: "Study 1", img: "/Oem/Study/1.jpg" },
+          { name: "Study 2", img: "/Oem/Study/2.jpg" },
+          { name: "Study 3", img: "/Oem/Study/3.jpg" },
+          { name: "Study 4", img: "/Oem/Study/4.jpg" },
+          { name: "Study 5", img: "/Oem/Study/5.jpg" },
+          { name: "Study 6", img: "/Oem/Study/6.jpg" },
+          { name: "Study 7", img: "/Oem/Study/7.jpg" },
+
+
+        ],
+      },
+      {
+        id: "Service",
+        name: "Service",
+        img: "/Oem/Service/1.jpg",
+        products: [
+          { name: "Service 1", img: "/Oem/Service/1.jpg" },
+          { name: "Service 2", img: "/Oem/Service/2.jpg" },
+          { name: "Service 3", img: "/Oem/Service/3.jpg" },
+          { name: "Service 4", img: "/Oem/Service/4.jpg" },
+
+        ],
+      },
+
+
+      {
+        id: "Travel",
+        name: "Travel",
+        img: "/Oem/Travel/1.jpg",
+        products: [
+          { name: "Travel 1", img: "/Oem/Travel/1.jpg" },
+
+        ],
+      },
+            {
+        id: "Food",
+        name: "Food",
+        img: "/Oem/Food/1.jpg",
+        products: [
+          { name: "Food 1", img: "/Oem/Technology/1.jpg" },
+          { name: "Food 2", img: "/Oem/Technology/2.jpg" },
+          { name: "Food 3", img: "/Oem/Technology/3.jpg" },
+          { name: "Food 4", img: "/Oem/Technology/4.jpg" },
+          { name: "Food 5", img: "/Oem/Technology/5.jpg" },
+
+        ],
+      },
+
     ],
   },
   {
