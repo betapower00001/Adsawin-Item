@@ -251,11 +251,10 @@ export const categories: Category[] = [
         detail: "อาหาร และเครื่องดื่ม",
         img: "/Oem/Food/1.jpg",
         products: [
-          { name: "Food 1", img: "/Oem/Technology/1.jpg" },
-          { name: "Food 2", img: "/Oem/Technology/2.jpg" },
-          { name: "Food 3", img: "/Oem/Technology/3.jpg" },
-          { name: "Food 4", img: "/Oem/Technology/4.jpg" },
-          { name: "Food 5", img: "/Oem/Technology/5.jpg" },
+          { name: "Food 1", img: "/Oem/Food/1.jpg" },
+          { name: "Food 2", img: "/Oem/Food/3.jpg" },
+          { name: "Food 4", img: "/Oem/Food/4.jpg" },
+          { name: "Food 5", img: "/Oem/Food/5.jpg" },
 
         ],
       },
@@ -862,12 +861,6 @@ export const categories: Category[] = [
 
         ],
       },
-
-
-
-
-
-
 
     ],
   },
