@@ -291,10 +291,13 @@ export const categories: Category[] = [
         name: "Christmas",
         detail: "ลายคริสมาส",
         detailProducts: "กลับห้องเรียนพร้อมไฟเต็มแม็กซ์ ปลั๊กลายพิเศษที่มีแค่เปิดเทอมนี้เท่านั้น",
-        img: "/Christmas-1.jpg",
+        img: "/seasonal/Christmas/5.png",
         products: [
-          { name: "Dimoo Night Sky 1", img: "/characters/dimoo_nightsky1.png" },
-          { name: "Dimoo Night Sky 2", img: "/characters/dimoo_nightsky2.png" },
+          { name: "Christmas 1", img: "/seasonal/Christmas/2.png" },
+          { name: "Christmas 2", img: "/seasonal/Christmas/1.png" },
+          { name: "Christmas 3", img: "/seasonal/Christmas/4.png" },
+          { name: "Christmas 4", img: "/seasonal/Christmas/3.png" },
+          { name: "Christmas 5", img: "/seasonal/Christmas/6.png" },
         ],
       },
       {
@@ -1126,8 +1129,6 @@ export const categories: Category[] = [
 
         ],
       },
-
-
     ],
   },
 
@@ -1406,8 +1407,6 @@ export const categories: Category[] = [
 
         ],
       },
-
-
     ],
   },
 
