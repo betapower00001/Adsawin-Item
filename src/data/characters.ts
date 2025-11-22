@@ -290,7 +290,7 @@ export const categories: Category[] = [
         id: "Christmas",
         name: "Christmas",
         detail: "ลายคริสมาส",
-        detailProducts: "กลับห้องเรียนพร้อมไฟเต็มแม็กซ์ ปลั๊กลายพิเศษที่มีแค่เปิดเทอมนี้เท่านั้น",
+        detailProducts: "ทุกแสงไฟ ทุกเพลง ทุกเสียงหัวเราะ…นี่แหละช่วงเวลาที่ทำให้ใจพองฟู! เล่น ป่วน หัวเราะไปกับเพื่อน ครอบครัว หรือเจ้าแมวซน ๆ ทุกนาทีคือความสุขเต็ม ๆ!",
         img: "/seasonal/Christmas/5.png",
         products: [
           { name: "Christmas 1", img: "/seasonal/Christmas/2.png" },
@@ -471,7 +471,7 @@ export const categories: Category[] = [
         id: "Just-a-cute-Duck",
         name: "Just a cute Duck",
         detail: "ลายเป็ดน้อย",
-        detailProducts: "-",
+        detailProducts: "ป็ดตัวเล็ก…แต่นิสัยไม่เล็ก! แหวกว่ายไปทุกมุม ซนแสบ ป่วนได้ทุกเวลา แล้วก็ทำให้หัวเราะจนต้องโบกปีกตาม!",
         img: "/fantasy/Just-a-cute-Duck/Just-a-cute-Duck-1.jpg",
         products: [
           { name: "Just-a-cute-Duck 1", img: "/fantasy/Just-a-cute-Duck/Just-a-cute-Duck-2.jpg" },
@@ -518,7 +518,7 @@ export const categories: Category[] = [
         id: "MoMo-and-the-panguin-gang",
         name: "MoMo and the panguin gang",
         detail: "ลาย MoMo and the panguin gang",
-        detailProducts: "-",
+        detailProducts: "กับแก๊งเพนกวินสุดซ่าพร้อมป่วนทุกมุมโลก! ป่วนจนบ้านแทบพัง แต่หัวเราะจนท้องแข็ง ไม่ลองไม่ได้แล้ว!",
         img: "/fantasy/MoMo/MoMo-1.jpg",
         products: [
           { name: "MoMo 1", img: "/fantasy/MoMo/MoMo-2.jpg" },
@@ -1420,7 +1420,7 @@ export const categories: Category[] = [
         id: "black-cat",
         name: "black cat",
         detail: "ลาย black cat",
-        detailProducts: "-",
+        detailProducts: "“ดำเมี่ยมตัวแสบขั้นเทพ! วิ่ง ขโมย แอบซนทุกมุมบ้าน ป่วนจนหัวเราะไม่หยุด จัดเต็มความฮาแบบที่ต้องเจอเอง!",
         img: "/Pets/black-cat/black-cat-1.jpg",
         products: [
           { name: "black-cat 1", img: "/Pets/black-cat/black-cat-2.jpg" },
@@ -1617,7 +1617,7 @@ export const categories: Category[] = [
         id: "Just-bee",
         name: "Just bee",
         detail: "ลาย Just bee",
-        detailProducts: "-",
+        detailProducts: "ตัวเล็กแต่บึ้ม! เจ้าผึ้งตัวนี้พร้อมบิน ป่วน ปลุกหัวเราะ และทำให้ทุกวันเต็มไปด้วยความหวานและความสนุกแบบไม่เหมือนใคร!",
         img: "/Pets/Just-bee/Just-bee-1.jpg",
         products: [
           { name: "Just-bee 1", img: "/Pets/Just-bee/Just-bee-2.jpg" },
@@ -1632,7 +1632,7 @@ export const categories: Category[] = [
         id: "Just-Bird",
         name: "Just Bird",
         detail: "ลาย Just Bird",
-        detailProducts: "-",
+        detailProducts: "แค่เจ้านกตัวน้อย แต่ซนเกินตัว! ปีกเต็มไปด้วยความฮา ความสนุก และเรื่องราวสุดป่วนที่จะทำให้หัวเราะจนบินได้!",
         img: "/Pets/Just-Bird/Just-Bird-1.jpg",
         products: [
           { name: "Just-Bird 1", img: "/Pets/Just-Bird/Just-Bird-2.jpg" },
@@ -1705,7 +1705,7 @@ export const categories: Category[] = [
         id: "Open-the-world",
         name: "Open the world",
         detail: "ลาย Open the-world",
-        detailProducts: "-",
+        detailProducts: "เปิดโลกแบบไม่มีเซฟโซน! ผจญภัยเต็มขั้น สดใส แสบเล็ก ๆ ป่วนแบบน่ารัก ทุกวันคือเรื่องราวใหม่ที่ทำให้หัวใจเต้นแรง!",
         img: "/Pets/Open-the-world/Open-the-world-1.jpg",
         products: [
           { name: "Open-the-world 1", img: "/Pets/Open-the-world/Open-the-world-2.jpg" },
@@ -1719,7 +1719,7 @@ export const categories: Category[] = [
         id: "Penguin",
         name: "Penguin",
         detail: "ลาย Penguin",
-        detailProducts: "-",
+        detailProducts: "กับแก๊งเพนกวินสุดซ่าพร้อมป่วนทุกมุมโลก! ป่วนจนบ้านแทบพัง แต่หัวเราะจนท้องแข็ง ไม่ลองไม่ได้แล้ว!",
         img: "/Pets/Penguin/Penguin-1.jpg",
         products: [
           { name: "Penguin 1", img: "/Pets/Penguin/Penguin-2.jpg" },
