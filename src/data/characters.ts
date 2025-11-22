@@ -424,7 +424,7 @@ export const categories: Category[] = [
         id: "Cute-Mermaid",
         name: "Cute Mermaid",
         detail: "ลายเงือกน้อย",
-        detailProducts: "เงือกน้อยคอยรัก",
+        detailProducts: "ฉันไม่ใช่เพื่อนของ Ariel นะ นังนั่นมันสวยกว่าฉันกี่โมง ผมฉันสีทอง ผิวฉันก็ขาวกว่า มาในลุคร้ายๆ ว่าไม่ง่าย สอนไม่จำ ว่าแต่ฝาหอยนั่นทำมาจากขาไก่หรือเปล่าน่ะ",
         img: "/fantasy/Cute-Mermaid/Cute-Mermaid-1.jpg",
         products: [
           { name: "Cute-Mermaid 1", img: "/fantasy/Cute-Mermaid/Cute-Mermaid-2.jpg" },
@@ -439,7 +439,7 @@ export const categories: Category[] = [
         id: "Dream-park",
         name: "Dream Park",
         detail: "ลายสวนสนุก",
-        detailProducts: "สวนสนุกแห่งความฝัน",
+        detailProducts: "เสียงหัวเราะ เสียงเพลงและแสงไฟ ใน Dream Park ฝันวัยเด็กของฉัน มันเป็นของคุณด้วยมั้ย Dream Park, where fun never ends",
         img: "/fantasy/Dream-park/Dream-park-1.jpg",
         products: [
           { name: "Dream-park 1", img: "/fantasy/Dream-park/Dream-park-2.jpg" },
@@ -454,7 +454,7 @@ export const categories: Category[] = [
         id: "Galaxy-Watcher",
         name: "Galaxy Watcher",
         detail: "ลายกาแลคซี่",
-        detailProducts: "-",
+        detailProducts: "HOUSTON! We've had a problem เมื่อเพื่อนตัวเขียวปี๋ ผ่านมาโบกมือทักทาย เอาไงดีล่ะทีนี้ จะมาอย่างเป็นมิตร หรือจะเรากำลังเข้าสู่ยุค Star Wars อย่างแท้จริงนะ",
         img: "/fantasy/Galaxy-Watcher/Galaxy-Watcher-1.png",
         products: [
           { name: "Galaxy-Watcher 1", img: "/fantasy/Galaxy-Watcher/Galaxy-Watcher-2.png" },
@@ -484,7 +484,7 @@ export const categories: Category[] = [
         id: "Lost-in-Space",
         name: "Lost in Space",
         detail: "ลาย Lost in Space",
-        detailProducts: "-",
+        detailProducts: "เจ้าเผือก แมวจอมป่วน ดันเผลอกดปุ่น LAUNCH ยานเลยหลุดออกมานอกวงโควร อยู่ท่ามกลางดาวเคราะห์เลย จะกลับโลกยังไงล่ะทีนี้? น้ำตาล หมาจอมมึนถาม",
         img: "/fantasy/Lost-in-Space/Lost-in-Space-1.jpg",
         products: [
           { name: "Lost-in-Space 1", img: "/fantasy/Lost-in-Space/Lost-in-Space-2.jpg" },
@@ -499,7 +499,7 @@ export const categories: Category[] = [
         id: "Magical-Moment",
         name: "Magical Moment",
         detail: "ลาย Magical Moment",
-        detailProducts: "-",
+        detailProducts: "นิกกี้ สาวน้อยบนก้อนเมฆ สะพานสีรุ้งบนปราสาทใหญ่ พร้อมยูนิคอร์นพาเหาะของเธอ ทุกย่างก้าวดั่งเวทมนตร์ ทำให้เกิดรอยยิ้มอย่างไม่รู้ตัว ปลั๊กไฟที่เจ้าของชอบที่สุด",
         img: "/fantasy/Magical-Moment/Magical-Moment-1.jpg",
         products: [
           { name: "Magical-Moment 1", img: "/fantasy/Magical-Moment/Magical-Moment-2.jpg" },
@@ -531,7 +531,7 @@ export const categories: Category[] = [
         id: "One-night-with-meteer-shower",
         name: "One night with meteer shower",
         detail: "ลาย One night with meteer shower",
-        detailProducts: "-",
+        detailProducts: "เราทุกคนล้วนแต่มีเด็กน้อยซ่อนอยู่ อยากเงยหน้ามองฟ้า ขอพรจากบนดาวตกขอพรด้วยความปรารถนาดี ขอให้พรุ่งนี้เป็นวันที่ดีอีก 1 วัน อย่าปล่อยโอกาสดีๆผ่านไปนะ",
         img: "/fantasy/One-night/One-night-1.jpg",
         products: [
           { name: "One-night 1", img: "/fantasy/One-night/One-night-2.jpg" },
@@ -547,7 +547,7 @@ export const categories: Category[] = [
         id: "Red-Riding-Hood",
         name: "Red Riding Hood",
         detail: "ลาย Red Riding Hood",
-        detailProducts: "-",
+        detailProducts: "หมาป่าตัวใหญ่ซ่อนตัวอยู่ในป่า ระวังนะแม่หนู! จะกลายเป็นจุดจบที่ลงเอยด้วยความหวาดกลัวมั้ยนะ นิทานวัยเด็ก เสน่ห์ที่ไม่มีวันตาย ลวดลายที่ไม่มีวันจางหายไป",
         img: "/fantasy/Red-Riding-Hood/Red-Riding-Hood-1.jpg",
         products: [
           { name: "Red-Riding-Hood 1", img: "/fantasy/Red-Riding-Hood/Red-Riding-Hood-2.jpg" },
@@ -563,7 +563,7 @@ export const categories: Category[] = [
         id: "The-Ocean-Odyssey",
         name: "The Ocean Odyssey",
         detail: "ลาย The Ocean Odyssey",
-        detailProducts: "-",
+        detailProducts: "ฝ่าคลื่นยักษ์ มหาสมุทรที่ไร้จุดสิ้นสุด กัปตันตัวน้อย พร้อมเรือเล็กที่พร้อมออกจากฝั่งไปผจญภัยในโลกกว้าง อย่างไม่หวั่นไหว เพื่อสร้าง LEGACY ให้ตนเอง",
         img: "/fantasy/The-Ocean/The-Ocean-Odyssey-1.jpg",
         products: [
           { name: "The-Ocean-Odyssey 1", img: "/fantasy/The-Ocean/The-Ocean-Odyssey-2.jpg" },
@@ -585,7 +585,7 @@ export const categories: Category[] = [
         id: "kai-ju",
         name: "Kai Ju",
         detail: "ลาย Kai Ju",
-        detailProducts: "-",
+        detailProducts: "ก๊าซซซซ! ไคจูตื่นมาพร้อมความหิวที่ใหญ่พอๆ กับตึกสิบชั้น ไอ้เขียวพ่นไฟไม่ใช่เพราะโกรธ แต่เพราะอยากย่างหมูปิ้งกลางชิบูย่า มันกัดตึกเหมือนเป็นข้าวปั้น กวาดสนามบินเหมือนถาดเบนโตะ เมืองทั้งเมืองเลยกลายเป็นโต๊ะอาหารบุฟเฟต์ที่ไม่มีใครสมัครใจ",
         img: "/Otaku/kai-ju/kai-ju.jpg",
         products: [
           { name: "kai-ju 1", img: "/Otaku/kai-ju/kai-ju-2.jpg" },
@@ -601,7 +601,7 @@ export const categories: Category[] = [
         id: "red-giant",
         name: "Red giant",
         detail: "ลาย Red giant",
-        detailProducts: "-",
+        detailProducts: "สัญลักษณ์ของศิลปะ ความงาม และจิตวิญญาณแห่งญี่ปุ่น ทุกองค์ประกอบในลวดลายตั้งแต่พัดญี่ปุ่น ปลาคาร์พ แมวกวัก ไปจนถึงดอกไม้ ล้วนสะท้อนความหมายมงคลและวัฒนธรรมดั้งเดิมที่สืบทอดกันมาหลายร้อยปี นี่คือลายที่เชื่อมโยงอดีต ปัจจุบัน และความเป็นญี่ปุ่นเข้าไว้ด้วยกันอย่างลงตัว",
         img: "/Otaku/red-giant/red-giant-1.jpg",
         products: [
           { name: "red-giant 1", img: "/Otaku/red-giant/red-giant-2.jpg" },
@@ -617,7 +617,7 @@ export const categories: Category[] = [
         id: "Rising-Sun",
         name: "Rising Sun",
         detail: "ลาย Rising Sun",
-        detailProducts: "-",
+        detailProducts: "การปะทะระหว่างพลังธรรมชาติและศิลปะ ukiyo-e ที่ไม่มีวันตาย ดวงอาทิตย์โผล่ขึ้นเหนือขอบฟ้า เป็นเครื่องหมายว่า ญี่ปุ่นยังคงลุกขึ้นใหม่ได้เสมอ",
         img: "/Otaku/Rising-Sun/Rising-Sun-1.jpg",
         products: [
           { name: "Rising-Sun 1", img: "/Otaku/Rising-Sun/Rising-Sun-2.jpg" },
@@ -632,7 +632,7 @@ export const categories: Category[] = [
         id: "Shushi",
         name: "Shushi",
         detail: "ลาย Shushi",
-        detailProducts: "-",
+        detailProducts: "หากซูชิคือศิลปะ แปลว่าจานนี้คือแคนวาส ทุกคำคือพู่กัน ทุกสายซอสโชยุคือหมึกดำวาดเรื่องราวความภูมิใจของญี่ปุ่นเอาไว้ ไม่ใช่แค่ของกิน แต่เป็นวัฒนธรรมที่วางเรียงอยู่บนข้าวเม็ดเล็กๆ “Every sushi tells a story.”",
         img: "/Otaku/Shushi/Shushi-1.jpg",
         products: [
           { name: "Shushi 1", img: "/Otaku/Shushi/Shushi-2.jpg" },
@@ -648,7 +648,7 @@ export const categories: Category[] = [
         id: "Shushi-meow",
         name: "Shushi Meow",
         detail: "ลาย Shushi",
-        detailProducts: "-",
+        detailProducts: "ถ้าคุณเป็นทาสแมวและเป็นสายญี่ปุ่น ต้องไม่พลาด Sushi Meow nyaa~ โลกนี้ไม่ต้องมีเชฟ แค่ปล่อยให้แมวครองสายพานไปเลย เมื่อแมวกลายร่างเป็นซูชิซะเอง ปลาทูน่า แซลมอน ไข่หวาน ทุกคำเต็มไปด้วยอารมณ์",
         img: "/Otaku/Shushi-meow/Shushi-meow-1.jpg",
         products: [
           { name: "Shushi-meow 1", img: "/Otaku/Shushi-meow/Shushi-meow-2.jpg" },
@@ -672,7 +672,7 @@ export const categories: Category[] = [
         id: "Cai-Shen-Ye",
         name: "Cai Shen Ye",
         detail: "ลาย Cai Shen Ye",
-        detailProducts: "-",
+        detailProducts: "เทพเจ้าแห่งโชคลาภที่คนไทยเชื้อสายจีนนับถือ... กระเป๋าตังค์จะแน่นปึ้กไม่รู้ตัว ต้องบูชา!",
         img: "/Mutelu/Cai-Shen-Ye/Cai-Shen-Ye-1.jpg",
         products: [
           { name: "Cai-Shen-Ye 1", img: "/Mutelu/Cai-Shen-Ye/Cai-Shen-Ye-2.jpg" },
@@ -687,7 +687,7 @@ export const categories: Category[] = [
         id: "Fortune-cards",
         name: "Fortune cards",
         detail: "ลาย Fortune cards",
-        detailProducts: "-",
+        detailProducts: "โชคลาภของผู้หญิงยุคใหม่! สวยอย่างมีสมอง รวยอย่างมีสไตล์!",
         img: "/Mutelu/Fortune-cards/Fortune-cards-1.jpg",
         products: [
           { name: "Fortune-cards 1", img: "/Mutelu/Fortune-cards/Fortune-cards-2.jpg" },
@@ -702,7 +702,7 @@ export const categories: Category[] = [
         id: "Ganesha2",
         name: "Ganesha2",
         detail: "ลาย Ganesha2",
-        detailProducts: "-",
+        detailProducts: "ไอเดียตัน งานไม่เดิน? องค์พ่อ Ganesha จะเสกเส้นทางความสำเร็จให้คุณลุล่วงอย่างไม่น่าเชื่อ! พลังสร้างสรรค์ล้นเหลือ!ไม่ใช่แค่เครื่องประดับ... แต่คือ พลังศักดิ์สิทธิ์ที่มองไม่เห็น! บูชาแล้วชีวิตเปลี่ยนไปในทางที่ดีขึ้นอย่างชัดเจน!",
         img: "/Mutelu/Ganesha2/Ganesha2-1.jpg",
         products: [
           { name: "Ganesha2 1", img: "/Mutelu/Ganesha2/Ganesha2-2.jpg" },
@@ -718,7 +718,7 @@ export const categories: Category[] = [
         id: "Gypsy-cards",
         name: "Gypsy Cards",
         detail: "ลาย Gypsy-cards",
-        detailProducts: "-",
+        detailProducts: "พลังแห่งจักรวาลที่หนุนนำให้คุณทยานไปสู่ความสำเร็จทุกสิ่ง",
         img: "/Mutelu/Gypsy-cards/Set01_AW05.png",
         products: [
           { name: "Gypsy-cards 1", img: "/Mutelu/Gypsy-cards/Set01_AW01.png" },
@@ -770,7 +770,7 @@ export const categories: Category[] = [
         id: "Lord-Ganesha-v1",
         name: "Lord Ganesha v1",
         detail: "ลาย Lord Ganesha v1",
-        detailProducts: "-",
+        detailProducts: "ไอเดียตัน งานไม่เดิน? องค์พ่อ Ganesha จะเสกเส้นทางความสำเร็จให้คุณลุล่วงอย่างไม่น่าเชื่อ! พลังสร้างสรรค์ล้นเหลือ!ไม่ใช่แค่เครื่องประดับ... แต่คือ พลังศักดิ์สิทธิ์ที่มองไม่เห็น! บูชาแล้วชีวิตเปลี่ยนไปในทางที่ดีขึ้นอย่างชัดเจน!",
         img: "/Mutelu/Lord-Ganeshav1/Lord-Ganesha-v1-1.jpg",
         products: [
           { name: "Lord-Ganeshav1 1", img: "/Mutelu/Lord-Ganeshav1/Lord-Ganesha-v1-2.jpg" },
@@ -786,7 +786,7 @@ export const categories: Category[] = [
         id: "Lord-Ganesha-v2",
         name: "Lord Ganesha v2",
         detail: "ลาย Lord Ganesha v2",
-        detailProducts: "-",
+        detailProducts: "ไอเดียตัน งานไม่เดิน? องค์พ่อ Ganesha จะเสกเส้นทางความสำเร็จให้คุณลุล่วงอย่างไม่น่าเชื่อ! พลังสร้างสรรค์ล้นเหลือ! ไม่ใช่แค่เครื่องประดับ... แต่คือ พลังศักดิ์สิทธิ์ที่มองไม่เห็น! บูชาแล้วชีวิตเปลี่ยนไปในทางที่ดีขึ้นอย่างชัดเจน!",
         img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-1.jpg",
         products: [
           { name: "Lord-Ganesha-v2 1", img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-2.jpg" },
@@ -802,7 +802,7 @@ export const categories: Category[] = [
         id: "Love-Card",
         name: "Love Card",
         detail: "ลาย Love Card",
-        detailProducts: "-",
+        detailProducts: "ทุกสิ่งที่ผู้หญิงหลงรัก! สวย แกร่ง และมีเสน่ห์ ที่ทำให้ใครๆ ก็ต้องมอง!",
         img: "/Mutelu/Love-Card/Love-Card-1.jpg",
         products: [
           { name: "Love-Card 1", img: "/Mutelu/Love-Card/Love-Card-2.jpg" },
@@ -818,7 +818,7 @@ export const categories: Category[] = [
         id: "Men-Love-Card",
         name: "Men Love Card",
         detail: "ลาย Men Love Card",
-        detailProducts: "-",
+        detailProducts: "ทุกสิ่งที่ผู้ชายต้องการ! ความเท่ ความเร็ว และความสำเร็จ ที่ทำให้คุณดูดีขึ้น 10 เท่า!",
         img: "/Mutelu/Men-Love-Card/Love-Card-1.jpg",
         products: [
           { name: "Men-Love-Card 1", img: "/Mutelu/Men-Love-Card/Love-Card-2.jpg" },
@@ -834,7 +834,7 @@ export const categories: Category[] = [
         id: "Thao-Wessuwan",
         name: "Thao Wessuwan",
         detail: "ลาย Thao Wessuwan",
-        detailProducts: "-",
+        detailProducts: "ที่สุดแห่งการกันจน! พลัง ท้าวเวส ไม่ได้มาแค่กันผี... แต่คือเครื่องรางที่ต้องมี ถ้าอยากรวย! พลาดไม่ได้!",
         img: "/Mutelu/Thao-Wessuwan/Thao-Wessuwan-1.jpg",
         products: [
           { name: "Thao-Wessuwan 1", img: "/Mutelu/Thao-Wessuwan/Thao-Wessuwan-2.jpg" },
@@ -850,7 +850,7 @@ export const categories: Category[] = [
         id: "Walth-Money",
         name: "Walth Money",
         detail: "ลาย Walth Money",
-        detailProducts: "-",
+        detailProducts: "ไม่ได้ขายแค่ของ... แต่ขาย พลังงานดึงดูดเงิน ! ซื้อแล้วรวยขึ้นแน่นอน!",
         img: "/Mutelu/Walth-Money/Walth-Money-1.jpg",
         products: [
           { name: "Walth-Money 1", img: "/Mutelu/Walth-Money/Walth-Money-2.jpg" },
@@ -873,7 +873,7 @@ export const categories: Category[] = [
         id: "Elephant-San",
         name: "Elephant San",
         detail: "ลาย Elephant-San",
-        detailProducts: "-",
+        detailProducts: "ช้างไทย สัญลักษณ์แห่งความ ยิ่งใหญ่และเมตตา ใครที่รักสัตว์คู่บ้านคู่เมืองนี้ ต้องมี! ช้างไทย สัญลักษณ์แห่งความยิ่งใหญ่และเมตตา! พลังงานบวกที่ช่วยให้กิจการงาน ราบรื่นมั่นคง!",
         img: "/Authentic-thai/Elephant-San/Elephant-San-1.jpg",
         products: [
           { name: "Elephant-San 1", img: "/Authentic-thai/Elephant-San/Elephant-San-2.jpg" },
@@ -888,7 +888,7 @@ export const categories: Category[] = [
         id: "End-of-month",
         name: "End of month",
         detail: "ลาย End of month",
-        detailProducts: "-",
+        detailProducts: "เงินหมดไม่กลัว กลัวแต่ไม่มีมาม่าอยู่ในชีวิต สิ้นเดือน #ปลั๊กไฟตามสั่ง",
         img: "/Authentic-thai/End-of-month/end-1.jpg",
         products: [
           { name: "End-of-month 1", img: "/Authentic-thai/End-of-month/end-2.jpg" },
@@ -903,7 +903,7 @@ export const categories: Category[] = [
         id: "KrungThep",
         name: "KrungThep",
         detail: "ลาย KrungThep",
-        detailProducts: "-",
+        detailProducts: "ไม่ใช่แค่เมืองหลวง... แต่คือ สวรรค์บนดิน ที่มีเรื่องเซอร์ไพรส์ทุกซอกซอย!",
         img: "/Authentic-thai/KrungThep/KrungThep-1.jpg",
         products: [
           { name: "KrungThep 1", img: "/Authentic-thai/KrungThep/KrungThep-2.jpg" },
@@ -918,7 +918,7 @@ export const categories: Category[] = [
         id: "Mango-Rice",
         name: "Mango Rice",
         detail: "ลาย Mango Rice",
-        detailProducts: "-",
+        detailProducts: "ปิดดีลความฟินที่คนทั่วโลกยอมรับ! ข้าวเหนียวมะม่วง... หวาน หอม มัน ครบเครื่องเรื่องความอร่อย!",
         img: "/Authentic-thai/Mango-Rice/Mango-Rice-1.jpg",
         products: [
           { name: "Mango-Rice 1", img: "/Authentic-thai/Mango-Rice/Mango-Rice-2.jpg" },
@@ -934,7 +934,7 @@ export const categories: Category[] = [
         id: "Monk",
         name: "Monk",
         detail: "ลาย Monk",
-        detailProducts: "-",
+        detailProducts: "เพราะกุฎิพระไม่ได้มีแค่เทียนและธูป พระเณรทุกรูปต้องใช้ปลั๊กไฟ",
         img: "/Authentic-thai/Monk/Monk-1.jpg",
         products: [
           { name: "Monk 1", img: "/Authentic-thai/Monk/Monk-2.jpg" },
@@ -950,7 +950,7 @@ export const categories: Category[] = [
         id: "Papaya-Pok-Pok",
         name: "Papaya Pok Pok",
         detail: "ลาย Papaya Pok Pok",
-        detailProducts: "-",
+        detailProducts: "ส้มตำ Papaya Pok Pok ที่แซ่บนัวจนน้ำตาไหล! เผ็ดสะใจ จนต้องสั่งเบิ้ล!",
         img: "/Authentic-thai/Papaya-Pok-Pok/Papaya-1.jpg",
         products: [
           { name: "Papaya-Pok-Pok 1", img: "/Authentic-thai/Papaya-Pok-Pok/Papaya-2.jpg" },
@@ -966,7 +966,7 @@ export const categories: Category[] = [
         id: "Ramayana",
         name: "Ramayana",
         detail: "ลาย Ramayana",
-        detailProducts: "-",
+        detailProducts: "ตำนานที่ไม่มีวันจบ! พลังแห่งความดีงามและสงครามอันยิ่งใหญ่ ที่คุณต้องพกติดตัว!",
         img: "/Authentic-thai/Ramayana/Ramayana-1.png",
         products: [
           { name: "Ramayana 1", img: "/Authentic-thai/Ramayana/Ramayana-2.png" },
@@ -981,7 +981,7 @@ export const categories: Category[] = [
         id: "Songkran",
         name: "Songkran",
         detail: "ลาย Songkran",
-        detailProducts: "-",
+        detailProducts: "เตรียมตัวรับความชุ่มฉ่ำ! ไอเทมต้อนรับปีใหม่ไทยที่จะพา โชคดีและความสุข มาสาดใส่คุณ!",
         img: "/Authentic-thai/Songkran/Songkran-1.jpg",
         products: [
           { name: "Songkran 1", img: "/Authentic-thai/Songkran/Songkran-2.jpg" },
@@ -997,7 +997,7 @@ export const categories: Category[] = [
         id: "Spooky-Thai-Ghost",
         name: "Spooky Thai Ghost",
         detail: "ลาย Spooky Thai Ghost",
-        detailProducts: "-",
+        detailProducts: "ผีไทยไม่แพ้ชาติใดในโลก! สำหรับคนที่ชอบ ความตื่นเต้นและลึกลับ ต้องมีไอเทมผีๆ ไปสะสม!",
         img: "/Authentic-thai/Spooky-Thai-Ghost/Spooky-1.jpg",
         products: [
           { name: "Spooky-Thai-Ghost 1", img: "/Authentic-thai/Spooky-Thai-Ghost/Spooky-2.jpg" },
@@ -1013,7 +1013,7 @@ export const categories: Category[] = [
         id: "Thai-Floating-mk",
         name: "Thai Floating mk",
         detail: "ลาย Thai Floating mk",
-        detailProducts: "-",
+        detailProducts: "เสน่ห์ของวิถีชีวิตไทยริมน้ำที่คุณสัมผัสได้! Floating Mkt คือประสบการณ์ ที่ไม่มีที่ไหนเหมือน!",
         img: "/Authentic-thai/Thai-Floating-mk/Floating-1.jpg",
         products: [
           { name: "Thai-Floating-mk 1", img: "/Authentic-thai/Thai-Floating-mk/Floating-2.jpg" },
@@ -1029,7 +1029,7 @@ export const categories: Category[] = [
         id: "Tom-Yum",
         name: "Tom Yum",
         detail: "ลาย Tom Yum",
-        detailProducts: "-",
+        detailProducts: "เติมความเผ็ดร้อนเปรี้ยวจี๊ดจ๊าดให้เต็มรสชาติของชีวิต รสชาติที่พาไทยไปสู่เวทีโลก! Tom Yum ซดน้ำที เผ็ดร้อนถึงใจ... นี่แหละรสชาติที่ใช่!",
         img: "/Authentic-thai/Tom-Yum/Tom-Yum-1.jpg",
         products: [
           { name: "Tom-Yum 1", img: "/Authentic-thai/Tom-Yum/Tom-Yum-2.jpg" },
@@ -1045,7 +1045,7 @@ export const categories: Category[] = [
         id: "Tuk-Tuk",
         name: "Tuk Tuk",
         detail: "ลาย Tuk Tuk",
-        detailProducts: "-",
+        detailProducts: "ยกล้อวิ่งวนรอบเมือง ไปดูมวยที่ราชดำเนิน เพลิดเพลินวิววัดพระแก้ว หิวแล้วไปเยาวราช ห้ามพลาดตลาดน้ำ ไทยสไตล์ที่ไครๆก็ไม่ลืม หอไอเฟลสัญลักษ์ของแฟชั่น สัญลักษ์ของความมันส์ของไทยก็คือTUKTUK",
         img: "/Authentic-thai/Tuk-Tuk/Tuk-Tuk-1.jpg",
         products: [
           { name: "Tuk-Tuk 1", img: "/Authentic-thai/Tuk-Tuk/Tuk-Tuk-2.jpg" },
@@ -1069,7 +1069,7 @@ export const categories: Category[] = [
         id: "Candy-Addict",
         name: "Candy Addict",
         detail: "ลาย Candy Addict",
-        detailProducts: "-",
+        detailProducts: "หยุดกินไม่ได้ คือเรื่องจริง! สำหรับคนรักความหวาน ติดหนึบ ยิ่งกว่ารักแรก!",
         img: "/Food/Candy-Addict/Candy-Addict-1.jpg",
         products: [
           { name: "Candy-Addict 1", img: "/Food/Candy-Addict/Candy-Addict-2.jpg" },
@@ -1085,7 +1085,7 @@ export const categories: Category[] = [
         id: "Shushi",
         name: "Shushi",
         detail: "ลาย Shushi",
-        detailProducts: "-",
+        detailProducts: "หากซูชิคือศิลปะ แปลว่าจานนี้คือแคนวาส ทุกคำคือพู่กัน ทุกสายซอสโชยุคือหมึกดำวาดเรื่องราวความภูมิใจของญี่ปุ่นเอาไว้ ไม่ใช่แค่ของกิน แต่เป็นวัฒนธรรมที่วางเรียงอยู่บนข้าวเม็ดเล็กๆ “Every sushi tells a story.",
         img: "/Otaku/Shushi/Shushi-1.jpg",
         products: [
           { name: "Shushi 1", img: "/Otaku/Shushi/Shushi-2.jpg" },
@@ -1101,7 +1101,7 @@ export const categories: Category[] = [
         id: "Fat-Or-Bold",
         name: "Fat Or Bold",
         detail: "ลาย Fat Or Bold",
-        detailProducts: "-",
+        detailProducts: "เลิกกังวลเรื่องน้ำหนัก! ความมั่นใจ คือสิ่งที่เราขาย! เพราะความหนาคือ ความกล้า!",
         img: "/Food/Fat-Or-Bold/Fat-Or-Bold-1.jpg",
         products: [
           { name: "Fat-Or-Bold 1", img: "/Food/Fat-Or-Bold/Fat-Or-Bold-2.jpg" },
@@ -1116,7 +1116,7 @@ export const categories: Category[] = [
         id: "In-Carbs-We-Trust",
         name: "In Carbs We Trust",
         detail: "ลาย In Carbs We Trust",
-        detailProducts: "-",
+        detailProducts: "พุงแตกก็ยังแดกไม่พัก อ้วนแต่น่ารักก็ปลั๊กนี้แหละ",
         img: "/Food/In-Carbs-We-Trust/Trust-1.jpg",
         products: [
           { name: "In-Carbs-We-Trust 1", img: "/Food/In-Carbs-We-Trust/Trust-2.jpg" },
@@ -1140,7 +1140,7 @@ export const categories: Category[] = [
         id: "Blossom",
         name: "Blossom",
         detail: "ลาย Blossom",
-        detailProducts: "-",
+        detailProducts: "ใครว่าดอกไม้มีไว้แค่ให้? เพราะปลั๊ก Blossom ของเรามีไว้เพื่อครองใจสาวๆ ทุกคน!ว้าว นะระอะ",
         img: "/Fashion-Trend/Blossom/Blossom-1.jpg",
         products: [
           { name: "Blossom 1", img: "/Fashion-Trend/Blossom/Blossom-2.jpg" },
@@ -1155,7 +1155,7 @@ export const categories: Category[] = [
         id: "Cute-Ghost",
         name: "Cute Ghost",
         detail: "ลาย Cute Ghost",
-        detailProducts: "-",
+        detailProducts: "ผีอื่นอะหลอกเก่ง...แต่เราเป็นผีดีหลอกให้รักได้อย่างเดียว! ปลั๊ก Cute Ghost ลายนี้เลยไม่ต้องกลัวว่าจะเจอเรื่องหลอนๆ",
         img: "/Fashion-Trend/Cute-Ghost/Cute-Ghost-1.jpg",
         products: [
           { name: "Cute-Ghost 1", img: "/Fashion-Trend/Cute-Ghost/Cute-Ghost-2.jpg" },
@@ -1170,7 +1170,7 @@ export const categories: Category[] = [
         id: "End-of-month",
         name: "End of month",
         detail: "ลาย End of month",
-        detailProducts: "-",
+        detailProducts: "เงินหมดไม่กลัว กลัวแต่ไม่มีมาม่าอยู่ในชีวิต สิ้นเดือน #ปลั๊กไฟตามสั่ง",
         img: "/Fashion-Trend/End-of-month/End-of-month-1.jpg",
         products: [
           { name: "End-of-month 1", img: "/Fashion-Trend/End-of-month/End-of-month-2.jpg" },
@@ -1185,7 +1185,7 @@ export const categories: Category[] = [
         id: "GAME-OVER",
         name: "GAME OVER",
         detail: "ลาย GAME OVER",
-        detailProducts: "-",
+        detailProducts: " เห็นคำว่า GAME OVER แล้วอย่าเพิ่งสลด! เพราะปลั๊ก GAME OVER ของเรามีไว้เพื่อบอกว่า...ต่อให้เกมจะจบแต่ผมไม่สลดนะค้าบ",
         img: "/Fashion-Trend/GAME-OVER/GAME-OVER-1.jpg",
         products: [
           { name: "GAME-OVER 1", img: "/Fashion-Trend/GAME-OVER/GAME-OVER-2.jpg" },
@@ -1200,7 +1200,7 @@ export const categories: Category[] = [
         id: "Graffiti",
         name: "Graffiti",
         detail: "ลาย Graffiti",
-        detailProducts: "-",
+        detailProducts: " เฮ้ยแก...ใครว่าปลั๊กไฟจะคูลไม่ได้วะ? ไม่ต้องพกสเปรย์ไปพ่นกำแพงให้โดนจับ แค่เสียบปลั๊กก็เหมือนได้โชว์งานศิลปะบนผนังแล้ว!",
         img: "/Fashion-Trend/Graffiti/Graffiti-1.jpg",
         products: [
           { name: "Graffiti 1", img: "/Fashion-Trend/Graffiti/Graffiti-2.jpg" },
@@ -1215,7 +1215,7 @@ export const categories: Category[] = [
         id: "Happy-in-Forest",
         name: "Happy in Forest",
         detail: "ลาย Happy in Forest",
-        detailProducts: "-",
+        detailProducts: " สายเขียวสดชื่นนนน! เอาปลั๊ก Happy in Fores ไปด้วย เพราะไม่ว่าป่าจะลึกแค่ไหน...ความสุขก็ยังชาร์จได้!",
         img: "/Fashion-Trend/Happy-in-Forest/Happy-in-Forest-1.jpg",
         products: [
           { name: "Happy-in-Forest 1", img: "/Fashion-Trend/Happy-in-Forest/Happy-in-Forest-2.jpg" },
@@ -1230,7 +1230,7 @@ export const categories: Category[] = [
         id: "Happy-Life",
         name: "Happy Life",
         detail: "ลาย Happy Life",
-        detailProducts: "-",
+        detailProducts: "Happy Life! อะไรไม่จอยก็แค่เชิดใส่! ชีวิตคือการได้เสียบ...ด้วยความสุข เพราะทุกวันคือวันใหม่ที่เราจะสุขได้แบบสดๆ",
         img: "/Fashion-Trend/Happy-Life/Happy-Life-1.png",
         products: [
           { name: "Happy-Life 1", img: "/Fashion-Trend/Happy-Life/Happy-Life-2.png" },
@@ -1245,7 +1245,7 @@ export const categories: Category[] = [
         id: "Hygge",
         name: "Hygge",
         detail: "ลาย Hygge",
-        detailProducts: "-",
+        detailProducts: "เตง...เคยมีความสุขจนล้นออกปากมั้ย? Hygge ของเรานี่แหละ!ชาร์จพลังความสุข  ให้คุณจนนอนไม่ได้เลย มันจะไหลออกทางหู",
         img: "/Fashion-Trend/Hygge/Hygge-1.jpg",
         products: [
           { name: "Hygge 1", img: "/Fashion-Trend/Hygge/Hygge-2.jpg" },
@@ -1260,7 +1260,7 @@ export const categories: Category[] = [
         id: "LGBTQ",
         name: "LGBTQ",
         detail: "ลาย LGBTQ",
-        detailProducts: "-",
+        detailProducts: "ใครว่าความต่างมันอยู่ด้วยกันไม่ได้! ปลั๊ก LGBTQ ของเรานี่ไง! ที่จะพิสูจน์ให้เห็นว่าความแตกต่างคือความสวยงาม มาสร้างสังคมที่แตกต่างแต่ลงตัวด้วยกันนะจ๊ะ",
         img: "/Fashion-Trend/LGBTQ/LGBTQ-1.jpg",
         products: [
           { name: "LGBTQ 1", img: "/Fashion-Trend/LGBTQ/LGBTQ-2.jpg" },
@@ -1275,7 +1275,7 @@ export const categories: Category[] = [
         id: "Love-Wins",
         name: "Love-Wins",
         detail: "ลาย Love-Wins",
-        detailProducts: "-",
+        detailProducts: "เตง...ลองส่งต่อความรักดูมั้ย? เลิกส่งสติกเกอร์รูปหัวใจ มาลองส่งต่อ ความรัก แบบมีไฟ ด้วยปลั๊ก Love Wins สิ",
         img: "/Fashion-Trend/Love-Wins/Love-Wins-1.jpg",
         products: [
           { name: "Love-Wins 1", img: "/Fashion-Trend/Love-Wins/Love-Wins-2.jpg" },
@@ -1290,7 +1290,7 @@ export const categories: Category[] = [
         id: "Narm-Laem",
         name: "Narm Laem",
         detail: "ลาย Narm Laem",
-        detailProducts: "-",
+        detailProducts: "หนามแหลมของกระบองเพชรว่าคมแล้ว...  ยังไม่เท่าสันกรามที่บาดใจเธอนะ! ความคมอาจจะไม่ได้น่ากลัวเสมอไป...อิๆ",
         img: "/Fashion-Trend/Narm-Laem/Narm-Laem-1.jpg",
         products: [
           { name: "Narm-Laem 1", img: "/Fashion-Trend/Narm-Laem/Narm-Laem-2.jpg" },
@@ -1305,7 +1305,7 @@ export const categories: Category[] = [
         id: "Opulently-Peony",
         name: "Opulently Peony",
         detail: "ลาย Opulently Peony",
-        detailProducts: "-",
+        detailProducts: "ความงดงามที่ไม่ได้มีไว้โชว์...แต่มีไว้ชาร์จ! เพราะความสวยอ่อนช้อยของมวลดอกไม้...พร้อมจะปลุกความสดใสในตัวคุณแล้ว!",
         img: "/Fashion-Trend/Opulently-Peony/Opulently-Peony-1.jpg",
         products: [
           { name: "Opulently-Peony 1", img: "/Fashion-Trend/Opulently-Peony/Opulently-Peony-2.png" },
@@ -1320,7 +1320,7 @@ export const categories: Category[] = [
         id: "Pick-Up",
         name: "Pick Up",
         detail: "ลาย Pick Up",
-        detailProducts: "-",
+        detailProducts: "เตง...ชีวิตนี้จะเลือกอะไร...ก็เรื่องของเรา! ลาย Pick Up บอกแล้วว่าการเลือกของเราถึงจะไม่ถูกใจใครแค่ใจเราชอบก็พอ!",
         img: "/Fashion-Trend/Pick-Up/Pick-Up-1.jpg",
         products: [
           { name: "Pick-Up 1", img: "/Fashion-Trend/Pick-Up/Pick-Up-2.jpg" },
@@ -1335,7 +1335,7 @@ export const categories: Category[] = [
         id: "Rock-Roll-FEV",
         name: "Rock & Roll FEV",
         detail: "ลาย Rock & Roll FEV",
-        detailProducts: "-",
+        detailProducts: "ปลั๊ก Rock & Roll FEV. ลายนี้มีไว้เพื่อระเบิดความมันส์ในตัวคุณ! ต่อให้วันนี้ชีวิตจะไม่ร็อกเลยก็ตาม",
         img: "/Fashion-Trend/Rock-Roll-FEV/Rock-Roll-FEV-1.jpg",
         products: [
           { name: "Rock-Roll-FEV 1", img: "/Fashion-Trend/Rock-Roll-FEV/Rock-Roll-FEV-2.jpg" },
@@ -1350,7 +1350,7 @@ export const categories: Category[] = [
         id: "Salaryman-DL",
         name: "Salaryman DL",
         detail: "ลาย Salaryman DL",
-        detailProducts: "-",
+        detailProducts: " ไม่ว่าจะเครียดแค่ไหน...มนุษย์เงินเดือนอย่างเราก็ต้องร่าเริง!เพราะปลั๊ก Salaryman's DL ลายนี้มีไว้เพื่อเติมพลังความสนุกสนาน",
         img: "/Fashion-Trend/Salaryman-DL/Salaryman-DL-1.png",
         products: [
           { name: "Salaryman-DL 1", img: "/Fashion-Trend/Salaryman-DL/Salaryman-DL-2.png" },
@@ -1365,7 +1365,7 @@ export const categories: Category[] = [
         id: "Swim-with-me",
         name: "Swim with me",
         detail: "ลาย Swim with me",
-        detailProducts: "-",
+        detailProducts: " ใครว่ายน้ำไม่เป็นมานี่เลย! 😜เพราะปลั๊ก Swim with me Free Breakfast นอกจากสำลักน้ำในสระไม่ได้แค่สนุก...แต่ยังทำให้คุณอิ่มด้วย!",
         img: "/Fashion-Trend/Swim-with-me/Swim-with-me-1.jpg",
         products: [
           { name: "Swim-with-me 1", img: "/Fashion-Trend/Swim-with-me/Swim-with-me-2.jpg" },
@@ -1380,7 +1380,7 @@ export const categories: Category[] = [
         id: "Toxic-Love",
         name: "Toxic Love",
         detail: "ลาย Toxic Love",
-        detailProducts: "-",
+        detailProducts: " เตง...ชีวิตนี้อย่าเป็นปลั๊กให้ใครมาเสียบแล้วเจ็บฟรีๆ! ปลั๊ก Toxic Love ลายนี้เตือนใจว่า…อะไรยอมได้..อย่าไปยอม!เชิดเลยค่ะ",
         img: "/Fashion-Trend/Toxic-Love/Toxic-Love-1.jpg",
         products: [
           { name: "Toxic-Love 1", img: "/Fashion-Trend/Toxic-Love/Toxic-Love-2.jpg" },
@@ -1395,7 +1395,7 @@ export const categories: Category[] = [
         id: "Want-to-travel",
         name: "Want to travel",
         detail: "ลาย Want to travel",
-        detailProducts: "-",
+        detailProducts: "เห็นชื่อปลั๊ก อยากเที่ยว แล้วอย่าเพิ่งแพลนทริป! เพราะไปเที่ยวไหนก็ไม่อุ่นใจเท่าเที่ยวกับเธอนะ...เบ๊บ!",
         img: "/Fashion-Trend/Want-to-travel/Want-to-travel-1.jpg",
         products: [
           { name: "Want-to-travel 1", img: "/Fashion-Trend/Want-to-travel/Want-to-travel-2.jpg" },
@@ -1436,7 +1436,7 @@ export const categories: Category[] = [
         id: "Bunny-Carrot",
         name: "Bunny Carrot",
         detail: "ลาย Bunny Carrot",
-        detailProducts: "-",
+        detailProducts: "นี่คือชาวกระต่ายที่ขยันที่สุดในโลก! แต่ปลั๊ก Bunny Carrot Garden ถึงจะขยันก็มีบางตัวแอบกินจนพุงกางนะ! กินแรงเพื่อนนะ...เดี๊ยวเถอะ!",
         img: "/Pets/Bunny-Carrot/Bunny-Carrot-1.jpg",
         products: [
           { name: "Bunny-Carrot 1", img: "/Pets/Bunny-Carrot/Bunny-Carrot-2.jpg" },
@@ -1452,7 +1452,7 @@ export const categories: Category[] = [
         id: "Bunny-Painter",
         name: "Bunny Painter",
         detail: "ลาย Bunny Painter",
-        detailProducts: "-",
+        detailProducts: "เมื่อความอาร์ตเข้าสิงกระต่าย...เขาเลยมาขอใช้ปลั๊กเราเป็นผืนผ้าใบซะเลย!พราะงานศิลป์บางทีก็ไม่ได้อยู่ในพิพิธภัณฑ์...แต่อยู่ในปลั๊กนี่แหละ!",
         img: "/Pets/Bunny-Painter/Bunny-Painter-1.jpg",
         products: [
           { name: "Bunny-Painter 1", img: "/Pets/Bunny-Painter/Bunny-Painter-2.jpg" },
@@ -1467,7 +1467,7 @@ export const categories: Category[] = [
         id: "Cat-World",
         name: "Cat World",
         detail: "ลาย Cat World",
-        detailProducts: "-",
+        detailProducts: "ทาส...มานี่! ปลั๊ก แมว บอกว่าถ้าจะรักก็ต้องยอมเป็นทาส! ยอมรึยัง? ถ้าไม่ยอมเราจะไปนอนบนคีย์บอร์ดให้ดู!",
         img: "/Pets/Cat-World/Cat-World-1.jpg",
         products: [
           { name: "Cat-World 1", img: "/Pets/Cat-World/Cat-World-2.jpg" },
@@ -1483,7 +1483,7 @@ export const categories: Category[] = [
         id: "Cats-Lover",
         name: "Cats Lover",
         detail: "ลาย Cats Lover",
-        detailProducts: "-",
+        detailProducts: "เบื่อมั้ย...กับการทำงานที่ต้องใช้พลังงานเยอะ? ปลั๊ก Cats Lover ของเรานี่แหละ! จะคอยชาร์จความน่ารักให้คุณตลอดเวลา...จนไม่ต้องไปชาร์จแบตที่อื่นเลย!",
         img: "/Pets/Cats-Lover/Cats-Lover-1.jpg",
         products: [
           { name: "Cats-Lover 1", img: "/Pets/Cats-Lover/Cats-Lover-2.jpg" },
@@ -1498,7 +1498,7 @@ export const categories: Category[] = [
         id: "Cat-weekend",
         name: "Cat weekend",
         detail: "ลาย Cat weekend",
-        detailProducts: "-",
+        detailProducts: "ชีวิตประจำวันก็ไม่มีอะไรมาก...นอกจากทำตัวเอ๋อๆ แล้วก็รอให้ทาสมาหลงเรา ง่ายจะตาย!",
         img: "/Pets/Cat-weekend/Cat-weekend-1.jpg",
         products: [
           { name: "Cat-weekend 1", img: "/Pets/Cat-weekend/Cat-weekend-2.jpg" },
@@ -1513,7 +1513,7 @@ export const categories: Category[] = [
         id: "Cat-whisperer",
         name: "Cat whisperer",
         detail: "ลาย Cat whisperer",
-        detailProducts: "-",
+        detailProducts: "เมื่อชีวิตนี้...มีแต่แมว!ก็ทาสที่ใช้ปลั๊ก Cat whisperer นี่แหละ!เพราะความเข้าใจมันลึกซึ้งจน...จะให้ไปรักใครคงไม่ได้แล้ว!",
         img: "/Pets/Cat-whisperer/Cat-whisperer-1.jpg",
         products: [
           { name: "Cat-whisperer 1", img: "/Pets/Cat-whisperer/Cat-whisperer-2.jpg" },
@@ -1528,7 +1528,7 @@ export const categories: Category[] = [
         id: "Circus",
         name: "Circus",
         detail: "ลาย Circus",
-        detailProducts: "-",
+        detailProducts: "พร้อมรับชมโชว์ที่ตระการตาที่สุดรึยัง? ปลั๊ก Circus of Bel. An. ของเราจะทำให้คุณรู้ว่า...การชาร์จแบตก็เป็นเรื่องตื่นเต้นได้! เพราะทุกครั้งที่เสียบ...ก็เหมือนได้ดูละครสัตว์สุดยิ่งใหญ่",
         img: "/Pets/Circus/Circus-1.jpg",
         products: [
           { name: "Circus 1", img: "/Pets/Circus/Circus-2.jpg" },
@@ -1543,7 +1543,7 @@ export const categories: Category[] = [
         id: "Colorful",
         name: "Colorful",
         detail: "ลาย Colorful",
-        detailProducts: "-",
+        detailProducts: "Bonjour! ใครว่าปารีสมีแต่แฟชั่นคน! ปลั๊ก Colorful Cats in Paris ของเราจะทำให้คุณรู้ว่า...แมวก็มีแฟชั่นเป็นของตัวเองนะ! เสียบปุ๊บความเก๋ก็มาปั๊บ...ทาสแมวต้องรักแน่ๆ!",
         img: "/Pets/Colorful/Colorful-1.jpg",
         products: [
           { name: "Colorful 1", img: "/Pets/Colorful/Colorful-2.jpg" },
@@ -1558,7 +1558,7 @@ export const categories: Category[] = [
         id: "Croaky",
         name: "Croaky",
         detail: "ลาย Croaky",
-        detailProducts: "-",
+        detailProducts: "ชีวิตนี้ไม่ต้องรีบ...เหมือนกบในสระ! เพราะปลั๊ก Croaky ที่พร้อมจะชาร์จความชิวให้ชีวิตคุณ เหมือนกบที่ใช้ชีวิตไปวันๆ แบบไม่แคร์ใคร!",
         img: "/Pets/Croaky/Croaky-1.jpg",
         products: [
           { name: "Croaky 1", img: "/Pets/Croaky/Croaky-2.jpg" },
@@ -1573,7 +1573,7 @@ export const categories: Category[] = [
         id: "Cutie-animals",
         name: "Cutie animals",
         detail: "ลาย Cutie animals",
-        detailProducts: "-",
+        detailProducts: "นี่ไม่ใช่เรื่องบังเอิญ... แต่คือการรวมตัวกันโดยมิได้นัดหมายของเหล่าสัตว์น้อยใหญ่!ปลั๊ก Cutie animals ของเราคือสถานที่ศักดิ์สิทธิ์ที่เหล่าความน่ารักมารวมกันโดยพร้อมเพรียง!",
         img: "/Pets/Cutie-animals/Cutie-animals-1.jpg",
         products: [
           { name: "Cutie-animals 1", img: "/Pets/Cutie-animals/Cutie-animals-2.jpg" },
@@ -1588,7 +1588,7 @@ export const categories: Category[] = [
         id: "Dogs-Happy",
         name: "Dogs-Happy",
         detail: "ลาย Dogs-Happy",
-        detailProducts: "-",
+        detailProducts: "เมื่อมนุษย์ไม่อยู่บ้าน...ก็เสร็จเราสิ! ปลั๊ก Dogs Happy Party ปาร์ตี้หมาเริ่มต้นขึ้นแล้วพร้อมมันส์ไปกับพวกเรายัง?",
         img: "/Pets/Dogs-Happy/Dogs-Happy-1.jpg",
         products: [
           { name: "Dogs-Happy 1", img: "/Pets/Dogs-Happy/Dogs-Happy-2.jpg" },
@@ -1603,7 +1603,7 @@ export const categories: Category[] = [
         id: "Hedgehog",
         name: "Hedgehog",
         detail: "ลาย Hedgehog",
-        detailProducts: "-",
+        detailProducts: "เคยหลงทางในเมืองแล้วเครียดจนหัวจะระเบิดไหม? ปลั๊ก Hodgehog in Town น้องเม่นยังหลงอย่างสนุกสนาน...เราก็ควรจะมีความสุขแล้วหลงไปกับชีวิตบ้าง!",
         img: "/Pets/Hedgehog/Hedgehog-1.jpg",
         products: [
           { name: "Hedgehog 1", img: "/Pets/Hedgehog/Hedgehog-2.jpg" },
@@ -1648,7 +1648,7 @@ export const categories: Category[] = [
         id: "Korean-cat",
         name: "Korean cat",
         detail: "ลาย Korean cat",
-        detailProducts: "-",
+        detailProducts: "ทาสต้องรักเราแน่ๆ! เพราะถ้าไม่รักจะเอาเราไปอยู่บนปลั๊กไฟได้ไง! มา! มารับเรากลับบ้านเลยนะ",
         img: "/Pets/Korean-cat/Korean-cat-1.jpg",
         products: [
           { name: "Korean-cat 1", img: "/Pets/Korean-cat/Korean-cat-2.jpg" },
@@ -1662,7 +1662,7 @@ export const categories: Category[] = [
         id: "Mee-Noi",
         name: "Mee Noi",
         detail: "ลาย Mee Noi",
-        detailProducts: "-",
+        detailProducts: "เตง...มีหมีน้อยตัวนึงคอยรักเตงอยู่นะ...เบ๊บ! ต่อให้วันนี้ยังไม่มีคนบอกรัก...็ขอให้ชาร์จความรักให้ตัวเองไปก่อนนะ",
         img: "/Pets/Mee-Noi/Mee-Noi-1.jpg",
         products: [
           { name: "Mee-Noi 1", img: "/Pets/Mee-Noi/Mee-Noi-2.jpg" },
@@ -1677,7 +1677,7 @@ export const categories: Category[] = [
         id: "Meow",
         name: "Meow",
         detail: "ลาย Meow",
-        detailProducts: "-",
+        detailProducts: "ชีวิตแมวไม่ต้องมีอะไรมาก...แค่ได้นั่งเฝ้าทาสทั้งวันก็พอแล้ว...อยู่กับเราไปนานๆนะเมี๊ยว!",
         img: "/Pets/Meow/Meow-1.jpg",
         products: [
           { name: "Meow 1", img: "/Pets/Meow/Meow-2.jpg" },
@@ -1691,7 +1691,7 @@ export const categories: Category[] = [
         id: "Nekko",
         name: "Nekko",
         detail: "ลาย Nekko",
-        detailProducts: "-",
+        detailProducts: "นี่ก็ทำเป็นหยิ่ง...ไม่สนใจใคร...แต่ในใจก็อยากให้ทาสมาเสียบปลั๊กให้เรานะ...งอนแล้วนะ! ไปหาอะไรให้เรากินด้วย!",
         img: "/Pets/Nekko/Neko-1.jpg",
         products: [
           { name: "Nekko 1", img: "/Pets/Nekko/Neko-2.jpg" },
@@ -1734,7 +1734,7 @@ export const categories: Category[] = [
         id: "Pets-Yummy",
         name: "Pets Yummy",
         detail: "ลาย Pets Yummy",
-        detailProducts: "-",
+        detailProducts: "อาหารจะมารึยังน้าาาา...ความหวังของเหล่าสัตว์เลี้ยง! ปลั๊ก Pets Yummy อาหารจะมาแล้วนะ!เสียบปุ๊บ...เหมือนได้ยินเสียงชามข้าวปั๊บ!",
         img: "/Pets/Pets-Yummy/Pets-Yummy-1.jpg",
         products: [
           { name: "Pets-Yummy 1", img: "/Pets/Pets-Yummy/Pets-Yummy-2.jpg" },
@@ -1748,7 +1748,7 @@ export const categories: Category[] = [
         id: "Sweet-PETS",
         name: "Sweet PETS",
         detail: "ลาย Sweet PETS",
-        detailProducts: "-",
+        detailProducts: "ปลั๊ก Sweet PETS คุณคือโลกทั้งใบของพวกเขา...จริงๆ นะ! เพราะถ้าไม่ได้ชาร์จความรักจากคุณ...โลกของพวกเขาก็เศร้าแย่เลย",
         img: "/Pets/Sweet-PETS/Sweet-PETS-1.jpg",
         products: [
           { name: "Sweet-PETS 1", img: "/Pets/Sweet-PETS/Sweet-PETS-2.jpg" },
@@ -1763,7 +1763,7 @@ export const categories: Category[] = [
         id: "We-are-Golden",
         name: "We are Golden",
         detail: "ลาย We are Golden",
-        detailProducts: "-",
+        detailProducts: "We are Golden ของเราคือแหล่งรวมความสดใส!...ความน่ารักของน้องหมาก็วิ่งมาหาทันทีระวังจะโดนความน่ารักตกจนหมดใจ!",
         img: "/Pets/We-are-Golden/We-are-Golden-1.jpg",
         products: [
           { name: "We-are-Golden 1", img: "/Pets/We-are-Golden/We-are-Golden-2.jpg" },
