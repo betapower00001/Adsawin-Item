@@ -1420,7 +1420,7 @@ export const categories: Category[] = [
         id: "black-cat",
         name: "black cat",
         detail: "ลาย black cat",
-        detailProducts: "“ดำเมี่ยมตัวแสบขั้นเทพ! วิ่ง ขโมย แอบซนทุกมุมบ้าน ป่วนจนหัวเราะไม่หยุด จัดเต็มความฮาแบบที่ต้องเจอเอง!",
+        detailProducts: "ดำเมี่ยมตัวแสบขั้นเทพ! วิ่ง ขโมย แอบซนทุกมุมบ้าน ป่วนจนหัวเราะไม่หยุด จัดเต็มความฮาแบบที่ต้องเจอเอง!",
         img: "/Pets/black-cat/black-cat-1.jpg",
         products: [
           { name: "black-cat 1", img: "/Pets/black-cat/black-cat-2.jpg" },
