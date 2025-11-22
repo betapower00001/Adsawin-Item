@@ -10,8 +10,8 @@ const anuphan = Anuphan({
 });
 
 export const metadata: Metadata = {
-  title: "My Next App",
-  description: "เว็บนี้ใช้ฟอนต์ Anuphan จาก Google Fonts",
+  title: "Adsawin",
+  description: "เลือกปลั๊กที่ใช่ ลายที่ชอบ",
 };
 
 export default function RootLayout({
