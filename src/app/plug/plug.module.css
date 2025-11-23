@@ -1,6 +1,0 @@
-.container { padding: 40px; text-align: center; }
-.title { font-size: 2rem; margin-bottom: 20px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
-.card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.2s; }
-.card:hover { transform: translateY(-4px); }
-.card img { width: 100%; border-radius: 10px; }

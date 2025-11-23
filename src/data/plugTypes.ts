@@ -1,16 +1,28 @@
+// data/plugTypes.ts
+
 export interface PlugType {
-  id: string;
-  name: string;
-  // thumbnail shown on the plug type list
-  thumb?: string;
+  id: string;
+  name: string;
+  thumb?: string;
+  modelPath: string; // <--- เพิ่ม Path สำหรับไฟล์ GLB
 }
 
 export const plugTypes: PlugType[] = [
-  { id: "universal", name: "Universal", thumb: "/plugs/universal/thumb.png" },
-  { id: "thai", name: "Thai", thumb: "/plugs/thai/thumb.png" },
-  { id: "eu", name: "EU", thumb: "/plugs/eu/thumb.png" },
-  { id: "us", name: "US", thumb: "/plugs/us/thumb.png" },
-  { id: "uk", name: "UK", thumb: "/plugs/uk/thumb.png" },
+  { 
+    id: "universal", 
+    name: "Universal", 
+    thumb: "/plugs/universal/thumb.png",
+    modelPath: "/models/plug/powerstrip_thai.glb" 
+  },
+  { 
+    id: "thai", 
+    name: "Thai", 
+    thumb: "/plugs/thai/thumb.png",
+    modelPath: "/models/plug/powerstrip_thai.glb" 
+  },
+  { id: "eu", name: "EU", thumb: "/2_0.png", modelPath: "/models/plug/powerstrip_thai.glb" },
+  { id: "us", name: "US", thumb: "/2_0.png", modelPath: "/models/plug/powerstrip_thai.glb" },
+  { id: "uk", name: "UK", thumb: "/2_0.png", modelPath: "/models/plug/powerstrip_thai.glb" },
 ];
 
 export default plugTypes;

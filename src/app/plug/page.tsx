@@ -1,30 +1,10 @@
-"use client";
+// app/plug/page.tsx
+import { redirect } from 'next/navigation';
 
-import Link from "next/link";
-import plugTypes from "@/data/plugTypes";
-import styles from "./typeList.module.css";
-
-export default function PlugTypeListPage() {
-  return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>เลือกชนิดปลั๊ก</h1>
-
-      <div className={styles.grid}>
-        {plugTypes.map((plug) => (
-          <Link
-            key={plug.id}
-            href={`/plug/${plug.id}`}
-            className={styles.card}
-          >
-            <img
-              src={plug.thumb}
-              className={styles.thumb}
-              alt={plug.name}
-            />
-            <div className={styles.name}>{plug.name}</div>
-          </Link>
-        ))}
-      </div>
-    </div>
-  );
+export default function PlugRootRedirectPage() {
+    // กำหนดชนิดปลั๊กไฟเริ่มต้นที่คุณต้องการให้เป็นหน้าแรก
+    const defaultPlugId = 'universal'; 
+    
+    // ทำการเปลี่ยนเส้นทางไปยังหน้า Customizer ของปลั๊กเริ่มต้นทันที
+    redirect(`/plug/${defaultPlugId}`);
 }
