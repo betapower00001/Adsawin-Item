@@ -1,107 +1,188 @@
-// components/PlugCustomizer.tsx
+// src/components/PlugCustomizer.tsx
 "use client";
 
-import { useState } from 'react';
-import { notFound } from "next/navigation";
-import plugTypes from "@/data/plugTypes";
-import patterns from "@/data/patterns";
+import React, { useState } from "react";
+import plugTypes from "../data/plugTypes";
+import patterns from "../data/patterns";
+import Plug3D from "./Plug3D";
+import ColorPicker from "./ColorPicker";
+import PlugSelector from "./PlugSelector";
+import PatternPicker from "./PatternPicker";
+import LayoutPreview from "./LayoutPreview";
 
-// Components ที่ Import เข้ามา
-import Plug3D from "./Plug3D"; 
-import ColorPicker from "./ColorPicker"; 
-// (สมมติว่าคุณสร้าง PatternSelector.tsx แล้ว)
+interface Props {
+  plugId: string; // <<< เปลี่ยนตรงนี้
+}
 
-// State หลักสำหรับสีและลาย (ชื่อคีย์เป็น Color)
 interface CustomizationState {
   topColor: string;
   bottomColor: string;
   switchColor: string;
   patternUrl: string;
-  // layers: any[];
+  view: "front" | "angle";
 }
 
-interface PlugCustomizerProps {
-  plugId: string; // ID ของปลั๊กที่เลือก
-}
+export default function PlugCustomizer({ plugId }: Props) {
+  // ใช้ plugId แทน initialPlugId
+  const [selectedPlugId, setSelectedPlugId] = useState<string>(plugId);
+  const plug = plugTypes.find((p) => p.id === selectedPlugId)!;
 
-export default function PlugCustomizer({ plugId }: PlugCustomizerProps) {
-  const plug = plugTypes.find((p) => p.id === plugId);
-  if (!plug) return notFound();
-  
-  const initialPatternUrl = patterns[plugId]?.[0]?.img || '';
-  
-  const [customization, setCustomization] = useState<CustomizationState>({
-    topColor: '#ffffff',
-    bottomColor: '#eeeeee',
-    switchColor: '#00bfff',
-    patternUrl: initialPatternUrl,
-  });
+  const initialPattern =
+    patterns[selectedPlugId]?.[0]?.img || "";
 
-  const handleDownload = () => {
-      alert("ฟังก์ชันดาวน์โหลดภาพ 3D ถูกเรียกใช้แล้ว! (ต้องใช้โค้ด Three.js ในการจับภาพ)");
-  };
+  const [customization, setCustomization] =
+    useState<CustomizationState>({
+      topColor: "#ffffff",
+      bottomColor: "#eaeaea",
+      switchColor: "#00bfff",
+      patternUrl: initialPattern,
+      view: "angle",
+    });
 
   return (
-    <div style={{ display: 'flex', maxWidth: '1400px', margin: 'auto', gap: '30px' }}>
-      
-      {/* -------------------- ส่วนซ้าย: 3D Preview และ Action Bar -------------------- */}
-      <div style={{ flex: '2', padding: '20px' }}>
-        <div style={{ width: '100%', height: '500px', backgroundColor: '#f0f0f0', borderRadius: '8px' }}>
-          
-          <Plug3D 
-            modelPath={plug.modelPath} 
+    <div
+      style={{
+        display: "flex",
+        maxWidth: 1400,
+        margin: "auto",
+        gap: 30,
+        padding: 20,
+      }}
+    >
+      {/* Left: 3D Preview */}
+      <div style={{ flex: 2, padding: 20 }}>
+        <div
+          style={{
+            width: "100%",
+            height: 520,
+            background: "#f2f6fb",
+            borderRadius: 12,
+            padding: 8,
+          }}
+        >
+          <Plug3D
+            modelPath={plug.modelPath}
             patternImg={customization.patternUrl}
-            // *** การแก้ไขโค้ดอยู่ตรงนี้: จัดโครงสร้าง Object ให้ตรงกับ Plug3DProps ***
             colors={{
               top: customization.topColor,
               bottom: customization.bottomColor,
               switch: customization.switchColor,
             }}
+            view={customization.view}
           />
         </div>
 
-        {/* Action Bar */}
-        <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '20px' }}>
-          <button style={{ padding: '10px' }}>อัพโหลด LOGO</button>
-          <button style={{ padding: '10px' }}>ใส่ข้อความ</button>
-          <button style={{ padding: '10px' }}>เปลี่ยนมุมมอง</button>
-          <button style={{ padding: '10px', backgroundColor: '#333', color: 'white' }} onClick={handleDownload}>
-             ดาวน์โหลดภาพ
-          </button>
+        <div
+          style={{
+            display: "flex",
+            gap: 12,
+            marginTop: 12,
+            justifyContent: "space-between",
+          }}
+        >
+          <div style={{ display: "flex", gap: 8 }}>
+            <button style={{ padding: "8px 12px" }}>
+              อัพโหลด LOGO
+            </button>
+            <button style={{ padding: "8px 12px" }}>
+              ได้แบบที่เลือกแล้ว
+            </button>
+            <button style={{ padding: "8px 12px" }}>
+              เรนเดอร์รูป
+            </button>
+          </div>
+
+          <div>
+            <button style={{ padding: "8px 12px" }}>
+              ดาวน์โหลดภาพ
+            </button>
+          </div>
         </div>
       </div>
-      
-      {/* -------------------- ส่วนขวา: Control Panel -------------------- */}
-      <div style={{ flex: '1', padding: '20px', borderLeft: '1px solid #ccc' }}>
-        <h2>แผงควบคุมการออกแบบ</h2>
-        
-        {/* 1. เลือกสีฝาปลั๊ก (บน-ล่าง) */}
-        <h3>เลือกสีฝาปลั๊ก</h3>
-        <ColorPicker 
-            label="ฝาบน" 
-            initialColor={customization.topColor} 
-            onColorChange={(c) => setCustomization(prev => ({...prev, topColor: c}))} 
-        />
-        <ColorPicker 
-            label="ฝาล่าง" 
-            initialColor={customization.bottomColor} 
-            onColorChange={(c) => setCustomization(prev => ({...prev, bottomColor: c}))} 
+
+      {/* Right Controls */}
+      <div
+        style={{
+          flex: 1,
+          padding: 20,
+          borderLeft: "1px solid #e1e5ea",
+        }}
+      >
+        <h3>เลือกโมเดล (รุ่น)</h3>
+        <PlugSelector
+          items={plugTypes}
+          selected={selectedPlugId}
+          onSelect={(id) => {
+            setSelectedPlugId(id);
+            const p = patterns[id]?.[0]?.img;
+            if (p)
+              setCustomization((s) => ({
+                ...s,
+                patternUrl: p,
+              }));
+          }}
         />
 
-        {/* 2. เลือกสีสวิตช์ On-Off */}
-        <h3>เลือกสีสวิตช์</h3>
-        <ColorPicker 
-            label="สวิตช์" 
-            initialColor={customization.switchColor} 
-            onColorChange={(c) => setCustomization(prev => ({...prev, switchColor: c}))} 
+        <h3 style={{ marginTop: 18 }}>ลวดลาย (Pattern)</h3>
+        <PatternPicker
+          patternsForSelected={patterns[selectedPlugId] || []}
+          uploadedExamples={[
+            "/mnt/data/42a50485-da3a-4e68-b62a-d92aa18f63cc.png",
+          ]}
+          onSelect={(img) =>
+            setCustomization((s) => ({
+              ...s,
+              patternUrl: img,
+            }))
+          }
         />
-        
-        {/* 3. ปุ่ม Generate Keyshot */}
-        <div style={{ marginTop: '40px' }}>
-             <button style={{ padding: '10px 20px', backgroundColor: 'teal', color: 'white' }}>
-                 เจนภาพ Keyshot
-             </button>
-        </div>
+
+        <h3 style={{ marginTop: 18 }}>สีฝาบน</h3>
+        <ColorPicker
+          label="ฝาบน"
+          initialColor={customization.topColor}
+          onColorChange={(c) =>
+            setCustomization((s) => ({
+              ...s,
+              topColor: c,
+            }))
+          }
+        />
+
+        <h3>สีฝาล่าง</h3>
+        <ColorPicker
+          label="ฝาล่าง"
+          initialColor={customization.bottomColor}
+          onColorChange={(c) =>
+            setCustomization((s) => ({
+              ...s,
+              bottomColor: c,
+            }))
+          }
+        />
+
+        <h3>สีสวิตช์</h3>
+        <ColorPicker
+          label="สวิตช์"
+          initialColor={customization.switchColor}
+          onColorChange={(c) =>
+            setCustomization((s) => ({
+              ...s,
+              switchColor: c,
+            }))
+          }
+        />
+
+        <h3 style={{ marginTop: 18 }}>มุมมอง / ดาวน์โหลด</h3>
+        <LayoutPreview
+          view={customization.view}
+          onSetView={(v) =>
+            setCustomization((s) => ({ ...s, view: v }))
+          }
+          onDownload={() => {
+            alert("Implement download capture");
+          }}
+        />
       </div>
     </div>
   );
