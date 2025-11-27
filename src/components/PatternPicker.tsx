@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // src/components/PatternPicker.tsx
 import React from "react";
 
@@ -7,7 +8,7 @@ export default function PatternPicker({
   onSelect,
 }: {
   patternsForSelected: { img: string }[];
-  uploadedExamples: string[]; // local sample paths or public urls
+  uploadedExamples: string[];
   onSelect: (imgUrl: string) => void;
 }) {
   return (
@@ -18,7 +19,14 @@ export default function PatternPicker({
             key={i}
             src={p.img}
             onClick={() => onSelect(p.img)}
-            style={{ width: 60, height: 60, objectFit: "cover", borderRadius: 6, cursor: "pointer", border: "2px solid #eee" }}
+            style={{
+              width: 60,
+              height: 60,
+              objectFit: "cover",
+              borderRadius: 6,
+              cursor: "pointer",
+              border: "2px solid #eee",
+            }}
             alt={`pattern-${i}`}
           />
         ))}
@@ -28,14 +36,30 @@ export default function PatternPicker({
             key={`up-${i}`}
             src={u}
             onClick={() => onSelect(u)}
-            style={{ width: 60, height: 60, objectFit: "cover", borderRadius: 6, cursor: "pointer", border: "2px solid #eee" }}
+            style={{
+              width: 60,
+              height: 60,
+              objectFit: "cover",
+              borderRadius: 6,
+              cursor: "pointer",
+              border: "2px solid #eee",
+            }}
             alt={`uploaded-${i}`}
           />
         ))}
       </div>
 
       <div style={{ marginTop: 8 }}>
-        <label style={{ display: "inline-block", padding: "6px 10px", borderRadius: 8, background: "#fafafa", border: "1px solid #ddd", cursor: "pointer" }}>
+        <label
+          style={{
+            display: "inline-block",
+            padding: "6px 10px",
+            borderRadius: 8,
+            background: "#fafafa",
+            border: "1px solid #ddd",
+            cursor: "pointer",
+          }}
+        >
           อัปโหลดลาย
           <input
             type="file"
