@@ -319,7 +319,7 @@ export const categories: Category[] = [
         id: "Hop-to-Prosperity",
         name: "Hop to Prosperity",
         detail: "ลายเริ่มต้นปีใหม่",
-        detailProducts: "เริ่มต้นปีใหม่ไฟแรง เฮงรับตรุษจีนกับปลั๊กลายมงคลลิมิตเต็ด",
+        detailProducts: "เริ่มต้นปีใหม่ไฟแรง เฮงรับตรุษจีนกับปลั๊กลายมงคล Limited Edition",
         img: "/seasonal/Hop-to-Prosperity/Hop-to-prosperity-01.jpg",
         products: [
           { name: "Hop-to-Prosperity 1", img: "/seasonal/Hop-to-Prosperity/Hop-to-prosperity-02.jpg" },
@@ -390,7 +390,7 @@ export const categories: Category[] = [
         id: "Trick-or-Treat",
         name: "Trick or Treat",
         detail: "ลายคืนวันฮาโลวีนหลอกหรือเลี้ยง",
-        detailProducts: "เติมพลังไม่ขาดตอน ให้ร้อนรัก แดดแรงแค่ไหนก็ไม่กลัวด้วยปลั๊กไฟซัมเมอร์",
+        detailProducts: "Trick or Treat yourself…เสริฟความสนุกหลอนๆ ที่ทุกคนรอคอย",
         img: "/seasonal/Trick-or-Treat/Cat Hallo Ween-01.jpg",
         products: [
           { name: "Trick-or-Treat 1", img: "/seasonal/Trick-or-Treat/Cat Hallo Ween-02.jpg" },
@@ -471,7 +471,7 @@ export const categories: Category[] = [
         id: "Just-a-cute-Duck",
         name: "Just a cute Duck",
         detail: "ลายเป็ดน้อย",
-        detailProducts: "ป็ดตัวเล็ก…แต่นิสัยไม่เล็ก! แหวกว่ายไปทุกมุม ซนแสบ ป่วนได้ทุกเวลา แล้วก็ทำให้หัวเราะจนต้องโบกปีกตาม!",
+        detailProducts: "เป็ดตัวเล็ก…แต่นิสัยไม่เล็ก! แหวกว่ายไปทุกมุม ซนแสบ ป่วนได้ทุกเวลา แล้วก็ทำให้หัวเราะจนต้องโบกปีกตาม!",
         img: "/fantasy/Just-a-cute-Duck/Just-a-cute-Duck-1.jpg",
         products: [
           { name: "Just-a-cute-Duck 1", img: "/fantasy/Just-a-cute-Duck/Just-a-cute-Duck-2.jpg" },
@@ -487,7 +487,7 @@ export const categories: Category[] = [
         id: "Lost-in-Space",
         name: "Lost in Space",
         detail: "ลาย Lost in Space",
-        detailProducts: "เจ้าเผือก แมวจอมป่วน ดันเผลอกดปุ่น LAUNCH ยานเลยหลุดออกมานอกวงโควร อยู่ท่ามกลางดาวเคราะห์เลย จะกลับโลกยังไงล่ะทีนี้? น้ำตาล หมาจอมมึนถาม",
+        detailProducts: "เจ้าเผือก แมวจอมป่วน ดันเผลอกดปุ่น LAUNCH ยานเลยหลุดออกมานอกวงโคจร อยู่ท่ามกลางดาวเคราะห์เลย จะกลับโลกยังไงล่ะทีนี้? น้ำตาล หมาจอมมึนถาม",
         img: "/fantasy/Lost-in-Space/Lost-in-Space-1.jpg",
         products: [
           { name: "Lost-in-Space 1", img: "/fantasy/Lost-in-Space/Lost-in-Space-2.jpg" },
@@ -773,7 +773,7 @@ export const categories: Category[] = [
         id: "Lord-Ganesha-v1",
         name: "Lord Ganesha v1",
         detail: "ลาย Lord Ganesha v1",
-        detailProducts: "ไอเดียตัน งานไม่เดิน? องค์พ่อ Ganesha จะเสกเส้นทางความสำเร็จให้คุณลุล่วงอย่างไม่น่าเชื่อ! พลังสร้างสรรค์ล้นเหลือ!ไม่ใช่แค่เครื่องประดับ... แต่คือ พลังศักดิ์สิทธิ์ที่มองไม่เห็น! บูชาแล้วชีวิตเปลี่ยนไปในทางที่ดีขึ้นอย่างชัดเจน!",
+        detailProducts: "ยกระดับโต๊ะทำงานจากธรรมดา ให้กลายเป็นพื้นที่ที่โอกาสพร้อมเสียบเข้ามาทุกพอร์ต",
         img: "/Mutelu/Lord-Ganeshav1/Lord-Ganesha-v1-1.jpg",
         products: [
           { name: "Lord-Ganeshav1 1", img: "/Mutelu/Lord-Ganeshav1/Lord-Ganesha-v1-2.jpg" },
@@ -789,7 +789,7 @@ export const categories: Category[] = [
         id: "Lord-Ganesha-v2",
         name: "Lord Ganesha v2",
         detail: "ลาย Lord Ganesha v2",
-        detailProducts: "ไอเดียตัน งานไม่เดิน? องค์พ่อ Ganesha จะเสกเส้นทางความสำเร็จให้คุณลุล่วงอย่างไม่น่าเชื่อ! พลังสร้างสรรค์ล้นเหลือ! ไม่ใช่แค่เครื่องประดับ... แต่คือ พลังศักดิ์สิทธิ์ที่มองไม่เห็น! บูชาแล้วชีวิตเปลี่ยนไปในทางที่ดีขึ้นอย่างชัดเจน!",
+        detailProducts: "งานเยอะจนหัวร้อน? วางน้องเนทไว้ข้างจอ…เดี๋ยวใจเย็น ไฟเย็น งานก็ไหลเหมือนลมเย็นยามเช้า",
         img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-1.jpg",
         products: [
           { name: "Lord-Ganesha-v2 1", img: "/Mutelu/Lord-Ganeshav2/Lord-Ganesha-v2-2.jpg" },
