@@ -242,7 +242,7 @@ export const categories: Category[] = [
         img: "/Oem/Travel/1.jpg",
         products: [
           { name: "Travel 1", img: "/Oem/Travel/1.jpg" },
-
+          { name: "Travel 2", img: "/Oem/Travel/2.jpg" },
         ],
       },
       {
