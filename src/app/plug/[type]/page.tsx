@@ -1,4 +1,5 @@
 // app/plug/[type]/page.tsx
+
 import { notFound } from "next/navigation";
 import plugTypes from "@/data/plugTypes";
 import PlugCustomizer from "@/components/PlugCustomizer";
