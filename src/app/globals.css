@@ -2,6 +2,9 @@
   --background: #ffffff;
   --foreground: #171717;
   --bg-image: url("/BG-1.jpg");
+
+  --site-font-family: var(--font-anuphan), "Anuphan", Arial, Helvetica, sans-serif;
+  --site-font-weight: 400;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,9 +28,22 @@ body {
   background: var(--bg-image) no-repeat center center fixed;
   background-size: cover;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--site-font-family);
+  font-weight: var(--site-font-weight);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ให้หน้าเว็บจริงใช้ฟอนต์ที่เลือกจากหลังบ้าน แม้ component บางจุดมี font-family เดิม */
+body * {
+  font-family: var(--site-font-family) !important;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
 
 @media (prefers-color-scheme: dark) {

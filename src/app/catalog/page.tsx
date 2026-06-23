@@ -13,7 +13,7 @@ export default function CatalogPage() {
       transition={{ duration: 0.8, ease: "easeOut" }}
       style={{
         minHeight: "100vh",
-        background: "linear-gradient(135deg, #f9fafb, #ffffff)",
+        background: "transparent",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

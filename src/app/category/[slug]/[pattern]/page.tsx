@@ -1,23 +1,68 @@
-"use client";
-
-import React from "react";
 import PatternGallery from "./PatternGallery";
-import { categories } from "@/data/characters";
+import { findCategoryBySlug, getCmsData } from "@/lib/cms";
 
-export default function PatternPage({
-  params: paramsPromise,
+export const dynamic = "force-dynamic";
+
+type GalleryProduct = {
+  id?: string;
+  img: string;
+  name: string;
+};
+
+function toGalleryProducts(
+  pattern: {
+    rowId?: string;
+    name: string;
+    img: string;
+    products: Array<{
+      id?: string;
+      name?: string;
+      img?: string;
+      isActive?: boolean;
+      sortOrder?: number;
+    }>;
+  },
+): GalleryProduct[] {
+  const products = [...(pattern.products ?? [])]
+    .sort((a, b) => Number(a.sortOrder ?? 0) - Number(b.sortOrder ?? 0))
+    .filter((product) => product.isActive !== false && Boolean(product.img?.trim()))
+    .map((product, index) => ({
+      id: product.id || `${pattern.rowId ?? "pattern"}-product-${index}`,
+      name: product.name?.trim() || `${pattern.name} ${index + 1}`,
+      img: product.img?.trim() ?? "",
+    }));
+
+  if (products.length > 0) {
+    return products;
+  }
+
+  // ถ้ายังไม่ได้เพิ่มรูปสินค้า ให้ใช้รูปหน้าปก Pattern เป็น fallback
+  if (pattern.img?.trim()) {
+    return [
+      {
+        id: pattern.rowId,
+        name: pattern.name,
+        img: pattern.img.trim(),
+      },
+    ];
+  }
+
+  return [];
+}
+
+export default async function PatternPage({
+  params,
 }: {
   params: Promise<{ slug: string; pattern: string }>;
 }) {
-  // 🔹 ใช้ React.use() unwrap params
-  const params = React.use(paramsPromise);
+  const resolvedParams = await params;
+  const data = await getCmsData();
+  const category = findCategoryBySlug(data, resolvedParams.slug);
+  const pattern = category?.patterns.find(
+    (item) => item.id === resolvedParams.pattern && item.isActive,
+  );
 
-  // 🔹 หา category และ pattern ที่ตรงกับพารามิเตอร์
-  const category = categories.find((c) => c.slug === params.slug);
-  const pattern = category?.patterns.find((p) => p.id === params.pattern);
-
-  // 🔹 ถ้าไม่พบ
-  if (!category || !pattern)
+  if (!category || !category.isActive || !pattern) {
     return (
       <div
         style={{
@@ -32,13 +77,14 @@ export default function PatternPage({
         ไม่พบลายนี้
       </div>
     );
+  }
 
-  // ✅ ใช้ detailProducts ถ้ามี, ถ้าไม่มีให้ fallback ไปใช้ detail เดิม
   const detailText = pattern.detailProducts ?? pattern.detail ?? "";
+  const products = toGalleryProducts(pattern);
 
   return (
     <PatternGallery
-      products={pattern.products}
+      products={products}
       name={pattern.name}
       detail={detailText}
     />

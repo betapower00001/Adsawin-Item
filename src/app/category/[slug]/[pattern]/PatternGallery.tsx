@@ -1,12 +1,13 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter, useParams } from "next/navigation";
 import styles from "./PatternGallery.module.css";
 
 interface Product {
+  id?: string;
   img: string;
   name: string;
 }
@@ -17,20 +18,42 @@ interface Props {
   detail?: string;
 }
 
+function cleanProducts(products: Product[], fallbackName: string) {
+  return products
+    .filter((product) => typeof product.img === "string" && product.img.trim().length > 0)
+    .map((product, index) => ({
+      ...product,
+      id: product.id || `${index}`,
+      img: product.img.trim(),
+      name: product.name?.trim() || `${fallbackName} ${index + 1}`,
+    }));
+}
+
 export default function PatternGallery({ products, name, detail }: Props) {
+  const galleryProducts = useMemo(
+    () => cleanProducts(products, name),
+    [products, name],
+  );
   const [selectedIndex, setSelectedIndex] = useState(0);
   const router = useRouter();
   const { slug } = useParams();
 
-  if (!products || products.length === 0) {
+  useEffect(() => {
+    if (selectedIndex >= galleryProducts.length) {
+      setSelectedIndex(0);
+    }
+  }, [galleryProducts.length, selectedIndex]);
+
+  if (galleryProducts.length === 0) {
     return <div className={styles.galleryContainer}>ไม่มีภาพสำหรับแสดงผล</div>;
   }
+
+  const selectedProduct = galleryProducts[selectedIndex] ?? galleryProducts[0];
 
   return (
     <div className={styles.galleryContainer}>
       {/* ====== ซ้าย: ปุ่มกลับ + ภาพใหญ่ ====== */}
       <div className={styles.leftPanel}>
-        {/* 🔙 ปุ่มกลับอยู่เหนือภาพใหญ่ */}
         <div className={styles.backButtonWrapper}>
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -42,24 +65,27 @@ export default function PatternGallery({ products, name, detail }: Props) {
           </motion.button>
         </div>
 
-        {/* ====== ภาพใหญ่ ====== */}
         <div className={styles.imageWrapper}>
           <AnimatePresence mode="wait">
             <motion.div
-              key={products[selectedIndex].img}
+              key={`${selectedProduct.id}-${selectedProduct.img}`}
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className={styles.fadeWrapper}
             >
-              <Image
-                src={products[selectedIndex].img}
-                alt={products[selectedIndex].name}
-                fill
+              <img
+                src={selectedProduct.img}
+                alt={selectedProduct.name}
                 className={styles.mainImage}
-                sizes="(max-width: 768px) 100vw, 50vw"
-                priority
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  display: "block",
+                  objectFit: "cover",
+                }}
+                loading="eager"
               />
             </motion.div>
           </AnimatePresence>
@@ -74,23 +100,28 @@ export default function PatternGallery({ products, name, detail }: Props) {
         </div>
 
         <div className={styles.thumbGrid}>
-          {products.map((prod, i) => (
-            <motion.div
-              key={i}
+          {galleryProducts.map((prod, index) => (
+            <motion.button
+              key={`${prod.id}-${prod.img}`}
+              type="button"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className={`${styles.thumb} ${i === selectedIndex ? styles.active : ""}`}
-              onClick={() => i !== selectedIndex && setSelectedIndex(i)}
+              className={`${styles.thumb} ${index === selectedIndex ? styles.active : ""}`}
+              onClick={() => index !== selectedIndex && setSelectedIndex(index)}
             >
-              <Image
+              <img
                 src={prod.img}
                 alt={prod.name}
-                fill
                 className={styles.thumbImage}
-                sizes="200px"
-                quality={90}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  display: "block",
+                  objectFit: "cover",
+                }}
+                loading="lazy"
               />
-            </motion.div>
+            </motion.button>
           ))}
         </div>
       </div>

@@ -5,124 +5,154 @@
   justify-content: center;
   min-height: 100vh;
   padding: 40px;
-  background:
-    radial-gradient(circle at center, rgba(240, 210, 255, 0) 0%, rgba(242, 237, 247, 0) 100%),
-    url('/BG-1.jpg') no-repeat center center;
-  background-size: cover;
+  background: transparent;
   box-sizing: border-box;
   text-align: center;
 }
 
 .container {
-  max-width: 1200px;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 32px;
+  margin: 0 0 32px;
   color: #1e2a78;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .notFound {
-  font-size: 1.5rem;
   padding: 20px;
-  font-weight: 600;
   color: #999;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
+/*
+ * กำหนดความกว้างการ์ดสูงสุดไว้ชัดเจน
+ * เมื่อมีลายเดียว การ์ดจะอยู่กึ่งกลางและไม่ยืดเต็มแถว
+ * เมื่อมีหลายลาย ระบบจะเรียงอัตโนมัติและทั้งกลุ่มยังอยู่กึ่งกลาง
+ */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 340px));
+  justify-content: center;
+  align-items: stretch;
   gap: 24px;
-  justify-items: center;
-  align-items: stretch; /* ✅ ให้แต่ละ card ยืดเท่ากันในแนวตั้ง */
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cardBox,
 .card {
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 16px;
-  background-color: #fff;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* ✅ ชิดขวา */
-  justify-content: space-between;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  height: 320px; /* ✅ การ์ดสูงเท่ากันทุกอัน */
+  align-items: stretch;
+  justify-content: flex-start;
   width: 100%;
+  min-width: 0;
+  height: 330px;
+  padding: 16px;
+  overflow: hidden;
   box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .cardBox:hover,
 .card:hover {
-  transform: scale(1.08);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
 }
 
 .imageWrapper {
-  width: 100%;
-  height: 180px; /* ✅ ความสูงภาพเท่ากันทุกการ์ด */
-  margin-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 190px;
+  width: 100%;
+  height: 190px;
+  margin-bottom: 14px;
   overflow: hidden;
+  border-radius: 12px;
+  background: #f4f4f4;
 }
 
 .image {
-  border-radius: 12px;
-  object-fit: cover; /* ✅ ปรับภาพไม่บิด */
   width: 100%;
   height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 .name {
-  font-weight: 500;
-  text-align: left; 
-  color: #333;
-  margin: 0;
   width: 100%;
-  padding-right: 8px; /* ✅ เผื่อระยะขอบขวาเล็กน้อย */
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: left;
+  overflow-wrap: anywhere;
 }
 
 .detail {
-  font-size: 1rem;
-  color: #666;
-  margin-top: 8px;
-  text-align: center;
   max-width: 600px;
+  margin: 8px auto 0;
+  color: #666;
+  font-size: 1rem;
   line-height: 1.5;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 .patternDetail {
-  padding-top: 5px;
-  font-size: 0.85rem;
-  color: #555;
-  margin-top: 4px;
-  text-align: left; 
-  line-height: 1.3;
+  display: -webkit-box;
   width: 100%;
-  padding-right: 8px;
+  margin: 8px 0 0;
+  overflow: hidden;
+  color: #555;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  text-align: left;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
-/* ✅ ปรับขนาดอัตโนมัติสำหรับมือถือ */
 @media (max-width: 768px) {
-  .cardBox {
-    height: 260px; /* ลดความสูงลงนิดหน่อย */
+  .page {
+    min-height: 100svh;
+    padding: 28px 16px;
+  }
+
+  .title {
+    margin-bottom: 24px;
+    font-size: 1.65rem;
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 420px);
+    gap: 18px;
+  }
+
+  .cardBox,
+  .card {
+    height: 300px;
+    padding: 14px;
   }
 
   .imageWrapper {
-    height: 150px;
+    flex-basis: 165px;
+    height: 165px;
   }
 
   .name {
@@ -131,5 +161,17 @@
 
   .patternDetail {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .cardBox,
+  .card {
+    height: 285px;
+  }
+
+  .imageWrapper {
+    flex-basis: 155px;
+    height: 155px;
   }
 }
