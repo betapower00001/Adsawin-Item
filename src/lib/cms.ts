@@ -8,6 +8,7 @@ import type {
   CmsHomeCharacter,
   CmsPattern,
   CmsProduct,
+  CmsSiteSettings,
 } from "@/types/cms";
 import { getSql } from "./db";
 
@@ -174,16 +175,20 @@ function normalizeHomeCharacter(
 }
 
 
-function getLegacySiteFontSettings(value: Partial<CmsData> | null | undefined) {
-  const legacyFont = (value as { siteFont?: { family?: unknown; weight?: unknown } } | null | undefined)?.siteFont;
+function getLegacySiteFontSettings(
+  value: Partial<CmsData> | null | undefined,
+): Partial<CmsSiteSettings> {
+  const legacyFont = (
+    value as { siteFont?: { family?: unknown; weight?: unknown } } | null | undefined
+  )?.siteFont;
 
   if (!legacyFont) {
     return {};
   }
 
   return {
-    fontFamily: legacyFont.family,
-    fontWeight: legacyFont.weight,
+    fontFamily: text(legacyFont.family),
+    fontWeight: text(legacyFont.weight),
   };
 }
 

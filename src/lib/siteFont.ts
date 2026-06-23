@@ -79,11 +79,14 @@ export const GOOGLE_FONT_OPTIONS: GoogleFontOption[] = [
 
 export const DEFAULT_SITE_FONT_FAMILY = "Anuphan";
 export const DEFAULT_SITE_FONT_WEIGHT = "400";
-
 export const DEFAULT_SITE_FONT = {
   family: DEFAULT_SITE_FONT_FAMILY,
   weight: DEFAULT_SITE_FONT_WEIGHT,
 };
+
+type CmsSiteFontValue = Partial<Pick<CmsSiteSettings, "fontFamily" | "fontWeight">>;
+type LegacySiteFontValue = { family?: unknown; weight?: unknown };
+type SiteFontInput = CmsSiteFontValue | LegacySiteFontValue | null | undefined;
 
 export function getGoogleFontOption(family: string) {
   return (
@@ -99,7 +102,10 @@ export function normalizeSiteFontFamily(value: unknown) {
     : DEFAULT_SITE_FONT_FAMILY;
 }
 
-export function normalizeSiteFontWeight(value: unknown, family = DEFAULT_SITE_FONT_FAMILY) {
+export function normalizeSiteFontWeight(
+  value: unknown,
+  family = DEFAULT_SITE_FONT_FAMILY,
+) {
   const option = getGoogleFontOption(family);
   const fallback = option.weights.includes(DEFAULT_SITE_FONT_WEIGHT)
     ? DEFAULT_SITE_FONT_WEIGHT
@@ -124,10 +130,13 @@ export function getGoogleFontHref(family: string) {
   return `https://fonts.googleapis.com/css2?family=${encodedFamily}${weightQuery}&display=swap`;
 }
 
-export function getSiteFontStyle(settings: Pick<CmsSiteSettings, "fontFamily" | "fontWeight">): CSSProperties {
+export function getSiteFontStyle(
+  settings: Pick<CmsSiteSettings, "fontFamily" | "fontWeight">,
+): CSSProperties {
   const fontFamily = normalizeSiteFontFamily(settings.fontFamily);
   const fontWeight = normalizeSiteFontWeight(settings.fontWeight, fontFamily);
-  const fallbackStack = 'var(--font-anuphan), "Anuphan", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+  const fallbackStack =
+    'var(--font-anuphan), "Anuphan", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
 
   return {
     fontFamily:
@@ -138,20 +147,14 @@ export function getSiteFontStyle(settings: Pick<CmsSiteSettings, "fontFamily" | 
   };
 }
 
-export function normalizeSiteFont(
-  value:
-    | Partial<Pick<CmsSiteSettings, "fontFamily" | "fontWeight">>
-    | { family?: unknown; weight?: unknown }
-    | null
-    | undefined,
-) {
-  const rawFamily =
-    value && "fontFamily" in value ? value.fontFamily : value?.family;
+export function normalizeSiteFont(value: SiteFontInput) {
+  const cmsValue = value as CmsSiteFontValue | null | undefined;
+  const legacyValue = value as LegacySiteFontValue | null | undefined;
 
+  const rawFamily = cmsValue?.fontFamily ?? legacyValue?.family;
   const family = normalizeSiteFontFamily(rawFamily);
 
-  const rawWeight =
-    value && "fontWeight" in value ? value.fontWeight : value?.weight;
+  const rawWeight = cmsValue?.fontWeight ?? legacyValue?.weight;
 
   return {
     family,
